@@ -103,6 +103,19 @@ body {
   margin-bottom: 16px;
 }
 
+.txt-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0px;
+  width: 100%;
+  background: rgb(234, 232, 232);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.5px);
+  border-radius: 16px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
 
 .nomp {
   margin: 0px;
