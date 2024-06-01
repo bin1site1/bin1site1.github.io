@@ -19,6 +19,22 @@
             "quickSearch": 1
         },
         {
+            "key": "奥斯卡资源",
+            "name": "奥斯卡资源",
+            "type": 1,
+            "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "淘片资源",
+            "name": "淘片资源",
+            "type": 1,
+            "api": "https://taopianapi.com/cjapi/sda/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "360资源",
             "name": "360资源",
             "type": 1,
