@@ -11,6 +11,14 @@
             "quickSearch": 1
         },
         {
+            "key": "麒麟资源",
+            "name": "麒麟资源",
+            "type": 1,
+            "api": "https://www.qilinzyz.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "闪电资源",
             "name": "闪电资源",
             "type": 1,
