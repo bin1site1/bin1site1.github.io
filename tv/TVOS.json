@@ -11,6 +11,14 @@
             "quickSearch": 1
         },
         {
+            "key": "闪电资源",
+            "name": "闪电资源",
+            "type": 1,
+            "api": "https://xsd.sdzyapi.com/api.php/provide/vod/from/sdm3u8/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "海外看资源",
             "name": "海外看资源",
             "type": 1,
