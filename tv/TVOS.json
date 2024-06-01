@@ -41,6 +41,12 @@
             "api": "https://api.wujinapi.me/api.php/provide/vod/"
         },
         {
+            "key": "天堂资源",
+            "name": "天堂资源",
+            "type": 1,
+            "api": "http://vipmv.cc/api.php/provide/vod/"
+        },
+        {
             "key": "易看资源",
             "name": "易看资源",
             "type": 1,
