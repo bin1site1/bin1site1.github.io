@@ -634,7 +634,7 @@
             "key": "精品资源",
             "name": "🈲精品资源",
             "type": 1,
-            "api": "https://www.jingpinx.com/api.php/provide/vod",
+            "api": "https://www.jingpinx.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -690,7 +690,7 @@
             "key": "KK资源",
             "name": "🈲KK资源",
             "type": 1,
-            "api": "https://kkzy.me/api.php/provide/vod/at/xml/?ac=list",
+            "api": "https://kkzy.me/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
