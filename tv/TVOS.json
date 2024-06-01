@@ -634,7 +634,7 @@
             "key": "精品资源",
             "name": "🈲精品资源",
             "type": 1,
-            "api": "https://www.jingpinx.com/api.php/provide/vod/?ac=list",
+            "api": "https://wwwjingpinx.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -682,7 +682,7 @@
             "key": "色猫资源",
             "name": "🈲色猫资源",
             "type": 1,
-            "api": "https://caiji.semaozy.net/inc/apijson_vod.php",
+            "api": "https://caiji.semaozy.net/inc/api.php",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -730,7 +730,7 @@
             "key": "皇冠资源",
             "name": "🈲皇冠资源",
             "type": 1,
-            "api": "https://www.hgzy05.com/api.php/provide/vod",
+            "api": "https://www.hgzy05.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -738,7 +738,7 @@
             "key": "鲨鱼资源",
             "name": "🈲鲨鱼资源",
             "type": 1,
-            "api": "https://www.shayuzy.com//api.php/provide/vod",
+            "api": "https://shayuapi.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1
         },
