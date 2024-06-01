@@ -273,7 +273,10 @@
             "name": "卧龙资源",
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
-            "api": "https://collect.wolongzy.cc/api.php/provide/vod/""dtEntities": [
+            "api": "https://collect.wolongzy.cc/api.php/provide/vod/",
+            "sort": 30,
+            "usePCUserAgent": true,
+            "dtEntities": [
                 {
                     "id": "wolongm3u8",
                     "sort": 0,
