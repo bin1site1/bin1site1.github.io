@@ -138,94 +138,14 @@
             ]
         },
         {
-            "key": "雨哥哥影视",
-            "name": "包子",
-            "type": 1,
-            "api": "http://cj.baozi66.top:66/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "2d50e74976a7802fd673d75738bce50e",
             "name": "高清",
             "type": 1,
             "api": "https://api.1080zyku.com/inc/apijson.php"
         },
         {
-            "key": "csp_xml___追剧官采",
-            "name": "💢追剧官采",
-            "type": 1,
-            "api": "http://gc.zhuijuba.vip/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___WaBc腾讯",
-            "name": "🐝WaBc腾讯",
-            "type": 1,
-            "api": "https://wabc.ml/mao/1.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___诺迅资源",
-            "name": "🐝诺迅资源",
-            "type": 1,
-            "api": "https://caiji.nxflv.com/api.php/provide/vod/",
-            "playUrl": "https://www.nxflv.com/?url=",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___M3U8资源",
-            "name": "🐝M3U8资源",
-            "type": 1,
-            "api": "http://www.zycaiji.net:7788/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___畅视影视",
-            "name": "🐝畅视影视",
-            "type": 1,
-            "api": "http://app.reboju.net/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___WaBc爱奇艺",
-            "name": "🐝WaBc爱奇艺",
-            "type": 1,
-            "api": "https://wabc.ml/mao/2.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___8090",
-            "name": "💢8090资源",
-            "type": 1,
-            "api": "http://zy.yilans.net:8090/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "csp_xml___小猫咪",
-            "name": "💢小 猫 咪",
-            "type": 1,
-            "api": "https://zy.xiaomaomi.cc/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "影图资源",
-            "name": "影图┃App",
+            "name": "影图资源",
             "type": 1,
             "api": "https://cj.vodimg.top/api.php/provide/vod/",
             "searchable": 1,
