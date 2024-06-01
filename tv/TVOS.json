@@ -591,7 +591,15 @@
                 "篮球",
                 "网球",
                 "斯诺克"
-            ]
+            ],
+            {
+                "key": "老鸭资源",
+                "name": "🈲老鸭资源",
+                "type": 1,
+                "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
+                "searchable": 1,
+                "quickSearch": 1
+            },
         },
         {
             "key": "四九资源",
