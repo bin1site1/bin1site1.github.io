@@ -8,7 +8,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://hhzyapi.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 1,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -32,7 +32,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://leshiapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 2,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -56,7 +56,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.okzy.org/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 3,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -80,7 +80,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://xsd.sdzyapi.com/api.php/provide/vod/from/sdm3u8/at/xml",
-            "sort": 30,
+            "sort": 4,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -104,7 +104,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "http://sdzyapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 5,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -128,7 +128,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://360zy.com/api.php/provide/vod",
-            "sort": 30,
+            "sort": 6,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -152,7 +152,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://json.heimuer.tv/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 7,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -176,7 +176,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.feisuzyapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 8,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -200,7 +200,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.feisuzy.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 9,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -224,8 +224,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod/",
-            "playUrl": "",
-            "sort": 30,
+            "sort": 10,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -249,8 +248,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "http://fszy1.com/api.php/provide/vod/",
-            "playUrl": "",
-            "sort": 30,
+            "sort": 11,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -274,7 +272,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://collect.wolongzy.cc/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 12,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -298,7 +296,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 13,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -322,7 +320,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.yikanapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 14,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -346,7 +344,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.39kan.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 15,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -370,7 +368,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://m3u8.tiankongapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 16,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -394,7 +392,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.tiankongapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 17,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -418,8 +416,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://ckzy.me/api.php/provide/vod/",
-            "playUrl": "",
-            "sort": 30,
+            "sort": 18,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -443,7 +440,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://p2100.net/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 19,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -467,7 +464,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://ikunzyapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 20,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -491,7 +488,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.1080zyku.com/inc/api_mac10.php",
-            "sort": 30,
+            "sort": 21,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -515,7 +512,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.huyaapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 22,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -539,7 +536,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://kuaikan-api.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 23,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -563,7 +560,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://jszyapi.com/api.php/provide/vod/from/jsm3u8",
-            "sort": 30,
+            "sort": 24,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -587,7 +584,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.xy1080.net/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 25,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -611,7 +608,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.1080zyku.com/inc/apijson.php",
-            "sort": 30,
+            "sort": 26,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -635,7 +632,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://cj.vodimg.top/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 27,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -659,7 +656,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://caiji.kczyapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 28,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -683,7 +680,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 29,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -728,9 +725,8 @@
         {
             "id": "taopian_demo",
             "name": "淘片资源",
-            "type": 0,
             "api": "https://taopianapi.com/cjapi/mc10/vod/xml.html",
-            "sort": 30,
+            "sort": 31,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -754,7 +750,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://jyzyapi.com/provide/vod/",
-            "sort": 30,
+            "sort": 32,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -778,7 +774,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.wujinapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 33,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -802,7 +798,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.wujinapi.me/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 34,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -826,7 +822,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.911ysw.top/tianyi.php/provide/vod/",
-            "sort": 30,
+            "sort": 35,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -850,7 +846,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.ukuapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 36,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -874,7 +870,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://bfzyapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 37,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -898,7 +894,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://app.bfzyapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 38,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -922,7 +918,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.ylzy.me/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 39,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -946,7 +942,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "http://cj.md214.cn/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 40,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -970,7 +966,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.1080zyku.com/inc/apijson.php",
-            "sort": 30,
+            "sort": 41,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -994,7 +990,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 42,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1018,7 +1014,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-            "sort": 30,
+            "sort": 43,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1042,7 +1038,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.apibdzy.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 44,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1066,7 +1062,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 45,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1090,7 +1086,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://cj.lzcaiji.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 46,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1111,9 +1107,8 @@
         {
             "id": "量子_demo",
             "name": "量子资源",
-            "type": 0,
             "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
-            "sort": 30,
+            "sort": 47,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1137,7 +1132,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://49zyw.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 48,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1161,7 +1156,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.jingpinx.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 49,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1185,7 +1180,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.ddapi.cc/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 50,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1209,7 +1204,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://caiji.gqjiexi.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 51,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1233,7 +1228,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 52,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1257,7 +1252,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://vnzyz.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 53,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1281,7 +1276,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://apisesehuzy.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 54,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1305,7 +1300,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://kkzy.me/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 55,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1329,7 +1324,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://lbapi9.com/api.php/provide/vod/",
-            "sort": 30,
+            "sort": 56,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1353,7 +1348,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://apilsbzy1.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 57,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1377,7 +1372,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://www.caoliuzyw.com/api.php/provide/vod/at/json/",
-            "sort": 30,
+            "sort": 58,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1401,7 +1396,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://155api.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 59,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
@@ -1425,7 +1420,7 @@
             "charset": "utf-8",
             "summary": "修订日期：2024-06-03",
             "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
-            "sort": 30,
+            "sort": 60,
             "usePCUserAgent": true,
             "dtEntities": [
                 {
