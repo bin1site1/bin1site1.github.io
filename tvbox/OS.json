@@ -1,5 +1,5 @@
 {
-    "spider": "./TVOS.jar",
+    "spider": "./OS.jar",
     "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
     "sites": [
         {
