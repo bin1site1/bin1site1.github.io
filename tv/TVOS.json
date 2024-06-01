@@ -30,9 +30,15 @@
             "key": "樱花资源",
             "name": "樱花资源",
             "type": 1,
-            "api": "https://m3u8.apiyhzy.com/api.php/seacms/vod/",
+            "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
+        },
+        {
+            "key": "无尽资源",
+            "name": "无尽资源2",
+            "type": 1,
+            "api": "https://api.wujinapi.me/api.php/provide/vod/"
         },
         {
             "key": "易看资源",
@@ -347,7 +353,7 @@
             "quickSearch": 1
         },
         {
-            "key": "3a565658ffb7ec926e61756240866e64",
+            "key": "无尽资源",
             "name": "无尽资源",
             "type": 1,
             "api": "https://api.wujinapi.com/api.php/provide/vod/"
