@@ -1045,7 +1045,7 @@
         },
         {
             "key": "xml_火狐",
-            "name": "🥟 豪华采集 ",
+            "name": "🥟 火狐采集 ",
             "type": 1,
             "api": "https://hhzyapi.com/api.php/provide/vod",
             "searchable": 1,
