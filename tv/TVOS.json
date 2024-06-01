@@ -11,6 +11,14 @@
             "quickSearch": 1
         },
         {
+            "key": "海外看资源",
+            "name": "海外看资源",
+            "type": 1,
+            "api": "https://haiwaikan.com/api.php/provide/vod/at/xml/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "360资源",
             "name": "360资源",
             "type": 1,
