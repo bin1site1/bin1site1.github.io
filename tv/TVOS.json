@@ -152,14 +152,6 @@
             "quickSearch": 1
         },
         {
-            "key": "人人资源",
-            "name": "人人资源(优)",
-            "type": 1,
-            "api": "http://www.rrzyw.cc/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "快车资源",
             "name": "🚘 快车",
             "type": 1,
@@ -184,12 +176,6 @@
             "name": "速博",
             "type": 1,
             "api": "https://subocaiji.com/api.php/provide/vod/"
-        },
-        {
-            "key": "cdc25e368870d416a57c277767e084e0",
-            "name": "至圣",
-            "type": 1,
-            "api": "http://82.156.40.118:1234/api.php/provide/vod/"
         },
         {
             "key": "e173267b0d7e1f1a1189c22c3bb7b556",
@@ -345,15 +331,6 @@
             "name": "U酷",
             "type": 1,
             "api": "https://api.ukuapi.com/api.php/provide/vod/"
-        },
-        {
-            "key": "csp_xml___番茄资源",
-            "name": "🐝番茄资源",
-            "type": 1,
-            "api": "http://api.fqzy.cc/api.php/provide/vod/",
-            "playUrl": "https://dp.fqplayer.com/dplayer/?url=",
-            "searchable": 1,
-            "quickSearch": 1
         },
         {
             "key": "740e5d81e28de3ab97eab19f0ce6cf1d",
