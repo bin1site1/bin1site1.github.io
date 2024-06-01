@@ -44,14 +44,6 @@
             ]
         },
         {
-            "key": "轮回资源",
-            "name": "轮回资源",
-            "type": 1,
-            "api": "http://vip.15998.cc/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "乐视资源",
             "name": "乐视资源",
             "type": 1,
@@ -68,14 +60,6 @@
             "quickSearch": 1
         },
         {
-            "key": "麒麟资源",
-            "name": "麒麟资源",
-            "type": 1,
-            "api": "https://www.qilinzyz.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "闪电资源",
             "name": "闪电资源",
             "type": 1,
@@ -88,14 +72,6 @@
             "name": "闪电资源",
             "type": 1,
             "api": "http://sdzyapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "海外看资源",
-            "name": "海外看资源",
-            "type": 1,
-            "api": "https://haiwaikan.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -634,7 +610,7 @@
             "key": "精品资源",
             "name": "🈲精品资源",
             "type": 1,
-            "api": "https://wwwjingpinx.com/api.php/provide/vod/at/xml",
+            "api": "https://www.jingpinx.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -682,7 +658,7 @@
             "key": "色猫资源",
             "name": "🈲色猫资源",
             "type": 1,
-            "api": "https://caiji.semaozy.net/inc/api.php",
+            "api": "https://caiji.semaozy.net/inc/apijson_vod.php",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -730,7 +706,7 @@
             "key": "皇冠资源",
             "name": "🈲皇冠资源",
             "type": 1,
-            "api": "https://www.hgzy05.com/api.php/provide/vod/at/xml",
+            "api": "https://www.hgzy05.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
