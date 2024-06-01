@@ -45,7 +45,7 @@
         },
         {
             "key": "飘零影院",
-            "name": "飘零（墙外）",
+            "name": "飘零资源",
             "type": 1,
             "api": "https://p2100.net/api.php/provide/vod/",
             "searchable": 1,
@@ -69,7 +69,7 @@
         },
         {
             "key": "虎牙资源",
-            "name": "虎牙",
+            "name": "虎牙资源",
             "type": 1,
             "api": "https://www.huyaapi.com/api.php/provide/vod/",
             "searchable": 1,
@@ -77,7 +77,7 @@
         },
         {
             "key": "快看视频",
-            "name": "快看",
+            "name": "快看资源",
             "type": 1,
             "api": "https://kuaikan-api.com/api.php/provide/vod/",
             "searchable": 1,
@@ -85,7 +85,7 @@
         },
         {
             "key": "jszy",
-            "name": "极速",
+            "name": "极速资源",
             "type": 1,
             "api": "https://jszyapi.com/api.php/provide/vod/from/jsm3u8",
             "searchable": 1,
@@ -125,7 +125,7 @@
         },
         {
             "key": "秒看资源",
-            "name": "秒看",
+            "name": "秒看资源",
             "type": 1,
             "api": "https://www.xy1080.net/api.php/provide/vod/",
             "searchable": 1,
@@ -139,7 +139,7 @@
         },
         {
             "key": "2d50e74976a7802fd673d75738bce50e",
-            "name": "高清",
+            "name": "高清资源",
             "type": 1,
             "api": "https://api.1080zyku.com/inc/apijson.php"
         },
@@ -153,7 +153,7 @@
         },
         {
             "key": "快车资源",
-            "name": "🚘 快车",
+            "name": "快车资源",
             "type": 1,
             "api": "https://caiji.kczyapi.com/api.php/provide/vod/",
             "searchable": 1,
@@ -167,25 +167,25 @@
         },
         {
             "key": "3bcf7fb89aa2f68696aeae9bab366739",
-            "name": "四圈",
+            "name": "四圈资源",
             "type": 1,
             "api": "https://pg.fenwe078.cf/api.php/provide/vod/"
         },
         {
             "key": "a93e240b86b123b432b61db56896f703",
-            "name": "速博",
+            "name": "速博资源",
             "type": 1,
             "api": "https://subocaiji.com/api.php/provide/vod/"
         },
         {
             "key": "e173267b0d7e1f1a1189c22c3bb7b556",
-            "name": "淘片",
+            "name": "淘片资源",
             "type": 0,
             "api": "https://taopianapi.com/cjapi/mc10/vod/xml.html"
         },
         {
             "key": "xml_火狐",
-            "name": "火狐",
+            "name": "火狐资源",
             "type": 1,
             "style": {
                 "type": "rect",
@@ -226,7 +226,7 @@
         },
         {
             "key": "SNzy",
-            "name": "索尼",
+            "name": "索尼资源",
             "type": 1,
             "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -266,7 +266,7 @@
         },
         {
             "key": "速博资源",
-            "name": "速播",
+            "name": "速播资源",
             "type": 1,
             "api": "https://subocaiji.com/api.php/provide/vod/",
             "playUrl": "",
@@ -275,7 +275,7 @@
         },
         {
             "key": "金鹰资源",
-            "name": "金鹰",
+            "name": "金鹰资源",
             "type": 1,
             "api": "https://jyzyapi.com/provide/vod/",
             "playUrl": "",
@@ -284,7 +284,7 @@
         },
         {
             "key": "卧龙资源",
-            "name": "🐉 卧龙",
+            "name": "卧龙资源",
             "type": 1,
             "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
             "searchable": 1,
@@ -298,7 +298,7 @@
         },
         {
             "key": "csp_xml___飞速资源",
-            "name": "🐝飞速资源",
+            "name": "飞速资源",
             "type": 1,
             "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod/",
             "playUrl": "",
@@ -307,7 +307,7 @@
         },
         {
             "key": "csp_xml___飞速资源2",
-            "name": "🐝飞速资源2",
+            "name": "飞速资源2",
             "type": 1,
             "api": "http://fszy1.com/api.php/provide/vod/",
             "playUrl": "",
@@ -316,31 +316,31 @@
         },
         {
             "key": "3a565658ffb7ec926e61756240866e64",
-            "name": "无尽",
+            "name": "无尽资源",
             "type": 1,
             "api": "https://api.wujinapi.com/api.php/provide/vod/"
         },
         {
             "key": "5c768286e6045c44abdfae6fd627b9fc",
-            "name": "天翼",
+            "name": "天翼资源",
             "type": 1,
             "api": "https://www.911ysw.top/tianyi.php/provide/vod/"
         },
         {
             "key": "6b89937eff774fdb0533180727011b38",
-            "name": "U酷",
+            "name": "U酷资源",
             "type": 1,
             "api": "https://api.ukuapi.com/api.php/provide/vod/"
         },
         {
             "key": "740e5d81e28de3ab97eab19f0ce6cf1d",
-            "name": "暴风",
+            "name": "暴风资源",
             "type": 1,
             "api": "https://bfzyapi.com/api.php/provide/vod/"
         },
         {
             "key": "鱼乐视频",
-            "name": "鱼乐",
+            "name": "鱼乐资源",
             "type": 1,
             "api": "https://api.ylzy.me/api.php/provide/vod/",
             "searchable": 1,
@@ -348,7 +348,7 @@
         },
         {
             "key": "暴风采集",
-            "name": "🚄暴风",
+            "name": "暴风资源",
             "type": 1,
             "api": "https://app.bfzyapi.com/api.php/provide/vod/",
             "playUrl": "",
@@ -378,7 +378,7 @@
         },
         {
             "key": "明帝视频",
-            "name": "明帝",
+            "name": "明帝资源",
             "type": 1,
             "api": "http://cj.md214.cn/api.php/provide/vod/",
             "searchable": 1,
@@ -386,7 +386,7 @@
         },
         {
             "key": "麻花资源",
-            "name": "麻花",
+            "name": "麻花资源",
             "type": 1,
             "api": "https://api.1080zyku.com/inc/apijson.php",
             "searchable": 1,
@@ -394,7 +394,7 @@
         },
         {
             "key": "光速资源",
-            "name": "☄ 光速",
+            "name": "光速资源",
             "type": 1,
             "api": "https://api.guangsuapi.com/api.php/provide/vod/",
             "searchable": 1,
@@ -408,7 +408,7 @@
         },
         {
             "key": "闪电资源",
-            "name": "⚡ 闪电",
+            "name": "闪电资源",
             "type": 1,
             "api": "http://sdzyapi.com/api.php/provide/vod/",
             "searchable": 1,
@@ -416,7 +416,7 @@
         },
         {
             "key": "天空资源",
-            "name": "🌔 天空",
+            "name": "天空资源",
             "type": 1,
             "api": "https://api.tiankongapi.com/api.php/provide/vod/",
             "searchable": 1,
@@ -431,7 +431,7 @@
         },
         {
             "key": "新浪资源",
-            "name": "🌊 新浪",
+            "name": "新浪资源",
             "type": 1,
             "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
             "searchable": 1,
@@ -446,7 +446,7 @@
         },
         {
             "key": "百度资源",
-            "name": "🐚 百度",
+            "name": "百度资源",
             "type": 1,
             "api": "https://api.apibdzy.com/api.php/provide/vod/",
             "searchable": 1,
@@ -460,7 +460,7 @@
         },
         {
             "key": "SNzy",
-            "name": "🥥 索尼┃资源 ",
+            "name": "索尼资源 ",
             "type": 1,
             "api": "https://suoniapi.com/api.php/provide/vod/from/snm3u8/at/json",
             "searchable": 1,
@@ -500,7 +500,7 @@
         },
         {
             "key": "xml_火狐",
-            "name": "🥟 火狐采集 ",
+            "name": "火狐采集 ",
             "type": 1,
             "api": "https://hhzyapi.com/api.php/provide/vod",
             "searchable": 1,
@@ -536,7 +536,7 @@
         },
         {
             "key": "量子资源",
-            "name": "量子",
+            "name": "量子资源",
             "type": 1,
             "api": "https://cj.lzcaiji.com/api.php/provide/vod/",
             "searchable": 1,
@@ -544,7 +544,7 @@
         },
         {
             "key": "量子",
-            "name": "🔴 量子 ",
+            "name": "量子资源",
             "type": 0,
             "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
@@ -587,34 +587,8 @@
             ]
         },
         {
-            "key": "meowtv_lzzy",
-            "name": "💜量子┃资源",
-            "type": 1,
-            "api": "http://cj.lziapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0,
-            "playurl": "json:http://jx.84jia.com/m3u8ts.php?url=",
-            "categories": [
-                "国产剧",
-                "国产动漫",
-                "泰国剧",
-                "台湾剧",
-                "香港剧",
-                "欧美剧",
-                "韩国剧",
-                "日本剧",
-                "动漫",
-                "体育",
-                "剧情片",
-                "动作片",
-                "爱情片",
-                "喜剧片"
-            ]
-        },
-        {
             "key": "49zy",
-            "name": "四九",
+            "name": "四九资源",
             "type": 1,
             "api": "https://49zyw.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
