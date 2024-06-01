@@ -634,7 +634,7 @@
             "key": "精品资源",
             "name": "🈲精品资源",
             "type": 1,
-            "api": "https://www.jingpinx.com/api.php/provide/vod/?ac=list",
+            "api": "https://www.jingpinx.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
