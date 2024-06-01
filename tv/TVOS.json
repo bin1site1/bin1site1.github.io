@@ -47,7 +47,7 @@
             "key": "轮回资源",
             "name": "轮回资源",
             "type": 1,
-            "api": "http://vip.15998.cc/api.php/provide/vod/?ac=list",
+            "api": "http://vip.15998.cc/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -71,7 +71,7 @@
             "key": "麒麟资源",
             "name": "麒麟资源",
             "type": 1,
-            "api": "https://www.qilinzyz.com/api.php/provide/vod/?ac=list",
+            "api": "https://www.qilinzyz.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -95,7 +95,7 @@
             "key": "海外看资源",
             "name": "海外看资源",
             "type": 1,
-            "api": "https://haiwaikan.com/api.php/provide/vod/at/xml/?ac=list",
+            "api": "https://haiwaikan.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
