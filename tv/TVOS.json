@@ -80,7 +80,7 @@
         },
         {
             "key": "csp_xml___CK资源",
-            "name": "🐝CK资源",
+            "name": "CK资源",
             "type": 1,
             "api": "https://ckzy.me/api.php/provide/vod/",
             "playUrl": "",
