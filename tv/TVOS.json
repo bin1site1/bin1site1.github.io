@@ -639,6 +639,54 @@
             ]
         },
         {
+            "key": "精品资源",
+            "name": "🈲精品资源",
+            "type": 1,
+            "api": "https://www.jingpinx.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "滴滴资源",
+            "name": "🈲滴滴资源",
+            "type": 1,
+            "api": "https://api.ddapi.cc/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "搞起资源",
+            "name": "🈲搞起资源",
+            "type": 1,
+            "api": "https://caiji.gqjiexi.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "奥斯卡资源",
+            "name": "🈲奥斯卡资源",
+            "type": 1,
+            "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "越南资源",
+            "name": "🈲越南资源",
+            "type": 1,
+            "api": "https://vnzyz.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "色色虎资源",
+            "name": "🈲色色虎资源",
+            "type": 1,
+            "api": "https://apisesehuzy.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "老鸭资源",
             "name": "🈲老鸭资源",
             "type": 1,
