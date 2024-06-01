@@ -3,34 +3,10 @@
     "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
     "sites": [
         {
-            "key": "天堂资源",
-            "name": "天堂资源",
-            "type": 1,
-            "api": "http://vipmv.cc/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "樱花资源",
-            "name": "樱花资源",
-            "type": 1,
-            "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "奥斯卡资源",
             "name": "奥斯卡资源",
             "type": 1,
             "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "淘片资源",
-            "name": "淘片资源",
-            "type": 1,
-            "api": "https://taopianapi.com/cjapi/sda/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
