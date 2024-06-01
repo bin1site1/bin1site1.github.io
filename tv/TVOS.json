@@ -47,6 +47,12 @@
             "api": "http://vipmv.cc/api.php/provide/vod/"
         },
         {
+            "key": "卧龙资源",
+            "name": "卧龙资源",
+            "type": 1,
+            "api": "https://collect.wolongzy.cc/api.php/provide/vod/"
+        },
+        {
             "key": "易看资源",
             "name": "易看资源",
             "type": 1,
