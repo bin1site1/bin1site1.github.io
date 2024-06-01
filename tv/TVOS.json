@@ -5266,27 +5266,6 @@
             "filterable": 1
         },
         {
-            "key": "dr_荐片",
-            "name": "🧲荐片┃App",
-            "type": 3,
-            "api": "./Q2OS/drpy2.min.js",
-            "playerType": "1",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./Q2OS/荐片.js"
-        },
-        {
-            "key": "农民",
-            "name": "🥝农民┃影视",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./sub/农民影视.json"
-        },
-        {
             "key": "csp_AppYsV2_嘉靓",
             "name": "🚍嘉靓┃影视",
             "type": 3,
