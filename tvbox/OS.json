@@ -3,8 +3,8 @@
     "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
     "sites": [
         {
-            "key": "豪华资源",
-            "name": "豪华资源",
+            "key": "bin1site1.github.io",
+            "name": "bin1site1.github.io",
             "type": 1,
             "style": {
                 "type": "rect",
