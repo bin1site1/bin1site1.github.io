@@ -562,8 +562,8 @@
             ]
         },
         {
-            "key": "四九资源",
-            "name": "四九资源",
+            "key": "49资源",
+            "name": "49资源",
             "type": 1,
             "api": "https://49zyw.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -605,14 +605,6 @@
                 "体育赛事",
                 "海外剧"
             ]
-        },
-        {
-            "key": "精品资源",
-            "name": "🈲精品资源",
-            "type": 1,
-            "api": "https://www.jingpinx.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
         },
         {
             "key": "滴滴资源",
