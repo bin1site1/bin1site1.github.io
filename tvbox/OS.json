@@ -608,7 +608,7 @@
         },
         {
             "key": "滴滴资源",
-            "name": "🈲滴滴资源",
+            "name": "🔞滴滴资源",
             "type": 1,
             "api": "https://api.ddapi.cc/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -616,7 +616,7 @@
         },
         {
             "key": "搞起资源",
-            "name": "🈲搞起资源",
+            "name": "🔞搞起资源",
             "type": 1,
             "api": "https://caiji.gqjiexi.com/api.php/provide/vod/",
             "searchable": 1,
@@ -624,7 +624,7 @@
         },
         {
             "key": "奥斯卡资源",
-            "name": "🈲奥斯卡资源",
+            "name": "🔞奥斯卡资源",
             "type": 1,
             "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -632,7 +632,7 @@
         },
         {
             "key": "越南资源",
-            "name": "🈲越南资源",
+            "name": "🔞越南资源",
             "type": 1,
             "api": "https://vnzyz.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -640,7 +640,7 @@
         },
         {
             "key": "色色虎资源",
-            "name": "🈲色色虎资源",
+            "name": "🔞色色虎资源",
             "type": 1,
             "api": "https://apisesehuzy.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -648,7 +648,7 @@
         },
         {
             "key": "KK资源",
-            "name": "🈲KK资源",
+            "name": "🔞KK资源",
             "type": 1,
             "api": "https://kkzy.me/api.php/provide/vod/",
             "searchable": 1,
@@ -656,7 +656,7 @@
         },
         {
             "key": "乐播资源",
-            "name": "🈲乐播资源",
+            "name": "🔞乐播资源",
             "type": 1,
             "api": "https://lbapi9.com/api.php/provide/vod/",
             "searchable": 1,
@@ -664,7 +664,7 @@
         },
         {
             "key": "老色逼资源",
-            "name": "🈲老色逼资源",
+            "name": "🔞老色逼资源",
             "type": 1,
             "api": "https://apilsbzy1.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -672,7 +672,7 @@
         },
         {
             "key": "草榴资源",
-            "name": "🈲草榴资源",
+            "name": "🔞草榴资源",
             "type": 1,
             "api": "https://www.caoliuzyw.com/api.php/provide/vod/at/json/",
             "searchable": 1,
@@ -680,7 +680,7 @@
         },
         {
             "key": "155资源",
-            "name": "🈲155资源",
+            "name": "🔞155资源",
             "type": 1,
             "api": "https://155api.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -688,7 +688,7 @@
         },
         {
             "key": "老鸭资源",
-            "name": "🈲老鸭资源",
+            "name": "🔞老鸭资源",
             "type": 1,
             "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -696,7 +696,7 @@
         },
         {
             "key": "chengren",
-            "name": "🈲成人影视1",
+            "name": "🔞成人影视1",
             "type": 1,
             "api": "https://www.partnersky-horoskop.com/api.php/provide/vod/",
             "searchable": 1,
@@ -704,7 +704,7 @@
         },
         {
             "key": "博天堂",
-            "name": "🈲成人影视2",
+            "name": "🔞成人影视2",
             "type": 0,
             "api": "http://bttcj.com/inc/sapi.php",
             "searchable": 0,
@@ -712,7 +712,7 @@
         },
         {
             "key": "*大地资源",
-            "name": "🏆大地资源",
+            "name": "🔞大地资源",
             "type": 0,
             "api": "https://dadiapi.com/api.php",
             "searchable": 0,
@@ -720,7 +720,7 @@
         },
         {
             "key": "美少女",
-            "name": "🈲美少女",
+            "name": "🔞美少女",
             "type": 0,
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 1,
@@ -729,7 +729,7 @@
         },
         {
             "key": "*CK资源",
-            "name": "🈴CK资源",
+            "name": "🔞CK资源",
             "type": 1,
             "api": "http://www.feifei67.com/api.php/provide/vod/",
             "searchable": 1,
@@ -738,7 +738,7 @@
         },
         {
             "key": "*白嫖资源",
-            "name": "🈲白嫖资源",
+            "name": "🔞白嫖资源",
             "type": 0,
             "api": "https://www.kxgav.com/api/xml.php",
             "searchable": 1,
@@ -747,7 +747,7 @@
         },
         {
             "key": "*点点娱乐",
-            "name": "🈲点点娱乐",
+            "name": "🔞点点娱乐",
             "type": 0,
             "api": "https://xx55zyapi.com/home/cjapi/ascf/mc10/vod/xml",
             "searchable": 1,
@@ -756,7 +756,7 @@
         },
         {
             "key": "*淫水机资源",
-            "name": "🈲淫水机",
+            "name": "🔞淫水机",
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
             "searchable": 1,
@@ -765,7 +765,7 @@
         },
         {
             "key": "*小湿妹资源",
-            "name": "🈲小湿妹",
+            "name": "🔞小湿妹",
             "type": 0,
             "api": "https://www.afasu.com/api/xml.php",
             "searchable": 1,
@@ -774,7 +774,7 @@
         },
         {
             "key": "*香奶儿资源",
-            "name": "🈲香奶儿",
+            "name": "🔞香奶儿",
             "type": 0,
             "api": "https://www.gdlsp.com/api/xml.php",
             "searchable": 1,
@@ -783,7 +783,7 @@
         },
         {
             "key": "*色猫资源",
-            "name": "🈲色猫资源",
+            "name": "🔞色猫资源",
             "type": 1,
             "api": "https://api.maozyapi.com/inc/apijson_vod.php",
             "searchable": 0,
