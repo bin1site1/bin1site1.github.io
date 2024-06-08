@@ -38,9 +38,9 @@ a:hover {
   padding: 50px 20px;
   padding-top: 100px;
   display: flex;
-  background: url(./bg.jpg) no-repeat center;
+  background: url(./image/bg.jpg) no-repeat center;
   display: flex;
-  background: url(./bg.jpg) no-repeat center;
+  background: url(./image/bg.jpg) no-repeat center;
 }
 
 @media screen and (max-width: 768px) {
