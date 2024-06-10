@@ -728,15 +728,6 @@
             "filterable": 1
         },
         {
-            "key": "*CK资源",
-            "name": "🔞CK资源",
-            "type": 1,
-            "api": "http://www.feifei67.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0
-        },
-        {
             "key": "*白嫖资源",
             "name": "🔞白嫖资源",
             "type": 0,
@@ -746,28 +737,10 @@
             "filterable": 0
         },
         {
-            "key": "*点点娱乐",
-            "name": "🔞点点娱乐",
-            "type": 0,
-            "api": "https://xx55zyapi.com/home/cjapi/ascf/mc10/vod/xml",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0
-        },
-        {
             "key": "*淫水机资源",
             "name": "🔞淫水机",
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0
-        },
-        {
-            "key": "*小湿妹资源",
-            "name": "🔞小湿妹",
-            "type": 0,
-            "api": "https://www.afasu.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0
@@ -797,14 +770,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0
-        },
-        {
-            "key": "*鲨鱼资源",
-            "name": "🔞鲨鱼资源",
-            "type": 1,
-            "api": "https://shayuapi.com/api.php/provide/vod/",
-            "searchable": 0,
-            "quickSearch": 0
         },
         {
             "key": "dadiapi.com",
@@ -871,44 +836,6 @@
             ]
         },
         {
-            "key": "色猫",
-            "name": "🔞色猫采集",
-            "type": 1,
-            "api": "https://caiji.semaozy.net/inc/apijson_vod.php/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": [
-                "国产自拍",
-                "日本无码",
-                "日本有码",
-                "中文字幕",
-                "欧美精品",
-                "成人动漫",
-                "日本素人",
-                "高清名优",
-                "三级伦理",
-                "网红主播",
-                "映画传媒",
-                "人妻熟女",
-                "口爆颜射",
-                "萝莉少女",
-                "SM调教",
-                "美乳巨乳",
-                "短视频",
-                "制服诱惑",
-                "女同性爱",
-                "AI换脸",
-                "多人群交",
-                "翹臀美尻",
-                "丝袜美腿",
-                "精选独家",
-                "貧乳小奶",
-                "探花系列"
-            ]
-        },
-        {
             "key": "量子",
             "name": "🔞量子伦理",
             "type": 0,
@@ -932,32 +859,8 @@
             }
         },
         {
-            "key": "91md.me",
-            "name": "🔞成人02",
-            "type": 1,
-            "api": "http://91md.me/api.php/provide/vod/",
-            "searchable": 1,
-            "recordable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
-        },
-        {
-            "key": "cjmygzy.com",
-            "name": "🔞成人03",
-            "type": 0,
-            "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
-            "searchable": 1,
-            "recordable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
-        },
-        {
             "key": "api.sexnguon.com",
-            "name": "🔞成人04",
+            "name": "🔞成人02",
             "type": 1,
             "api": "http://api.sexnguon.com/api.php/provide/vod/",
             "searchable": 1,
@@ -969,7 +872,7 @@
         },
         {
             "key": "pgxdy.com",
-            "name": "🔞成人05",
+            "name": "🔞成人03",
             "type": 0,
             "api": "https://www.pgxdy.com/api/xml.php",
             "searchable": 1,
@@ -981,7 +884,7 @@
         },
         {
             "key": "kkzy.me",
-            "name": "🔞成人06",
+            "name": "🔞成人04",
             "type": 1,
             "api": "https://kkzy.me/api.php/provide/vod/",
             "searchable": 1,
