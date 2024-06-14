@@ -44,6 +44,22 @@
             ]
         },
         {
+            "key": "红牛资源",
+            "name": "红牛资源",
+            "type": 1,
+            "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "飞刀资源",
+            "name": "飞刀资源",
+            "type": 1,
+            "api": "http://www.feidaozy.com/api.php/provide/vod?",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "乐视资源",
             "name": "乐视资源",
             "type": 1,
