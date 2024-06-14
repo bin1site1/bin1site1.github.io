@@ -3,17 +3,6 @@
     "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
     "sites": [
         {
-            "api": "",
-            "ext": "csp_Douban",
-            "filterable": "",
-            "isFound": false,
-            "key": "豆瓣",
-            "name": "豆瓣5/26",
-            "quickSearch": "",
-            "searchable": "",
-            "type": ""
-        },
-        {
             "key": "豪华资源",
             "name": "豪华资源",
             "type": 1,
@@ -55,26 +44,20 @@
             ]
         },
         {
-            "api": "",
-            "ext": "https://www.hongniuzy2.com/api.php/provide/vod/",
-            "filterable": "",
-            "isFound": true,
+
             "key": "红牛资源",
             "name": "红牛资源",
-            "quickSearch": "",
-            "searchable": "",
-            "type": ""
+                        "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+"searchable": 1,
+            "quickSearch": 1
         },
         {
-            "api": "",
-            "ext": "http://www.feidaozy.com/api.php/provide/vod?",
-            "filterable": "",
-            "isFound": true,
-            "key": "飞刀",
-            "name": "飞刀🏂蓝光",
-            "quickSearch": "",
-            "searchable": "",
-            "type": ""
+
+            "key": "飞刀资源",
+            "name": "飞刀资源",
+                        "api": "http://www.feidaozy.com/api.php/provide/vod?",
+"searchable": 1,
+            "quickSearch": 1
         },
         {
             "key": "乐视资源",
