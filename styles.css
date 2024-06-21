@@ -244,12 +244,12 @@ footer p {
 @media screen and (max-width: 768px) {
 	.profile-card-inf__item {
 		padding: 10px 20px;
-		min-width: 120px;
+		min-width: 10px;
 	}
 }
 
 .profile-card-inf__title {
-	font-weight: 700;
+	font-weight: 1000;
 	font-size: 27px;
 	color: #324e63;
 }
