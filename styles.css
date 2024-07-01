@@ -333,112 +333,183 @@ body {
 	}
 
 	.release-body .title p {
+		/* 设置字体大小 */
 		font-size: 14px;
+		/* 设置字母间距 */
 		letter-spacing: .8px;
+		/* 设置顶部内边距 */
 		padding-top: 15px;
 	}
 
 	.release-main .links ul li {
+		/* 设置元素的宽度为30.555% */
 		width: 30.555%;
 	}
 
 	.release-main .links ul li:nth-child(3n) {
+		/* 设置元素的右边距为0 */
 		margin-right: 0;
 	}
 
 	.release-main .links ul li a {
+		/* 设置字体大小 */
 		font-size: 16px;
+		/* 设置字体粗细 */
 		font-weight: 400;
+		/* 设置边框圆角 */
 		border-radius: 12px;
+		/* 设置字母间距 */
 		letter-spacing: 2px;
 	}
 
 	.release-main .tips {
+		/* 设置内边距 */
 		padding: 20px 20px 10px;
 	}
 
 	.release-main .tips p {
+		/* 设置字体大小为14像素 */
 		font-size: 14px;
 	}
 }
 
 .release-main .bin1site {
+	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
+	/* 设置内边距，左右各10像素 */
 	padding: 0 10px;
+	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
+	/* 设置内边距，左右各10像素 */
 	padding: 0 10px;
 }
 
 .release-main .bin1site ul {
+	/* 设置元素的宽度为95% */
 	width: 95%;
+	/* 设置元素的水平居中对齐 */
 	margin: 0 auto;
+	/* 设置文本颜色为白色 */
 	color: #ffffff;
 }
 
 .release-main .bin1site ul li a {
+	/* 设置文本无装饰 */
 	text-decoration: none;
+	/* 设置元素为块级元素 */
 	display: block;
+	/* 设置文本居中对齐 */
 	text-align: center;
+	/* 设置内边距 */
 	padding: 10px 0;
+	/* 设置字体大小 */
 	font-size: 18px;
+	/* 设置文本颜色 */
 	color: #ffffff;
+	/* 设置外边距 */
 	margin: 2px;
+	/* 设置高度 */
 	height: 30px;
+	/* 设置上外边距 */
 	margin-top: 10px;
+	/* 设置下外边距 */
 	margin-bottom: 12px;
+	/* 设置边框圆角 */
 	border-radius: 12px;
+	/* 设置过渡效果 */
 	transition: all .3s ease;
+	/* 设置字母间距 */
 	letter-spacing: 2px;
+	/* 设置字体粗细 */
 	font-weight: 700;
+	/* 设置背景渐变 */
 	background: linear-gradient(90deg, #95c2fccb, #51a8f5, #0389f7, #0329fe) 0/400%;
+	/* 设置定位 */
 	position: relative;
+	/* 设置层叠顺序 */
 	z-index: 1;
+	/* 设置阴影效果 */
 	box-shadow: 0 0 10px #00000033;
 }
 
 premium {
 	margin: 10px 0;
+	/* 设置外边距 */
 	border: 2px solid #f78484;
+	/* 设置边框样式 */
 	border-radius: 12px;
+	/* 设置边框圆角 */
 	background-color: #fff;
+	/* 设置背景颜色 */
 	padding: 10px;
+	/* 设置内边距 */
 	font-size: 12px;
+	/* 设置字体大小 */
 	font-weight: bold;
+	/* 设置字体粗细 */
 	color: #0099fa;
+	/* 设置字体颜色 */
 	text-align: center;
+	/* 设置文本对齐方式 */
 	line-height: 2;
+	/* 设置行高 */
 	word-wrap: break-word;
+	/* 设置单词换行方式 */
 	word-break: break-all;
+	/* 设置断词规则 */
 	text-shadow: 1px 1px 1px #ccc;
+	/* 设置文字阴影 */
 	box-sizing: border-box;
+	/* 设置盒模型 */
 }
 
 .bordered-box {
 	border: 2px solid #fdabab;
+	/* 设置边框样式 */
 	padding: 10px;
+	/* 设置内边距 */
 	margin: 10px;
+	/* 设置外边距 */
 	border-radius: 12px;
+	/* 设置边框圆角 */
 	background-color: #ffffff;
+	/* 设置背景颜色 */
 	box-sizing: border-box;
+	/* 设置盒模型为边框盒 */
 	text-align: center;
+	/* 设置文本居中对齐 */
 	line-height: 2;
+	/* 设置行高 */
 	word-wrap: break-word;
+	/* 设置长单词换行 */
 	word-break: break-all;
+	/* 设置单词内换行 */
 	text-shadow: 1px 1px 1px #ccc;
+	/* 设置文本阴影 */
 }
 
 footer {
+	/* 设置文本居中对齐 */
 	text-align: center;
+	/* 设置内边距为10px，上下0px */
 	padding: 10px 0;
+	/* 设置圆角边框为12px */
 	border-radius: 12px;
+	/* 设置外边距为20px，上下0px */
 	margin: 20px 0;
+	/* 设置背景颜色为白色 */
 	background-color: #ffffff;
+	/* 设置盒子阴影效果 */
 	box-shadow: 0 5px 70px #b977f749, 0 0 10px #7137f789;
 }
 
 footer p {
 	margin-bottom: 0;
+	/* 设置底部边距为0 */
 	color: #000000;
+	/* 设置文本颜色为黑色 */
 	letter-spacing: 1px;
+	/* 设置字母间距为1像素 */
 	font-size: 12px;
+	/* 设置字体大小为12像素 */
 }
