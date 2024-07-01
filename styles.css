@@ -333,7 +333,7 @@ premium {
 
 footer {
 	text-align: center;
-	padding: 20px 0;
+	padding: 10px 0;
 	border-radius: 12px;
 	margin: 20px 0;
 	background-color: #f7eac1;
@@ -345,5 +345,5 @@ footer p {
 	margin-bottom: 0;
 	color: #856404;
 	letter-spacing: 1px;
-	font-size: 16px;
+	font-size: 12px;
 }
