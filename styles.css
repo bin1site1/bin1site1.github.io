@@ -449,8 +449,6 @@ premium {
 	/* 设置边框样式 */
 	border-radius: 12px;
 	/* 设置边框圆角 */
-	background-color: #fff;
-	/* 设置背景颜色 */
 	padding: 10px;
 	/* 设置内边距 */
 	font-size: 12px;
@@ -459,18 +457,10 @@ premium {
 	/* 设置字体粗细 */
 	color: #0099fa;
 	/* 设置字体颜色 */
-	text-align: center;
-	/* 设置文本对齐方式 */
 	line-height: 2;
 	/* 设置行高 */
-	word-wrap: break-word;
-	/* 设置单词换行方式 */
-	word-break: break-all;
-	/* 设置断词规则 */
 	text-shadow: 1px 1px 1px #ccc;
 	/* 设置文字阴影 */
-	box-sizing: border-box;
-	/* 设置盒模型 */
 }
 
 .bordered-box {
