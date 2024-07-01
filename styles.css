@@ -472,20 +472,9 @@ premium {
 	/* 设置外边距 */
 	border-radius: 12px;
 	/* 设置边框圆角 */
-	background-color: #ffffff;
-	/* 设置背景颜色 */
-	box-sizing: border-box;
-	/* 设置盒模型为边框盒 */
 	text-align: center;
 	/* 设置文本居中对齐 */
 	line-height: 2;
-	/* 设置行高 */
-	word-wrap: break-word;
-	/* 设置长单词换行 */
-	word-break: break-all;
-	/* 设置单词内换行 */
-	text-shadow: 1px 1px 1px #ccc;
-	/* 设置文本阴影 */
 }
 
 footer {
