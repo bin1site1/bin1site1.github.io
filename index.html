@@ -7,6 +7,7 @@
 	<title>🪪bin1site·导航</title> <!-- 设置页面标题 -->
 	<link rel="stylesheet" href="styles.css"> <!-- 链接外部样式表 -->
 	<script src="js/Sitetime.js"></script><!-- 运行时间 -->
+	<script src="js/toggleText.js"></script>
 </head>
 
 <body>
@@ -16,11 +17,10 @@
 			<div class="image"><img class="hover-zoom" src="https://vip.helloimg.com/i/2024/06/21/66750f9556e4a.png"
 					alt="bin1皮燕子导航" onclick="location.reload();"></div>
 			<div class="title">
-				<h2><b>@bin1</b></h2>
+				<h2 id="toggleText"></h2>
 				<p>世味年来薄似纱，谁令骑马客京华？
 					<br></br>
-					<canvas class="navigation-wrapper iUp up" id="canvas" style="width:50%;padding-top:0px;" width="820"
-						height="250"></canvas>
+					<canvas id="canvas" style="width:50%;padding-top:0px;" width="820" height="250"></canvas>
 					<!-- 引入时钟脚本文件 -->
 					<script src="js/clock.js"></script>
 					<br></br>
