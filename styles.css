@@ -128,10 +128,12 @@ shiju {
 /* 定义动画 */
 @keyframes flowCss {
 	0% {
+		/* 设置背景图像的位置 */
 		background-position: 0% 50%;
 	}
 
 	100% {
+		/* 设置背景图片的位置 */
 		background-position: 100% 50%;
 	}
 }
@@ -139,10 +141,12 @@ shiju {
 /* 兼容WebKit浏览器 */
 @-webkit-keyframes flowCss {
 	0% {
+		/* 设置背景图像的位置 */
 		background-position: 0% 50%;
 	}
 
 	100% {
+		/* 设置背景图片的位置 */
 		background-position: 100% 50%;
 	}
 }
