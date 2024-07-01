@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 设置视口适应设备宽度 -->
 	<title>🪪bin1site·导航</title> <!-- 设置页面标题 -->
 	<link rel="stylesheet" href="styles.css"> <!-- 链接外部样式表 -->
+	<script src="js/Sitetime.js"></script><!-- 运行时间 -->
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 					<canvas class="navigation-wrapper iUp up" id="canvas" style="width:50%;padding-top:0px;" width="820"
 						height="250"></canvas>
 					<!-- 引入时钟脚本文件 -->
-					<script src="clock.js"></script>
+					<script src="js/clock.js"></script>
 					<br></br>
 					<b>Android | Windows | Other</b>
 				</p>
@@ -105,10 +106,13 @@
 		</div>
 		<!--代码分割线-->
 		<footer>友情提示：为了防止失联，建议收藏保存。
-			<br></br> <!-- 插入换行符 -->
-			<b>©bin1. 2023
-				<script>document.write(' - ' + (new Date()).getFullYear())</script>. All Rights Reserved
-			</b></br> <!-- 插入换行符并加粗文本 -->
+			<p></p>
+			<b></br>
+				<span id="sitetime"></span> <!-- 运行时间 -->
+				<p></p>
+				<b></br>
+					©bin1. 2023
+					<script>document.write(' - ' + (new Date()).getFullYear())</script>. All Rights Reserved
 		</footer> <!-- 定义页脚部分 -->
 		<!--代码分割线-->
 	</div>
