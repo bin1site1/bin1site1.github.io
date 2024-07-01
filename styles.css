@@ -57,110 +57,173 @@ body {
 }
 
 .release {
+	/* 设置元素的定位方式为相对定位 */
 	position: relative;
+	/* 设置元素的边框圆角半径为12像素 */
 	border-radius: 12px;
+	/* 设置元素的宽度为父容器的95% */
 	width: 95%;
+	/* 设置元素的最大宽度为550像素 */
 	max-width: 550px;
+	/* 设置元素的左右外边距为自动，使其水平居中 */
 	margin: auto;
 }
 
 .release-body {
+	/* 设置背景颜色为白色 */
 	background: #fff;
+	/* 设置边框圆角为12像素 */
 	border-radius: 12px;
+	/* 设置顶部外边距为80像素 */
 	margin-top: 80px;
+	/* 设置盒子阴影效果 */
 	box-shadow: 0 5px 70px #96caf7, 0 0 10px #03ef2a89;
 }
 
 .release-body .image {
+	/* 设置文本对齐方式为居中 */
 	text-align: center;
 }
 
 .release-body .image img {
-	
 	border-radius: 50%;
+	/* 设置元素为圆形 */
 	width: 100px;
+	/* 设置元素宽度 */
 	padding: 1px;
+	/* 设置内边距 */
 	background-color: #fff;
+	/* 设置背景颜色为白色 */
 	margin-top: -50px;
+	/* 设置上外边距 */
 	box-shadow: 0 0 8px #ccccd626, 0 5px 50px #4ba4f1, 0 0 7px #4a95ff89;
+	/* 设置阴影效果 */
 }
 
 .release-body .title {
 	padding: 30px 0;
+	/* 设置内边距为上下30px，左右0px */
 	text-align: center;
+	/* 设置文本居中对齐 */
 }
 
 .release-body .title h2 {
+	/* 设置字体大小 */
 	font-size: 35px;
+	/* 设置字体粗细 */
 	font-weight: 700;
+	/* 设置字母间距 */
 	letter-spacing: 2px;
+	/* 设置文本颜色 */
 	color: #474747;
 }
 
 .release-body .title p {
 	font-size: 19px;
+	/* 设置字体大小 */
 	padding-top: 20px;
+	/* 设置顶部内边距 */
 	color: #676767;
+	/* 设置文本颜色 */
 	letter-spacing: 2px;
+	/* 设置字符间距 */
 }
 
 .release-main .links {
+	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
+	/* 设置内边距为10像素 */
 	padding: 10px;
+	/* 设置顶部边框为1像素实线，颜色为#cdcdcd */
 	border-top: 1px solid #cdcdcd;
 }
 
 .release-main .links ul {
+	/* 设置元素显示为块级元素 */
 	display: block;
 }
 
 .release-main .links ul li {
+	/* 移除列表项的默认样式 */
 	list-style: none;
+	/* 设置元素的宽度为父容器的30% */
 	width: 30%;
+	/* 文本居中对齐 */
 	text-align: center;
+	/* 设置内边距，上下10px，左右0 */
 	padding: 10px 0;
+	/* 设置外边距，左右1.666% */
 	margin: 0 1.666%;
+	/* 使元素向左浮动 */
 	float: left;
 }
 
 .release-main .links ul li a {
+	/* 设置文本装饰为无 */
 	text-decoration: none;
+	/* 设置元素为块级元素 */
 	display: block;
+	/* 设置内边距 */
 	padding: 12px 0;
+	/* 设置字体大小 */
 	font-size: 18px;
+	/* 设置字体颜色 */
 	color: #fff;
+	/* 设置外边距 */
 	margin: 2px;
+	/* 设置边框圆角 */
 	border-radius: 12px;
+	/* 设置过渡效果 */
 	transition: all .3s ease;
+	/* 设置字母间距 */
 	letter-spacing: 2px;
+	/* 设置字体粗细 */
 	font-weight: 700;
+	/* 设置背景渐变 */
 	background: linear-gradient(90deg, #0d9ffa, #0454a0, #11a0ff, #2c91f6) 400% / 400%;
+	/* 设置定位方式 */
 	position: relative;
+	/* 设置层级 */
 	z-index: 1;
 }
 
 .release-main .links ul li a:hover {
+	/* 定义动画效果，动画名称为 'animate'，持续时间为 8 秒，线性变化，无限循环 */
 	animation: animate 8s linear infinite;
 }
 
 .release-main .links ul li a:before {
+	/* 设置伪元素的内容为空 */
 	content: "";
+	/* 设置伪元素的定位方式为绝对定位 */
 	position: absolute;
+	/* 设置伪元素的顶部位置 */
 	top: 0;
+	/* 设置伪元素的左侧位置 */
 	left: 0;
+	/* 设置伪元素的堆叠顺序，使其位于其他元素之后 */
 	z-index: -1;
+	/* 设置伪元素的背景为线性渐变 */
 	background: linear-gradient(90deg, #6cbaeb, #0454a0, #11a0ff, #2c91f6) 200% / 200%;
+	/* 设置伪元素的边框半径 */
 	border-radius: 12px;
+	/* 设置伪元素的过渡效果 */
 	transition: .5s;
+	/* 设置伪元素的透明度 */
 	opacity: 0;
+	/* 设置伪元素的宽度 */
 	width: 100%;
+	/* 设置伪元素的高度 */
 	height: 100%;
 }
 
 .release-main .links ul li a:hover:before {
 	filter: blur(10px);
+	/* 应用模糊效果，模糊半径为10像素 */
 	opacity: 1;
+	/* 设置元素的不透明度为1，即完全不透明 */
 	animation: animate 8s linear infinite;
+	/* 应用名为animate的动画，持续8秒，线性播放，无限循环 */
 }
 
 @keyframes animate {
@@ -180,63 +243,92 @@ body {
 
 .release-main .tips p {
 	font-size: 12px;
+	/* 设置字体大小为12像素 */
 	color: #959595;
+	/* 设置字体颜色为浅灰色 */
 	letter-spacing: 2px;
+	/* 设置字符间距为2像素 */
 	margin-bottom: 10px;
+	/* 设置底部外边距为10像素 */
 	line-height: 30px;
+	/* 设置行高为30像素 */
 }
 
 .release-main .tips p b {
 	color: #353535;
+	/* 设置文本颜色为深灰色 */
 	padding: 4px;
+	/* 设置内边距为4像素 */
 	margin: 5px;
+	/* 设置外边距为5像素 */
 	border-radius: 5px;
+	/* 设置边框圆角为5像素 */
 	background-color: #fff;
+	/* 设置背景颜色为白色 */
 	border: 1px solid #eaeaea;
+	/* 设置边框为1像素宽的浅灰色实线 */
 }
 
 .profile-card-inf {
+	/* 设置容器为弹性布局 */
 	display: flex;
+	/* 水平居中对齐子元素 */
 	justify-content: center;
+	/* 允许子元素换行 */
 	flex-wrap: wrap;
+	/* 顶部对齐子元素 */
 	align-items: flex-start;
+	/* 顶部外边距为10像素 */
 	margin-top: 10px;
 }
 
 .profile-card-inf__item {
 	padding: 10px 35px;
+	/* 设置内边距 */
 	min-width: 150px;
+	/* 设置最小宽度 */
 }
 
 @media screen and (max-width: 768px) {
 	.profile-card-inf__item {
+		/* 设置内边距为10px（上下）和20px（左右） */
 		padding: 10px 20px;
+		/* 设置最小宽度为10px */
 		min-width: 10px;
 	}
 }
 
 .profile-card-inf__title {
 	font-weight: 1000;
+	/* 设置字体粗细为1000 */
 	font-size: 27px;
+	/* 设置字体大小为27像素 */
 	color: #324e63;
+	/* 设置字体颜色为#324e63 */
 }
 
 .profile-card-inf__txt {
+	/* 设置字体粗细为中等 */
 	font-weight: 500;
+	/* 设置顶部外边距为7像素 */
 	margin-top: 7px;
 }
 
 @media screen and (max-width: 550px) {
 	.release-body .image img {
+		/* 设置元素的宽度为80像素 */
 		width: 80px;
+		/* 设置元素的上边距为-40像素，用于调整元素的垂直位置 */
 		margin-top: -40px;
 	}
 
 	.release-body .title {
 		padding: 25px 0;
+		/* 设置上下内边距为25px，左右内边距为0 */
 	}
 
 	.release-body .title h2 {
+		/* 设置字体大小为24像素 */
 		font-size: 24px;
 	}
 
