@@ -163,6 +163,16 @@ body {
 	float: left;
 }
 
+.hover-zoom {
+	transition: transform 0.3s ease;
+	/* 添加过渡效果 */
+}
+
+.hover-zoom:hover {
+	transform: scale(1.2);
+	/* 悬停时放大120% */
+}
+
 .release-main .links ul li a {
 	/* 设置文本装饰为无 */
 	text-decoration: none;
