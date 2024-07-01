@@ -68,7 +68,7 @@ body {
 	background: #fff;
 	border-radius: 12px;
 	margin-top: 80px;
-	box-shadow: 0 5px 50px #96caf7, 0 0 7px rgba(3, 239, 42, 0.538);
+	box-shadow: 0 5px 50px #96caf7, 0 0 7px #03ef2a89;
 }
 
 .release-body .image {
@@ -82,7 +82,7 @@ body {
 	padding: 1px;
 	background-color: #fff;
 	margin-top: -50px;
-	box-shadow: 0 0 8px rgba(214, 204, 204, 0.15), 0 5px 50px #4ba4f1, 0 0 7px rgba(74, 149, 255, 0.538);
+	box-shadow: 0 0 8px #d6cccc26, 0 5px 50px #4ba4f1, 0 0 7px rgba(74, 149, 255, 0.538);
 }
 
 .release-body .title {
@@ -341,7 +341,7 @@ footer {
 	border-radius: 12px;
 	margin: 20px 0;
 	background-color: #ffffff;
-	box-shadow: 0 5px 50px #b977f749, 0 0 7px rgba(113, 55, 247, 0.538);
+	box-shadow: 0 5px 50px #b977f749, 0 0 7px #7137f789;
 }
 
 footer p {
