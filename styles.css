@@ -38,10 +38,15 @@ select,
 td,
 textarea,
 th {
+	/* 设置字体系列，包括多种备用字体 */
 	font-family: Quicksand, sans-serif, SimSun, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica, tahoma, arial, Verdana, sans-serif, WenQuanYi Micro Hei, "\5B8B\4F53";
+	/* 设置字体大小 */
 	font-size: 12px;
+	/* 设置字体颜色 */
 	color: #333;
+	/* 启用 WebKit 浏览器的字体平滑处理 */
 	-webkit-font-smoothing: antialiased;
+	/* 启用 Mozilla 浏览器的字体平滑处理 */
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -228,16 +233,21 @@ body {
 
 @keyframes animate {
 	0% {
+		/* 设置背景图像的位置 */
 		background-position: 0;
 	}
 
 	to {
+		/* 设置背景图像的位置 */
 		background-position: 400%;
 	}
 }
 
 .release-main .tips {
+	/* 设置文本居中对齐 */
 	text-align: center;
+
+	/* 设置内边距，上下分别为30px和20px，左右为默认值 */
 	padding: 30px 0 20px;
 }
 
