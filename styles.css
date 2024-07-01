@@ -231,7 +231,7 @@ shiju {
 	float: left;
 }
 
-
+/* ---代码分割线--- */
 .hover-zoom {
 	transition: transform 0.3s ease;
 	/* 添加过渡效果 */
@@ -240,8 +240,10 @@ shiju {
 .hover-zoom:hover {
 	transform: scale(1.2);
 	/* 悬停时放大120% */
+	transition: transform 0.3s ease;
+	/* 添加过渡效果以便悬停结束时自动还原 */
 }
-
+/* ---代码分割线--- */
 .release-main .links ul li a {
 	/* 设置文本装饰为无 */
 	text-decoration: none;
