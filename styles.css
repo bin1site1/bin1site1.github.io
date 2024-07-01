@@ -336,14 +336,13 @@ footer {
 	padding: 10px 0;
 	border-radius: 12px;
 	margin: 20px 0;
-	background-color: #f7eac1;
-	border: 1px solid #f9ecc1;
+	background-color: #ffffff;
 	box-shadow: 0 5px 50px #b977f749, 0 0 7px rgba(113, 55, 247, 0.538);
 }
 
 footer p {
 	margin-bottom: 0;
-	color: #856404;
+	color: #000000;
 	letter-spacing: 1px;
 	font-size: 12px;
 }
