@@ -46,11 +46,14 @@ th {
 }
 
 body {
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	min-height: 95vh;
-	background: url(https://vip.helloimg.com/i/2024/06/21/6675170e293d3.jpg) fixed / cover;
+	background-image: url('https://vip.helloimg.com/i/2024/06/21/6675170e293d3.jpg');
+	/* 替换为您的背景图片URL */
+	background-size: cover;
+	/* 使背景图片覆盖整个页面 */
+	background-repeat: no-repeat;
+	/* 防止背景图片重复 */
+	background-attachment: fixed;
+	/* 使背景图片固定，不随滚动条滚动 */
 }
 
 .release {
@@ -73,6 +76,7 @@ body {
 }
 
 .release-body .image img {
+	
 	border-radius: 50%;
 	width: 100px;
 	padding: 1px;
