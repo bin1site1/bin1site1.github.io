@@ -383,7 +383,7 @@ body {
 	}
 }
 
-.release-main .bin1site {
+.release-main .kms-tvbox {
 	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
 	/* 设置内边距，左右各10像素 */
@@ -394,7 +394,7 @@ body {
 	padding: 0 10px;
 }
 
-.release-main .bin1site ul {
+.release-main .kms-tvbox ul {
 	/* 设置元素的宽度为95% */
 	width: 95%;
 	/* 设置元素的水平居中对齐 */
@@ -403,7 +403,7 @@ body {
 	color: #ffffff;
 }
 
-.release-main .bin1site ul li a {
+.release-main .kms-tvbox ul li a {
 	/* 设置文本无装饰 */
 	text-decoration: none;
 	/* 设置元素为块级元素 */
