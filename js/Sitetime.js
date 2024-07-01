@@ -1,6 +1,6 @@
-//运行时间
+// 运行时间
 function siteTime() {
-  window.setTimeout("siteTime()", 1000);
+  window.setTimeout(siteTime, 1000);
   var seconds = 1000;
   var minutes = seconds * 60;
   var hours = minutes * 60;
@@ -14,9 +14,8 @@ function siteTime() {
   var todayMinute = today.getMinutes();
   var todaySecond = today.getSeconds();
 
-
-  var t1 = Date.UTC(2022, 1, 7, 0o0, 0o0, 0o0);
-  var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+  var t1 = Date.UTC(2022, 0, 7, 0, 0, 0); // 注意月份是从 0 开始的
+  var t2 = Date.UTC(todayYear, todayMonth - 1, todayDate, todayHour, todayMinute, todaySecond); // 注意月份是从 0 开始的
   var diff = t2 - t1;
   var diffYears = Math.floor(diff / years);
   var diffDays = Math.floor((diff / days) - diffYears * 365);
