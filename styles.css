@@ -85,6 +85,45 @@ body {
 	box-shadow: 0 5px 70px #96caf7, 0 0 10px #03ef2a89;
 }
 
+/* ---代码分割线--- */
+shiju {
+	background: -webkit-linear-gradient(135deg,
+			#0eaf6d,
+			#ff6ac6 25%,
+			#147b96 50%,
+			#e6d205 55%,
+			#2cc4e0 60%,
+			#8b2ce0 80%,
+			#ff6384 95%,
+			#08dfb4);
+	/* 文字颜色填充设置为透明 */
+	-webkit-text-fill-color: transparent;
+	/* 背景裁剪，即让文字使用背景色 */
+	-webkit-background-clip: text;
+	/* 背景图放大一下，看着柔和一些 */
+	-webkit-background-size: 200% 100%;
+	/* 应用动画flowCss 12秒速度 无限循环 线性匀速动画*/
+	-webkit-animation: flowCss 12s infinite linear;
+	font-size: 16px;
+	/* 设置字体大小 */
+}
+
+@-webkit-keyframes flowCss {
+	0% {
+		/* 移动背景位置 */
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -400% 0;
+	}
+}
+
+shiju:hover {
+	-webkit-animation: flowCss 4s infinite linear;
+}
+
+/* ---代码分割线--- */
 .release-body .image {
 	/* 设置文本对齐方式为居中 */
 	text-align: center;
@@ -134,6 +173,7 @@ body {
 	/* 设置字符间距 */
 }
 
+/* ---代码分割线--- */
 .release-main .links {
 	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
@@ -361,6 +401,7 @@ body {
 		padding-top: 15px;
 	}
 
+	/* ---代码分割线--- */
 	.release-main .links ul li {
 		/* 设置元素的宽度为30.555% */
 		width: 30.555%;
@@ -393,6 +434,7 @@ body {
 	}
 }
 
+/* ---代码分割线--- */
 .release-main .kms-tvbox {
 	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
@@ -452,6 +494,7 @@ body {
 	box-shadow: 0 0 10px #00000033;
 }
 
+/* ---代码分割线--- */
 premium {
 	margin: 10px 0;
 	/* 设置外边距 */
@@ -473,6 +516,7 @@ premium {
 	/* 设置文字阴影 */
 }
 
+/* ---代码分割线--- */
 .bordered-box {
 	border: 2px solid #fdabab;
 	/* 设置边框样式 */
@@ -487,6 +531,7 @@ premium {
 	line-height: 2;
 }
 
+/* ---代码分割线--- */
 footer {
 	/* 设置文本居中对齐 */
 	text-align: center;
@@ -512,3 +557,5 @@ footer p {
 	font-size: 12px;
 	/* 设置字体大小为12像素 */
 }
+
+/* ---代码分割线--- */
