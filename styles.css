@@ -74,7 +74,7 @@ body {
 	margin: auto;
 }
 
-.release-body {
+.body {
 	/* 设置背景颜色为白色 */
 	background: #fff;
 	/* 设置边框圆角为12像素 */
@@ -152,12 +152,12 @@ shiju {
 }
 
 /* ---代码分割线--- */
-.release-body .image {
+.body .image {
 	/* 设置文本对齐方式为居中 */
 	text-align: center;
 }
 
-.release-body .image img {
+.body .image img {
 	border-radius: 50%;
 	/* 设置元素为圆形 */
 	width: 100px;
@@ -186,14 +186,14 @@ shiju {
 
 /* 设置标题字体样式 */
 
-.release-body .title {
+.body .title {
 	padding: 30px 0;
 	/* 设置内边距为上下30px，左右0px */
 	text-align: center;
 	/* 设置文本居中对齐 */
 }
 
-.release-body .title h2 {
+.body .title h2 {
 	/* 设置字体大小 */
 	font-size: 35px;
 	/* 设置字体粗细 */
@@ -204,7 +204,7 @@ shiju {
 	color: #474747;
 }
 
-.release-body .title p {
+.body .title p {
 	font-size: 19px;
 	/* 设置字体大小 */
 	padding-top: 20px;
@@ -232,7 +232,7 @@ shiju {
 /* 时钟样式 */
 
 /* ---代码分割线--- */
-.release-main .links {
+.main .links {
 	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
 	/* 设置内边距为10像素 */
@@ -241,12 +241,12 @@ shiju {
 	border-top: 1px solid #cdcdcd;
 }
 
-.release-main .links ul {
+.main .links ul {
 	/* 设置元素显示为块级元素 */
 	display: block;
 }
 
-.release-main .links ul li {
+.main .links ul li {
 	/* 移除列表项的默认样式 */
 	list-style: none;
 	/* 设置元素的宽度为父容器的30% */
@@ -275,7 +275,7 @@ shiju {
 }
 
 /* ---代码分割线--- */
-.release-main .links ul li a {
+.main .links ul li a {
 	/* 设置文本装饰为无 */
 	text-decoration: none;
 	/* 设置元素为块级元素 */
@@ -304,12 +304,12 @@ shiju {
 	z-index: 1;
 }
 
-.release-main .links ul li a:hover {
+.main .links ul li a:hover {
 	/* 定义动画效果，动画名称为 'animate'，持续时间为 8 秒，线性变化，无限循环 */
 	animation: animate 8s linear infinite;
 }
 
-.release-main .links ul li a:before {
+.main .links ul li a:before {
 	/* 设置伪元素的内容为空 */
 	content: "";
 	/* 设置伪元素的定位方式为绝对定位 */
@@ -334,7 +334,7 @@ shiju {
 	height: 100%;
 }
 
-.release-main .links ul li a:hover:before {
+.main .links ul li a:hover:before {
 	filter: blur(10px);
 	/* 应用模糊效果，模糊半径为10像素 */
 	opacity: 1;
@@ -355,7 +355,7 @@ shiju {
 	}
 }
 
-.release-main .tips {
+.main .tips {
 	/* 设置文本居中对齐 */
 	text-align: center;
 
@@ -363,7 +363,7 @@ shiju {
 	padding: 30px 0 20px;
 }
 
-.release-main .tips p {
+.main .tips p {
 	font-size: 12px;
 	/* 设置字体大小为12像素 */
 	color: #959595;
@@ -376,7 +376,7 @@ shiju {
 	/* 设置行高为30像素 */
 }
 
-.release-main .tips p b {
+.main .tips p b {
 	color: #353535;
 	/* 设置文本颜色为深灰色 */
 	padding: 4px;
@@ -391,7 +391,7 @@ shiju {
 	/* 设置边框为1像素宽的浅灰色实线 */
 }
 
-.profile-card-inf {
+.card {
 	/* 设置容器为弹性布局 */
 	display: flex;
 	/* 水平居中对齐子元素 */
@@ -404,7 +404,7 @@ shiju {
 	margin-top: 10px;
 }
 
-.profile-card-inf__item {
+.card__item {
 	padding: 10px 35px;
 	/* 设置内边距 */
 	min-width: 150px;
@@ -412,7 +412,7 @@ shiju {
 }
 
 @media screen and (max-width: 768px) {
-	.profile-card-inf__item {
+	.card__item {
 		/* 设置内边距为10px（上下）和20px（左右） */
 		padding: 10px 20px;
 		/* 设置最小宽度为10px */
@@ -420,7 +420,7 @@ shiju {
 	}
 }
 
-.profile-card-inf__title {
+.card__title {
 	font-weight: 1000;
 	/* 设置字体粗细为1000 */
 	font-size: 27px;
@@ -429,7 +429,7 @@ shiju {
 	/* 设置字体颜色为#324e63 */
 }
 
-.profile-card-inf__txt {
+.card__txt {
 	/* 设置字体粗细为中等 */
 	font-weight: 500;
 	/* 设置顶部外边距为7像素 */
@@ -437,24 +437,24 @@ shiju {
 }
 
 @media screen and (max-width: 550px) {
-	.release-body .image img {
+	.body .image img {
 		/* 设置元素的宽度为80像素 */
 		width: 80px;
 		/* 设置元素的上边距为-40像素，用于调整元素的垂直位置 */
 		margin-top: -40px;
 	}
 
-	.release-body .title {
+	.body .title {
 		padding: 25px 0;
 		/* 设置上下内边距为25px，左右内边距为0 */
 	}
 
-	.release-body .title h2 {
+	.body .title h2 {
 		/* 设置字体大小为24像素 */
 		font-size: 24px;
 	}
 
-	.release-body .title p {
+	.body .title p {
 		/* 设置字体大小 */
 		font-size: 14px;
 		/* 设置字母间距 */
@@ -464,17 +464,17 @@ shiju {
 	}
 
 	/* ---代码分割线--- */
-	.release-main .links ul li {
+	.main .links ul li {
 		/* 设置元素的宽度为30.555% */
 		width: 30.555%;
 	}
 
-	.release-main .links ul li:nth-child(3n) {
+	.main .links ul li:nth-child(3n) {
 		/* 设置元素的右边距为0 */
 		margin-right: 0;
 	}
 
-	.release-main .links ul li a {
+	.main .links ul li a {
 		/* 设置字体大小 */
 		font-size: 16px;
 		/* 设置字体粗细 */
@@ -485,19 +485,19 @@ shiju {
 		letter-spacing: 2px;
 	}
 
-	.release-main .tips {
+	.main .tips {
 		/* 设置内边距 */
 		padding: 20px 20px 10px;
 	}
 
-	.release-main .tips p {
+	.main .tips p {
 		/* 设置字体大小为14像素 */
 		font-size: 14px;
 	}
 }
 
 /* ---代码分割线--- */
-.release-main .kms-tvbox {
+.main .kms-tvbox {
 	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
 	/* 设置内边距，左右各10像素 */
@@ -508,7 +508,7 @@ shiju {
 	padding: 0 10px;
 }
 
-.release-main .kms-tvbox ul {
+.main .kms-tvbox ul {
 	/* 设置元素的宽度为95% */
 	width: 95%;
 	/* 设置元素的水平居中对齐 */
@@ -517,7 +517,7 @@ shiju {
 	color: #ffffff;
 }
 
-.release-main .kms-tvbox ul li a {
+.main .kms-tvbox ul li a {
 	/* 设置文本无装饰 */
 	text-decoration: none;
 	/* 设置元素为块级元素 */
