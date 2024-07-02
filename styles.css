@@ -215,6 +215,22 @@ shiju {
 	/* 设置字符间距 */
 }
 
+/* 时钟样式 */
+#canvas {
+	/* 设置元素的宽度 */
+	width: 60%;
+	/* 设置元素的高度 */
+	height: 50%;
+	/* 设置元素的背景颜色 */
+	background-color: #fff;
+	/* 设置元素的边框圆角 */
+	border-radius: 10px;
+	padding-top: 0px;
+	/* 设置顶部内边距 */
+}
+
+/* 时钟样式 */
+
 /* ---代码分割线--- */
 .release-main .links {
 	/* 设置元素内容溢出时隐藏 */
