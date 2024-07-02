@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleTextElement.innerText = originalText;
     let isOriginalText = true;
 
-    // 点击toggleTextElement时触发的函数
-    toggleTextElement.addEventListener("click", function () {
+    // 每3秒钟切换一次文本内容
+    setInterval(function () {
         if (isOriginalText) {
             toggleTextElement.innerText = "bin1site1.github.io"; // 替换为你要切换的文字内容
         } else {
             toggleTextElement.innerText = originalText;
         }
         isOriginalText = !isOriginalText;
-    });
+    }, 3000); // 3000毫秒 = 3秒
 });
