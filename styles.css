@@ -172,6 +172,20 @@ shiju {
 	/* 设置阴影效果 */
 }
 
+/* 设置标题字体样式 */
+#toggleText {
+	font-weight: 700;
+	/* 设置字体粗细为粗体 */
+	font-size: 24px;
+	/* 设置字体大小为24像素 */
+	color: #6944ff;
+	/* 设置字体颜色为紫色 */
+	margin-bottom: 15px;
+	/* 设置底部外边距为15像素 */
+}
+
+/* 设置标题字体样式 */
+
 .release-body .title {
 	padding: 30px 0;
 	/* 设置内边距为上下30px，左右0px */
