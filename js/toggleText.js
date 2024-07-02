@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "bin1site1.github.io",
         "@bin1",
         "可乐加冰~🥤",
+        "可乐没汽~🥤",
     ];
 
     let currentIndex = 0; // 初始化索引
