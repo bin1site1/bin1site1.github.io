@@ -168,7 +168,7 @@ shiju {
 	/* 设置背景颜色为白色 */
 	margin-top: -50px;
 	/* 设置上外边距 */
-	box-shadow: 0 0 8px #ccccd626, 0 5px 50px #4ba4f1, 0 0 7px #4a95ff89;
+	box-shadow: 0px 5px 50px 0px #6c44fc, 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
 	/* 设置阴影效果 */
 }
 
