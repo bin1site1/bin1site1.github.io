@@ -20,27 +20,12 @@
 					onclick="location.reload();"></div>
 			<div class="title">
 				<h2 id="toggleText"></h2>
-				<biaoqian>
-					#Android
-				</biaoqian>
-				<biaoqian>
-					#HTML
-				</biaoqian>
-				<biaoqian>
-					#CSS
-				</biaoqian>
-				<biaoqian>
-					#JavaScript
-				</biaoqian>
-				<biaoqian>
-					#website
-				</biaoqian>
-				<biaoqian>
-					#Java
-				</biaoqian>
-				<biaoqian>
-					#Smali
-				</biaoqian>
+				<script>
+					const tags = ["#Android", "#HTML", "#CSS", "#JavaScript", "#website", "#Java", "#Smali"];
+					tags.forEach(tag => {
+						document.write(`<biaoqian>${tag}</biaoqian>`);
+					});
+				</script>
 				<p>
 					<colourful-text id="colourful-text"></colourful-text>
 					<br></br>
