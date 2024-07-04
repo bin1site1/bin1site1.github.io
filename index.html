@@ -22,7 +22,7 @@
 				<h2 id="toggleText"></h2>
 				<script>
 					// 定义一个包含多个标签的数组
-					const tags = ["#Android", "#HTML", "#CSS", "#JavaScript", "#Website", "#Java", "#Smali","Wordpress"];
+					const tags = ["#Android", "#HTML", "#CSS", "#JavaScript", "#Website", "#Java", "#Smali", "Wordpress"];
 					// 遍历数组中的每个标签，并将其写入文档中
 					tags.forEach(tag => {
 						document.write(`<biaoqian>${tag}</biaoqian>`);
@@ -39,19 +39,20 @@
 				<!--代码分割线-->
 				<div class="card">
 					<script>
+						// 定义一个包含多个对象的数组，每个对象包含标题和文本信息
 						const items = [
 							{ title: "软件", txt: "Software" },
 							{ title: "教程", txt: "Study" },
 							{ title: "密钥", txt: "Serial-Key" },
 							{ title: "技术", txt: "Technology" }
 						];
+						// 遍历数组中的每个对象，并使用 document.write 方法生成 HTML 内容
 						items.forEach(item => {
 							document.write(`
-			                <div class="card__item">
-			                    <div class="card__title">${item.title}</div>
-			                    <div class="card__txt">${item.txt}</div>
-			                </div>
-			            `);
+							<div class="card__item">
+                       <div class="card__title">${item.title}</div>
+                       <div class="card__txt">${item.txt}</div></div>
+				   		`);
 						});
 					</script>
 				</div>
