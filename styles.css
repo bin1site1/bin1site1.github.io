@@ -86,7 +86,7 @@ body {
 }
 
 /* ---代码分割线--- */
-shiju {
+colourful-text {
 	background: linear-gradient(135deg,
 			#0eaf6d,
 			#ff6ac6 25%,
@@ -534,7 +534,7 @@ shiju {
 	/* 设置字体粗细 */
 	font-weight: 700;
 	/* 设置背景渐变 */
-	background: linear-gradient(90deg, #95c2fccb, #51a8f5, #0389f7, #0329fe) 0/400%;
+	background: linear-gradient(90deg, #cbe7f7cb, #ffffff, #ffffff, #ffffff) 0/400%;
 	/* 设置定位 */
 	position: relative;
 	/* 设置层叠顺序 */
