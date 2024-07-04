@@ -39,7 +39,7 @@ td,
 textarea,
 th {
 	/* 设置字体系列，包括多种备用字体 */
-	font-family: Quicksand, 华文楷体, Hiragino Sans GB, Helvetica, Arial, sans-serif, 微软雅黑, 宋体, 黑体, Microsoft Yahei,SimSun,sans-serif, Helvetica Neue, Helvetica, tahoma, arial, Verdana, sans-serif, WenQuanYi Micro Hei,Oxygen-Sans;
+	font-family: Quicksand, 华文楷体, Hiragino Sans GB, Helvetica, Arial, sans-serif, 微软雅黑, 宋体, 黑体, Microsoft Yahei, SimSun, sans-serif, Helvetica Neue, Helvetica, tahoma, arial, Verdana, sans-serif, WenQuanYi Micro Hei, Oxygen-Sans;
 	/* 设置字体大小 */
 	font-size: 12px;
 	/* 设置字体颜色 */
@@ -502,6 +502,12 @@ colourful-text {
 	z-index: 1;
 	/* 设置阴影效果 */
 	box-shadow: 0 0 10px #00000033;
+	/* 设置容器为弹性盒子布局 */
+	display: flex;
+	/* 垂直居中对齐子元素 */
+	align-items: center;
+	/* 水平居中对齐子元素 */
+	justify-content: center;
 }
 
 /* ---代码分割线--- */
