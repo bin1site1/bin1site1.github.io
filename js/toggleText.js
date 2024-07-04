@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "@bin1",
         "可乐加冰~🥤",
         "可乐没汽~🥤",
+        "可乐充汽~🥤",
     ];
 
     let currentIndex = 0; // 初始化索引
