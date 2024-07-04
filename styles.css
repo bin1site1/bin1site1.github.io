@@ -39,7 +39,7 @@ td,
 textarea,
 th {
 	/* 设置字体系列，包括多种备用字体 */
-	font-family: Quicksand, sans-serif, SimSun, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica, tahoma, arial, Verdana, sans-serif, WenQuanYi Micro Hei, "\5B8B\4F53";
+	font-family: 华文楷体,Quicksand, sans-serif, SimSun, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica, tahoma, arial, Verdana, sans-serif, WenQuanYi Micro Hei, "\5B8B\4F53";
 	/* 设置字体大小 */
 	font-size: 12px;
 	/* 设置字体颜色 */
@@ -270,7 +270,7 @@ colourful-text {
 	/* 设置内边距 */
 	padding: 12px 0;
 	/* 设置字体大小 */
-	font-size: 18px;
+	font-size: 16px;
 	/* 设置字体颜色 */
 	color: #fff;
 	/* 设置外边距 */
@@ -289,45 +289,6 @@ colourful-text {
 	position: relative;
 	/* 设置层级 */
 	z-index: 1;
-}
-
-.main .links ul li a:hover {
-	/* 定义动画效果，动画名称为 'animate'，持续时间为 8 秒，线性变化，无限循环 */
-	animation: animate 8s linear infinite;
-}
-
-.main .links ul li a:before {
-	/* 设置伪元素的内容为空 */
-	content: "";
-	/* 设置伪元素的定位方式为绝对定位 */
-	position: absolute;
-	/* 设置伪元素的顶部位置 */
-	top: 0;
-	/* 设置伪元素的左侧位置 */
-	left: 0;
-	/* 设置伪元素的堆叠顺序，使其位于其他元素之后 */
-	z-index: -1;
-	/* 设置伪元素的背景为线性渐变 */
-	background: linear-gradient(90deg, #6cbaeb, #0454a0, #11a0ff, #2c91f6) 200% / 200%;
-	/* 设置伪元素的边框半径 */
-	border-radius: 12px;
-	/* 设置伪元素的过渡效果 */
-	transition: .5s;
-	/* 设置伪元素的透明度 */
-	opacity: 0;
-	/* 设置伪元素的宽度 */
-	width: 100%;
-	/* 设置伪元素的高度 */
-	height: 100%;
-}
-
-.main .links ul li a:hover:before {
-	filter: blur(10px);
-	/* 应用模糊效果，模糊半径为10像素 */
-	opacity: 1;
-	/* 设置元素的不透明度为1，即完全不透明 */
-	animation: animate 8s linear infinite;
-	/* 应用名为animate的动画，持续8秒，线性播放，无限循环 */
 }
 
 @keyframes animate {
