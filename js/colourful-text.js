@@ -9,12 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
         "劝君莫惜金缕衣，劝君惜取少年时。",
     ];
 
-    let currentIndex = 0; // 初始化索引
-    colourfultextElement.innerText = texts[currentIndex]; // 初始显示第一个文本
+    function getCurrentText() {
+        const now = new Date();
+        const hours = now.getHours();
 
-    // 每8小时切换一次文本内容
+        if (hours >= 0 && hours < 8) {
+            return texts[0];
+        } else if (hours >= 8 && hours < 16) {
+            return texts[1];
+        } else {
+            return texts[2];
+        }
+    }
+
+    colourfultextElement.innerText = getCurrentText(); // 初始显示当前时间段的文本
+
+    // 每小时更新一次文本内容
     setInterval(function () {
-        currentIndex = (currentIndex + 1) % texts.length; // 更新索引
-        colourfultextElement.innerText = texts[currentIndex]; // 显示下一个文本
-    }, 28800000); // 28800000毫秒 = 8小时
+        colourfultextElement.innerText = getCurrentText(); // 显示当前时间段的文本
+    }, 3600000); // 3600000毫秒 = 1小时
 });
