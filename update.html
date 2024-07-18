@@ -2,87 +2,72 @@
 <html>
 
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      /* 设置字体为Arial或无衬线字体 */
-      font-size: 5px;
-      /* 设置字体大小为5像素 */
-      line-height: 1.5;
-      /* 设置行高为1.5倍字体大小 */
-      background-color: #f9f9f9;
-      /* 设置背景颜色为浅灰色 */
-      text-align: center;
-      /* 设置文本对齐方式为居中 */
-    }
-
-    h2 {
-      font-size: 18px;
-      /* 设置字体大小为18像素 */
-      font-weight: bold;
-      /* 设置字体加粗 */
-      margin-bottom: 10px;
-      /* 设置底部外边距为10像素 */
-    }
-
-    p {
-      font-size: 12px;
-      /* 设置字体大小为12像素 */
-      margin-bottom: 5px;
-      /* 设置底部外边距为5像素 */
-    }
-
-    button {
-      background-color: #4CAF50;
-      /* 设置背景颜色为绿色 */
-      border: none;
-      /* 去除边框 */
-      color: white;
-      /* 设置文字颜色为白色 */
-      padding: 6px 10px;
-      /* 设置内边距 */
-      text-align: center;
-      /* 文字居中对齐 */
-      text-decoration: none;
-      /* 去除文字装饰 */
-      display: inline-block;
-      /* 设置为内联块元素 */
-      font-size: 16px;
-      /* 设置字体大小 */
-      border-radius: 5px;
-      /* 设置边框圆角 */
-      cursor: pointer;
-      /* 设置鼠标悬停时的光标样式为指针 */
-      margin-top: 10px;
-      /* 设置顶部外边距 */
-      margin-bottom: 10px;
-      /* 设置底部外边距 */
-      margin-left: 10px;
-      /* 设置左边距为10像素 */
-      margin-right: 10px;
-      /* 设置右边距为10像素 */
-    }
-
-    button:hover {
-      background-color: #3e8e41;
-      /* 设置背景颜色为深绿色 */
-    }
-  </style>
+  <meta charset="utf-8"> <!-- 设置字符编码为UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 设置视口适应设备宽度 -->
+  <meta name="description" content="bin1site·导航"> <!-- 设置页面描述 -->
+  <meta name="keywords" content="bin1site,导航,bin1,网站导航,网站导航网址,网站导航网址导航,网站导航网址导航网址"> <!-- 设置页面关键词 -->
+  <meta name="author" content="bin1"> <!-- 设置作者 -->
+  <title>🪪bin1site·导航</title> <!-- 设置页面标题 -->
+  <link rel="stylesheet" href="styles.css"> <!-- 链接外部样式表 -->
+  <script src="js/toggleText.js"></script><!-- 3秒切换标题文字 -->
+  <script src="js/colourful-text.js"></script><!-- 8小时彩色文字切换 -->
 </head>
-<h2>🌎网站：bin1site1.github.io</h2>
 
 <body>
-  <p>
-    1、该资源完全免费，若是付费购买所得即是被倒卖软件的骗了，建议退款举报处理。
-    <br>
-    2、仅供学习和技术交流，不得非法使用或商用，若侵犯了您的权益，请联系邮箱删除。
-    <br>
-    3、请尊重开发者的劳动成果，如需要更好的服务和安全性与稳定性，请支持正版软件。
-  </p>
-  <button onclick="window.location.href='https://bin1site1.github.io'">bin1site主页</button>
-  <button onclick="window.location.href='https://pd.qq.com/s/1oqtpdvbd'">QQ频道</button>
-  <button onclick="window.location.href='mailto:3295532395@qq.com'">Email联系</button>
-
+  <div class="release">
+    <div class="body">
+      <!-- 定义一个包含图片的div元素 -->
+      <div class="image"><img class="hover-zoom" src="img/logo.jpg" onclick="location.reload();"></div>
+      <div class="title">
+        <h2 id="toggleText"></h2>
+        <script>
+          // 定义一个包含多个标签的数组
+          const tags = ["HTML", "CSS", "JavaScript", "Website", "Wordpress", "C", "Java", "Smali"];
+          // 遍历数组中的每个标签，并将其写入文档中
+          tags.forEach(tag => {
+            document.write(`<biaoqian>${tag}</biaoqian>`);
+            // 定义一个包含多个标签的元素
+          });
+        </script>
+        <p>
+          <colourful-text id="colourful-text"></colourful-text>
+          <!-- 定义一个包含8小时彩色文字的元素 -->
+        </p>
+        <!--代码分割线-->
+      </div>
+      <!--代码分割线-->
+      <div class="main">
+        <div class="tips">
+          <zanzhu>
+            - 资源声明 -
+          </zanzhu>
+          <h4 class="bordered-box" style="color: #0099fa; text-align: left;">
+            <a>
+              1、该资源完全免费，若是付费购买所得即是被倒卖软件的骗了，建议退款举报处理。
+              <p></p>
+              2、仅供学习和技术交流，不得非法使用或商用，若侵犯了您的权益，请联系邮箱删除。
+              <p></p>
+              3、请尊重开发者的劳动成果，如需要更好的服务和安全性与稳定性，请支持正版软件。
+            </a>
+          </h4>
+          <p></p>
+          <div class="links">
+            <ul>
+              <li><a href="https://pd.qq.com/s/1oqtpdvbd" target="_blank" class="hover-zoom">QQ频道</a></li>
+              <!-- 链接到QQ频道 -->
+              <li><a href="https://bin1site1.github.io" target="_blank" class="hover-zoom">bin1site主页</a></li>
+              <!-- 链接到QQ频道Ⅱ -->
+              <li><a href="mailto:3295532395@qq.com" target="_blank" class="hover-zoom">Email联系</a></li>
+              <!-- 链接到电子邮件联系 -->
+            </ul>
+          </div>
+          <!--代码分割线-->
+        </div>
+        <!--代码分割线-->
+      </div>
+    </div>
+    <!--代码分割线-->
+  </div>
 </body>
 
 </html>
