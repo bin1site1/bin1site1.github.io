@@ -255,8 +255,8 @@ colourful-text {
 }
 
 .hover-zoom:hover {
-	transform: scale(1.2);
-	/* 悬停时放大120% */
+	transform: scale(1.05);
+	/* 悬停时放大105% */
 	transition: transform 0.3s ease;
 	/* 添加过渡效果以便悬停结束时自动还原 */
 }
