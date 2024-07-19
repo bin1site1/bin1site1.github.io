@@ -353,16 +353,16 @@ colourful-text {
 }
 
 .card__item {
-	padding: 10px 35px;
+	padding: 10px 10px;
 	/* 设置内边距 */
-	min-width: 150px;
+	min-width: 100px;
 	/* 设置最小宽度 */
 }
 
 @media screen and (max-width: 768px) {
 	.card__item {
 		/* 设置内边距为10px（上下）和20px（左右） */
-		padding: 10px 20px;
+		padding: 10px 10px;
 		/* 设置最小宽度为10px */
 		min-width: 10px;
 	}
