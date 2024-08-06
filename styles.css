@@ -224,8 +224,6 @@ colourful-text {
 	overflow: hidden;
 	/* 设置内边距为10像素 */
 	padding: 10px;
-	/* 设置顶部边框为1像素实线，颜色为#cdcdcd */
-	border-top: 1px solid #cdcdcd;
 }
 
 .main .links ul {
@@ -337,51 +335,6 @@ colourful-text {
 	/* 设置背景颜色为白色 */
 	border: 1px solid #eaeaea;
 	/* 设置边框为1像素宽的浅灰色实线 */
-}
-
-.card {
-	/* 设置容器为弹性布局 */
-	display: flex;
-	/* 水平居中对齐子元素 */
-	justify-content: center;
-	/* 允许子元素换行 */
-	flex-wrap: wrap;
-	/* 顶部对齐子元素 */
-	align-items: flex-start;
-	/* 顶部外边距为10像素 */
-	margin-top: 10px;
-}
-
-.card__item {
-	padding: 10px 10px;
-	/* 设置内边距 */
-	min-width: 100px;
-	/* 设置最小宽度 */
-}
-
-@media screen and (max-width: 768px) {
-	.card__item {
-		/* 设置内边距为10px（上下）和20px（左右） */
-		padding: 10px 10px;
-		/* 设置最小宽度为10px */
-		min-width: 10px;
-	}
-}
-
-.card__title {
-	font-weight: 1000;
-	/* 设置字体粗细为1000 */
-	font-size: 27px;
-	/* 设置字体大小为27像素 */
-	color: #324e63;
-	/* 设置字体颜色为#324e63 */
-}
-
-.card__txt {
-	/* 设置字体粗细为中等 */
-	font-weight: 500;
-	/* 设置顶部外边距为7像素 */
-	margin-top: 7px;
 }
 
 @media screen and (max-width: 550px) {
