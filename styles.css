@@ -192,7 +192,7 @@ colourful-text {
 }
 
 .body .title p {
-	font-size: 19px;
+	font-size: 14px;
 	/* 设置字体大小 */
 	padding-top: 20px;
 	/* 设置顶部内边距 */
@@ -215,8 +215,6 @@ colourful-text {
 	padding-top: 0px;
 	/* 设置顶部内边距 */
 }
-
-/* 时钟样式 */
 
 /* ---代码分割线--- */
 .main .links {
@@ -346,7 +344,7 @@ colourful-text {
 	}
 
 	.body .title {
-		padding: 25px 0;
+		padding: 20px 0;
 		/* 设置上下内边距为25px，左右内边距为0 */
 	}
 
@@ -377,7 +375,7 @@ colourful-text {
 
 	.main .links ul li a {
 		/* 设置字体大小 */
-		font-size: 16px;
+		font-size: 14px;
 		/* 设置字体粗细 */
 		font-weight: 400;
 		/* 设置边框圆角 */
