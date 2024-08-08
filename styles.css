@@ -460,13 +460,13 @@ colourful-text {
 
 /* ---代码分割线--- */
 .bordered-box {
-	border: 2px solid #fdabab;
+	border: 2px solid #cdcdcd;
 	/* 设置边框样式 */
 	padding: 10px;
 	/* 设置内边距 */
 	margin: 10px;
 	/* 设置外边距 */
-	border-radius: 12px;
+	border-radius: 10px;
 	/* 设置边框圆角 */
 	text-align: left;
 	/* 设置文本居中对齐 */
