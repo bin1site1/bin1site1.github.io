@@ -459,26 +459,6 @@ colourful-text {
 }
 
 /* ---代码分割线--- */
-zanzhu {
-	margin: 10px 0;
-	/* 设置外边距 */
-	border: 2px solid #f57f70;
-	/* 设置边框样式 */
-	border-radius: 12px;
-	/* 设置边框圆角 */
-	padding: 10px;
-	/* 设置内边距 */
-	font-size: 12px;
-	/* 设置字体大小 */
-	font-weight: bold;
-	/* 设置字体粗细 */
-	color: #6a48f4;
-	/* 设置字体颜色 */
-	line-height: 2;
-	/* 设置行高 */
-}
-
-/* ---代码分割线--- */
 .bordered-box {
 	border: 2px solid #fdabab;
 	/* 设置边框样式 */
