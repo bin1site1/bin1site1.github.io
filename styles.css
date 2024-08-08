@@ -310,7 +310,7 @@ colourful-text {
 .main .tips p {
 	font-size: 12px;
 	/* 设置字体大小为12像素 */
-	color: #959595;
+	color: #000000;
 	/* 设置字体颜色为浅灰色 */
 	letter-spacing: 2px;
 	/* 设置字符间距为2像素 */
@@ -321,7 +321,7 @@ colourful-text {
 }
 
 .main .tips p b {
-	color: #353535;
+	color: #f90000;
 	/* 设置文本颜色为深灰色 */
 	padding: 4px;
 	/* 设置内边距为4像素 */
@@ -488,7 +488,7 @@ zanzhu {
 	/* 设置外边距 */
 	border-radius: 12px;
 	/* 设置边框圆角 */
-	text-align: center;
+	text-align: left;
 	/* 设置文本居中对齐 */
 	line-height: 2;
 }
