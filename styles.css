@@ -396,7 +396,7 @@ colourful-text {
 }
 
 /* ---代码分割线--- */
-.main .kms-tvbox {
+.main .Tools {
 	/* 设置元素内容溢出时隐藏 */
 	overflow: hidden;
 	/* 设置内边距，左右各10像素 */
@@ -404,7 +404,7 @@ colourful-text {
 	/* 设置元素内容溢出时隐藏 */
 }
 
-.main .kms-tvbox ul {
+.main .Tools ul {
 	/* 设置元素的宽度为95% */
 	width: 95%;
 	/* 设置元素的水平居中对齐 */
@@ -413,7 +413,7 @@ colourful-text {
 	color: #ffffff;
 }
 
-.main .kms-tvbox ul li a {
+.main .Tools ul li a {
 	/* 设置文本无装饰 */
 	text-decoration: none;
 	/* 设置元素为块级元素 */
@@ -443,13 +443,13 @@ colourful-text {
 	/* 设置字体粗细 */
 	font-weight: 700;
 	/* 设置背景渐变 */
-	background: linear-gradient(90deg, #ebe8e8cb, #c5c5c5, #ffffff, #ffffff) 0/400%;
+	background: linear-gradient(90deg, #7bc4f9cb, #89ccf8, #a0bdcf, #89b7f8) 0/400%;
 	/* 设置定位 */
 	position: relative;
 	/* 设置层叠顺序 */
 	z-index: 1;
 	/* 设置阴影效果 */
-	box-shadow: 0 0 10px #88888833;
+	box-shadow: 0 0 10px #23232333;
 	/* 设置容器为弹性盒子布局 */
 	display: flex;
 	/* 垂直居中对齐子元素 */
