@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleTextElement = document.getElementById("toggleText");
     const texts = [
         "bin1site1.github.io",
-        "@拾光忘忧",
+        "@时光忘忧",
         "@SGWY",
     ];
 
