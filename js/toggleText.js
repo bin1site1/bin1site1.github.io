@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleTextElement = document.getElementById("toggleText");
     const texts = [
         "bin1site1.github.io",
-        "睡觉💤摸Pipi",
+        "@拾光忘忧",
     ];
 
     let currentIndex = 0; // 初始化索引
