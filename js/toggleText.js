@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const texts = [
         "bin1site1.github.io",
         "@拾光忘忧",
+        "@SGWY",
     ];
 
     let currentIndex = 0; // 初始化索引
