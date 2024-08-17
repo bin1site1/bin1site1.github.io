@@ -1,0 +1,416 @@
+a,
+body,
+button,
+div,
+form,
+h1,
+h2,
+h3,
+h4,
+input,
+li,
+p,
+table,
+textarea,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    height: 100%
+}
+
+html {
+    -webkit-tap-highlight-color: transparent
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+body {
+    background: #f4f6f9;
+    color: #4b4d51;
+    font-size: 14px;
+    line-height: 1.75;
+    font-family: Quicksand,
+        华文楷体,
+        Hiragino Sans GB,
+        Helvetica,
+        Arial,
+        sans-serif,
+        微软雅黑,
+        宋体,
+        黑体,
+        Microsoft Yahei,
+        SimSun,
+        sans-serif,
+        Helvetica Neue,
+        Helvetica,
+        tahoma,
+        arial,
+        Verdana,
+        sans-serif,
+        WenQuanYi Micro Hei,
+        Oxygen-Sans;
+}
+
+img {
+    border: none
+}
+
+li,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #4b4d51;
+    outline: 0
+}
+
+.logo {
+    padding: 40px 0 10px;
+    text-align: center;
+}
+
+.logo img {
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 50px 0px #fb8bb6, 0px 0px 0px 7px rgba(252, 51, 185, 0.5);
+        /* 设置阴影效果 */
+}
+
+.main {
+    width: 760px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 30px
+}
+
+.content {
+    margin: 0 0 30px;
+    width: 100%;
+    padding: 25px 30px;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    border-radius: 8px
+}
+
+.content:first-child {
+    border-top: 4px solid #f97fae;
+    border-radius: 4px 4px 8px 8px
+}
+
+.domain-go {
+    opacity: 0;
+    float: right;
+    background: #f97fae;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 28px;
+    font-size: 12px;
+    margin: 0
+}
+
+.domain-list:hover .domain-go {
+    opacity: 1
+}
+
+.main-foot {
+    border-top: 2px dashed #efefef;
+    margin: -30px 0 30px;
+    padding: 15px 0;
+    position: relative;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    color: #788391
+}
+
+.copyright {
+    font-size: 12px;
+    color: #788391;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    z-index: 2
+}
+
+.domain {
+    padding-bottom: 25px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+
+.domain-status {
+    padding: 10px 20px 15px 20px;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    border-radius: 8px
+}
+
+.name {
+    color: #06060b;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px
+}
+
+.link {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 1px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    background: #f97fae;
+    line-height: 25px;
+    color: #fff
+}
+
+.status {
+    font-size: 12px;
+    display: inline-block
+}
+
+.success .status {
+    color: green
+}
+
+.failure .status {
+    color: red
+}
+
+.success .link {
+    display: inline-block
+}
+
+.border {
+    border-bottom: 1px solid #f1f2f3;
+    padding-bottom: 20px
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify
+}
+
+.content p:last-child {
+    margin-bottom: 0
+}
+
+.content a {
+    color: #f97fae
+}
+
+.content-foot {
+    border-top: 2px dashed #e8e8e8;
+    margin: 30px -30px -25px;
+    font-size: 14px;
+    padding: 25px 20px;
+    position: relative;
+    text-align: center
+}
+
+.content-foot:after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -8px;
+    height: 16px;
+    width: 12px;
+    background: #f4f6f9;
+    border-radius: 50px 0 0 50px
+}
+
+.content-foot:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -8px;
+    height: 16px;
+    width: 12px;
+    background: #f4f6f9;
+    border-radius: 0 50px 50px 0
+}
+
+.content-foot a {
+    color: ##f97fae
+}
+
+.list {
+    padding: 20px 0 10px
+}
+
+.list-main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+}
+
+.list-content {
+    border-radius: 6px;
+    padding: 18px 20px 15px;
+    border: 1px solid #f97fae;
+    position: relative
+}
+
+.list-content h4 {
+    position: absolute;
+    top: -12px;
+    background: #fff;
+    padding: 0 10px;
+    font-size: 14px;
+    margin-left: -10px;
+    color: #f97fae
+}
+
+@media (max-width:900px) {
+    body {
+        font-size: 14px
+    }
+
+    .main {
+        width: 100%;
+        padding: 0 15px 30px
+    }
+
+    .content {
+        padding: 25px
+    }
+
+    .domain {
+        grid-gap: 10px;
+        padding-bottom: 10px
+    }
+
+    .list-main {
+        grid-gap: 25px
+    }
+}
+
+.app-download-domain {
+    padding-bottom: 30px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+
+.app-download-status {
+    padding: 10px 20px 15px 20px;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    border-radius: 8px
+}
+
+.app-link {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 1px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    background: #f97fae;
+    line-height: 25px;
+    color: #fff
+}
+
+.app-name {
+    color: #913737;
+    position: relative;
+    font-weight: 1200;
+    font-size: 18px
+}
+
+.app-status {
+    font-size: 12px;
+    display: inline-block;
+    color: green
+}
+
+/* ---代码分割线--- */
+.hover-zoom {
+    transition: transform 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+    /* 悬停时放大105% */
+    transition: transform 0.3s ease;
+    /* 添加过渡效果以便悬停结束时自动还原 */
+}
+
+/* ---代码分割线--- */
+colourful-text {
+    background: linear-gradient(135deg,
+            #0eaf6d,
+            #ff6ac6 25%,
+            #147b96 50%,
+            #e6d205 55%,
+            #2cc4e0 60%,
+            #8b2ce0 80%,
+            #ff6384 95%,
+            #08dfb4);
+    /* 文字颜色填充设置为透明 */
+    -webkit-text-fill-color: transparent;
+    /* 背景裁剪，即让文字使用背景色 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* 背景图放大一下，看着柔和一些 */
+    -webkit-background-size: 200% 100%;
+    background-size: 200% 100%;
+    /* 应用动画flowCss 12秒速度 无限循环 线性匀速动画*/
+    -webkit-animation: flowCss 12s infinite linear;
+    animation: flowCss 12s infinite linear;
+    font-size: 14px;
+    /* 设置字体大小 */
+    font-weight: bold;
+    /* 设置字体粗细 */
+    letter-spacing: 2px;
+    /* 设置字符间距 */
+    animation-name: flowCss;
+    /* 定义动画名称 */
+    animation-duration: 5s;
+    /* 定义动画持续时间 */
+    animation-iteration-count: infinite;
+    /* 定义动画重复次数 */
+    animation-timing-function: linear;
+    /* 定义动画速度曲线 */
+    animation-fill-mode: forwards;
+    /* 定义动画结束后状态 */
+}
+
+/* ---代码分割线--- */
+biaoqian {
+    margin: 10px 0;
+    /* 设置外边距 */
+    border: 2px solid #d2d2d2;
+    /* 设置边框样式 */
+    border-radius: 8px;
+    /* 设置边框圆角 */
+    padding: 4px;
+    /* 设置内边距 */
+    font-size: 8px;
+    /* 设置字体大小 */
+    font-weight: bold;
+    /* 设置字体粗细 */
+    color: #c4c3c3;
+    /* 设置字体颜色 */
+    line-height: 2;
+    /* 设置行高 */
+    margin-left: 4px;
+}
