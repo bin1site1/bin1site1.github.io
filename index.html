@@ -2,105 +2,115 @@
 <html>
 
 <head>
-	<meta charset="utf-8"> <!-- 设置字符编码为UTF-8 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 设置视口适应设备宽度 -->
-	<meta name="description" content="bin1site·导航"> <!-- 设置页面描述 -->
-	<meta name="keywords" content="bin1site,导航,bin1,网站导航,网站导航网址,网站导航网址导航,网站导航网址导航网址"> <!-- 设置页面关键词 -->
-	<meta name="author" content="bin1"> <!-- 设置作者 -->
-	<meta name="robots" content="index,follow"> <!-- 设置搜索引擎抓取 -->
-	<meta name="googlebot" content="index,follow"> <!-- 设置谷歌搜索引擎抓取 -->
-	<meta name="bingbot" content="index,follow"> <!-- 设置必应搜索引擎抓取 -->
-	<meta name="slurp" content="index,follow"> <!-- 设置搜狗搜索引擎抓取 -->
-	<meta name="yandex" content="index,follow"> <!-- 设置雅虎搜索引擎抓取 -->
-	<meta name="baidu" content="index,follow"> <!-- 设置百度搜索引擎抓取 -->
-	<meta name="sogou" content="index,follow"> <!-- 设置搜狗搜索引擎抓取 -->
-	<title>🪪@时光忘忧</title> <!-- 设置页面标题 -->
-	<link rel="stylesheet" href="CSS/styles.css"> <!-- 链接外部样式表 -->
-	<script src="js/Sitetime.js"></script><!-- 运行时间 -->
-	<script src="js/toggleText.js"></script><!-- 3秒切换标题文字 -->
-	<script src="js/colourful-text.js"></script><!-- 8小时彩色文字切换 -->
-	<script src="js/sakura-less.js"></script><!-- 花瓣飘落效果 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="cleartype" content="on">
+    <title>@时光忘忧 - 个人主页</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="IMG/logo.jpg">
+    <script src="JS/Sitetime.js"></script><!-- 运行时间 -->
+    <script src="js/sakura-less.js"></script><!-- 花瓣飘落效果 -->
+    <script src="js/toggleText.js"></script><!-- 3秒切换标题文字 -->
+    <script src="js/colourful-text.js"></script><!-- 8小时彩色文字切换 -->
 </head>
 
 <body>
-	<div class="release">
-		<div class="body">
-			<!-- 定义一个包含图片的div元素 -->
-			<div class="image"><img class="hover-zoom" src="img/logo.jpg" onclick="location.reload();"></div>
-			<div class="title">
-				<h2 id="toggleText"></h2>
-				<script>
-					// 定义一个包含多个标签的数组
-					const tags = ["HTML", "CSS", "JavaScript", "Website", "Wordpress", "C", "Java", "Smali"];
-					// 遍历数组中的每个标签，并将其写入文档中
-					tags.forEach(tag => {
-						document.write(`<biaoqian>${tag}</biaoqian>`);
-						// 定义一个包含多个标签的元素
-					});
-				</script>
-				<p>
-					<colourful-text id="colourful-text"></colourful-text>
-					<!-- 定义一个包含8小时彩色文字的元素 -->
-					<br></br>
-					<canvas id="canvas"></canvas>
-					<script src="js/clock.js"></script><!-- 引入时钟脚本文件 -->
-					<br></br>
-					<b>资源分享 | 技术教程 | 交流学习</b>
-				</p>
-				<!--代码分割线-->
-			</div>
-			<!--代码分割线-->
-			<div class="main">
-				<div class="links">
-					<ul>
-						<li><a href="https://t.me/sgwyapk" target="_blank" class="hover-zoom">加入TG频道</a>
-						</li>
-						<!-- 链接到Telegram频道 -->
-						<li><a href="https://pd.qq.com/s/1oqtpdvbd" target="_blank" class="hover-zoom">加入QQ频道</a>
-						</li>
-						<!-- 链接到QQ频道 -->
-						<li><a href="mailto:3295532395@qq.com" target="_blank" class="hover-zoom">Mail联系我</a></li>
-						<!-- 链接到Email联系 -->
-					</ul>
-				</div>
-				<!--代码分割线-->
-				<div class="kms-tvbox">
-					<div class="tips">
-						<h4 class="bordered-box">
-							<a style="color: #0070fa; font-size: 16px; text-align: center; display: block;">加群说明</a>
-							✅赞助成员群（赞助）：Android和Windows绿色软件、Windows和Office密钥、教程资料、软件注册码等资源。<br>
-							✅普通成员群（免费）：仅交流学习，不分享资源。<br>
-							✅VIP群加入方法：QQ频道加群私信群主赞助加入。
-						</h4>
-					</div>
-					<!--代码分割线-->
-				</div>
-				<!--代码分割线-->
-				<a style="color: #00abfa; font-size: 16px; text-align: center; display: block;">其他快捷工具</a>
-				<div class="Tools">
-					<ul>
-						<li><a href="#"
-								onclick="navigator.clipboard.writeText('https://bin1site1.github.io/tvbox/OS.json').then(() => { alert('复制成功！'); }).catch(err => { console.error('复制失败: ', err); });"
-								class="hover-zoom">一键复制TVBOX单仓订阅链接</a></li>
-						<li><a href="#"
-								onclick="navigator.clipboard.writeText('https://bin1site1.github.io/tvbox/多仓.json').then(() => { alert('复制成功！'); }).catch(err => { console.error('复制失败: ', err); });"
-								class="hover-zoom">一键复制TVBOX多仓订阅链接</a></li>
-						<li><a href="tvbox/tvbox.html" target="_blank" class="hover-zoom">自由选择TVBOX单仓线路</a></li>
-					</ul>
-				</div>
-				<a style="color: #0099fa; text-align: center; display: block;">友情提示：为了防止失联，建议收藏保存。</a><br>
-			</div>
-		</div>
-		<!--代码分割线-->
-		<footer>
-			<span id="sitetime"></span> <!-- 运行时间 --><br></br>
-			<p>
-				Copyright ©SGWY.2022
-				<script>document.write('-' + (new Date()).getFullYear())</script>. All Rights Reserved
-			</p>
-		</footer> <!-- 定义页脚部分 -->
-		<!--代码分割线-->
-	</div>
+    <div class="main">
+        <div class="logo"><img src="IMG/logo.jpg" class="hover-zoom" onclick="location.reload();"></div>
+        <div class="title" style="text-align: center; font-size: 20px;  color: #fc8ec9;">
+            <h3 id="toggleText"></h3>
+        </div>
+        <div style="text-align: center;">
+            <script>
+                // 定义一个包含多个标签的数组
+                const tags = ["HTML", "CSS", "JavaScript", "Website", "Wordpress", "C", "Java", "Smali"];
+                // 遍历数组中的每个标签，并将其写入文档中
+                tags.forEach(tag => {
+                    document.write(`<biaoqian>${tag}</biaoqian>`);
+                    // 定义一个包含多个标签的元素
+                });
+            </script><br></br><!-- 显示标签 -->
+            <colourful-text id="colourful-text"></colourful-text>
+            <br></br>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>这里是 <a>@时光忘忧</a> 的个人主页，用于公布最新社区交流群链接。如果你加入的交流群无法继续使用，那么这个页面可以帮你快速找到替代的交流群。
+                </p>
+            </div>
+            <!-- 代码分割线 -->
+            <div class="app-download-domain">
+                <!-- 代码分割线 -->
+                <div class="domain-status">
+                    <span class="name"> Telegram</span>
+                    <div class="status-and-link">
+                        <span class="app-status">原创安卓破解软件分享</span>
+                        <a href="https://t.me/sgwyapk" class="app-link">加入</a>
+                    </div>
+                </div>
+                <!-- 代码分割线 -->
+                <div class="domain-status">
+                    <span class="name">QQ Channel</span>
+                    <div class="status-and-link">
+                        <span class="app-status">安卓软件分享交流社区</span>
+                        <a href="https://pd.qq.com/s/1oqtpdvbd" class="app-link">加入</a>
+                    </div>
+                </div>
+                <!-- 代码分割线 -->
+                <div class="domain-status">
+                    <span class="name">E-mail</span>
+                    <div class="status-and-link">
+                        <span class="app-status">发送邮件反馈与建议</span>
+                        <a href="mailto:3295532395@qq.com" class="app-link">发送</a>
+                    </div>
+                </div>
+                <!-- 代码分割线 -->
+            </div>
+            <!-- 代码分割线 -->
+            <div class="content">
+                <p><a><strong>关于交流群加群说明</strong></a><br />
+                    ✅ 加入QQ群，请认真阅读群公告，并遵守群规，严禁在群内发表广告、推广其他群组，或者分享带有引流性质的文件或链接，一经发现，将会被永久踢出群。<br />
+                    ✅QQ群主要分为赞助群和免费群，区别如下：
+                </p>
+                <div class="list">
+                    <div class="list-main">
+                        <div class="list-content">
+                            <h4>赞助成员群（赞助）</h4>
+                            <p>安卓软件、Windows软件、Windows密钥、Office密钥、教程资料、软件注册码等资源。</p>
+                        </div>
+                        <div class="list-content">
+                            <h4>普通成员群（免费）</h4>
+                            <p>仅交流闲聊，不分享资源。原创破解和收集整理均要花费大量的时间和精力，为爱发电无法长久。</p>
+                        </div>
+                        <div class="list-content">
+                            <h4>VIP群加入方法</h4>
+                            <p>关注QQ频道私信频道主，或者加附属QQ群私信群主赞助后即可加入。（已持续更新超过两年半！）</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-foot">
+                    <strong style="color:rgb(243, 143, 196);">
+                        此页面长期维护和更新，强烈建议收藏保存！
+                    </strong>
+                </div>
+            </div>
+        </div>
+        <!--代码分割线-->
+        <footer style="text-align: center;">
+            <span id="sitetime"></span> <!-- 运行时间 --></br>
+            Copyright ©时光忘忧. 2022
+            <script>document.write(' - ' + (new Date()).getFullYear())</script>. All Rights Reserved
+        </footer> <!-- 定义页脚部分 -->
+        <!--代码分割线-->
+        <div>
+            <p style="text-align: center;">
+                友情链接：<a href="TVBOX/index.html" style="color: #4696f9">TVBOX视频订阅</a>
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
