@@ -93,6 +93,16 @@ a {
     text-align: center;
 }
 
+/* 添加媒体查询以适配小屏幕设备 */
+@media (max-width: 600px) {
+    .location img {
+        width: 1em;
+        /* 在小屏幕设备上减小图片宽度 */
+        height: 1em;
+        /* 在小屏幕设备上减小图片高度 */
+    }
+}
+
 .main {
     width: 760px;
     position: relative;
