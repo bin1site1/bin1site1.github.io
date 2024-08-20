@@ -19,8 +19,10 @@ function siteTime() {
   // 计算两个时间戳的差值
   var diff = t2 - t1;
 
-  // 计算天数差值
-  var diffDays = Math.floor(diff / (1000 * 60 * 60 * 24));
+  // 计算年份差值
+  var diffYears = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+  // 计算天数差值（除去整年的天数）
+  var diffDays = Math.floor((diff / (1000 * 60 * 60 * 24)) % 365);
   // 计算小时差值
   var diffHours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   // 计算分钟差值
@@ -29,7 +31,7 @@ function siteTime() {
   var diffSeconds = Math.floor(diff / 1000) % 60;
 
   // 更新页面上的运行时间显示
-  document.getElementById("sitetime").innerHTML = "本站已运行 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+  document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
 }
 
 siteTime();
