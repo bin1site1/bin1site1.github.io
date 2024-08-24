@@ -55,7 +55,7 @@
             "key": "非凡云资源",
             "name": "非凡云资源",
             "type": 1,
-            "api": "http://api.ffzyapi.com/api.php/provide/vod/at/xml/",
+            "api": "http://api.ffzyapi.com/api.php/seacms/vod/from/feifan/at/xml/",
             "searchable": 1,
             "quickSearch": 1
         },
