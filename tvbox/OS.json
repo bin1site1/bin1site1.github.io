@@ -60,14 +60,6 @@
             "quickSearch": 1
         },
         {
-            "key": "麒麟资源站",
-            "name": "麒麟资源站",
-            "type": 1,
-            "api": "https://www.qilinzyz.com/api.php/provide/vod/at/xml/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "飞刀资源",
             "name": "飞刀资源",
             "type": 1,
