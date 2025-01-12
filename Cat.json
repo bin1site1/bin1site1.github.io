@@ -19,7 +19,7 @@
      "canDownload": true
     },
     {
-     "id": "hhzy",
+     "id": "hhyun",
      "sort": 1,
      "name": "云播放",
      "type": "WebView"
@@ -43,7 +43,7 @@
       "canDownload": true
      },
      {
-      "id": "ffzy",
+      "id": "feifan",
       "sort": 1,
       "name": "云播放",
       "type": "WebView"
