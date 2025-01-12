@@ -7,7 +7,7 @@
    "name": "豪华资源网",
    "charset": "utf-8",
    "summary": "修订日期：2025-01-011",
-   "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/xml",
+   "api": "https://hhzyapi.com/api.php/provide/vod/from/hhyun/at/xml",
    "sort": 30,
    "usePCUserAgent": true,
    "dtEntities": [
@@ -31,7 +31,7 @@
     "name": "非凡资源网",
     "charset": "utf-8",
     "summary": "修订日期：2025-01-011",
-    "api": "http://api.ffzyapi.com/api.php/provide/vod/from/feifan/at/xml/",
+    "api": "http://api.ffzyapi.com/api.php/provide/vod/at/xml",
     "sort": 30,
     "usePCUserAgent": true,
     "dtEntities": [
