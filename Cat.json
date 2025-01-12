@@ -27,6 +27,30 @@
    ]
   },
   {
+    "id": "ffzy_demo",
+    "name": "非凡资源网",
+    "charset": "utf-8",
+    "summary": "修订日期：2025-01-011",
+    "api": "http://api.ffzyapi.com/api.php/provide/vod/from/feifan/at/xml/",
+    "sort": 30,
+    "usePCUserAgent": true,
+    "dtEntities": [
+     {
+      "id": "ffm3u8",
+      "sort": 0,
+      "name": "在线播放",
+      "type": "Direct",
+      "canDownload": true
+     },
+     {
+      "id": "ffzy",
+      "sort": 1,
+      "name": "云播放",
+      "type": "WebView"
+     }
+    ]
+   },
+  {
    "id": "subocaiji_demo",
    "name": "速播资源网",
    "charset": "utf-8",
