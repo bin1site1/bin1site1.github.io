@@ -646,50 +646,10 @@
             ]
         },
         {
-            "key": "滴滴资源",
-            "name": "🔞滴滴资源",
-            "type": 1,
-            "api": "https://api.ddapi.cc/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "搞起资源",
-            "name": "🔞搞起资源",
-            "type": 1,
-            "api": "https://caiji.gqjiexi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "奥斯卡资源",
             "name": "🔞奥斯卡资源",
             "type": 1,
             "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "越南资源",
-            "name": "🔞越南资源",
-            "type": 1,
-            "api": "https://vnzyz.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "色色虎资源",
-            "name": "🔞色色虎资源",
-            "type": 1,
-            "api": "https://apisesehuzy.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "KK资源",
-            "name": "🔞KK资源",
-            "type": 1,
-            "api": "https://kkzy.me/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -724,38 +684,6 @@
             "api": "https://155api.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
-        },
-        {
-            "key": "老鸭资源",
-            "name": "🔞老鸭资源",
-            "type": 1,
-            "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "chengren",
-            "name": "🔞成人影视1",
-            "type": 1,
-            "api": "https://www.partnersky-horoskop.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "博天堂",
-            "name": "🔞成人影视2",
-            "type": 0,
-            "api": "http://bttcj.com/inc/sapi.php",
-            "searchable": 0,
-            "quickSearch": 0
-        },
-        {
-            "key": "*大地资源",
-            "name": "🔞大地资源",
-            "type": 0,
-            "api": "https://dadiapi.com/api.php",
-            "searchable": 0,
-            "quickSearch": 0
         },
         {
             "key": "美少女",
@@ -800,27 +728,6 @@
             "api": "https://api.maozyapi.com/inc/apijson_vod.php",
             "searchable": 0,
             "quickSearch": 0
-        },
-        {
-            "key": "鸡坤资源",
-            "name": "🔞鸡坤资源",
-            "type": 1,
-            "api": "https://jkunzyapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 0
-        },
-        {
-            "key": "dadiapi.com",
-            "name": "🔞成人one",
-            "type": 0,
-            "api": "http://dadiapi.com/api.php",
-            "searchable": 1,
-            "recordable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
         },
         {
             "key": "玉兔专场",
@@ -886,46 +793,10 @@
             ]
         },
         {
-            "key": "dadiapi1.com",
-            "name": "🔞成人01",
-            "type": 0,
-            "api": "http://dadiapi.com/api.php",
-            "searchable": 1,
-            "recordable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
-        },
-        {
-            "key": "api.sexnguon.com",
-            "name": "🔞成人02",
-            "type": 1,
-            "api": "http://api.sexnguon.com/api.php/provide/vod/",
-            "searchable": 1,
-            "recordable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
-        },
-        {
             "key": "pgxdy.com",
-            "name": "🔞成人03",
+            "name": "🔞成人",
             "type": 0,
             "api": "https://www.pgxdy.com/api/xml.php",
-            "searchable": 1,
-            "recordable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
-        },
-        {
-            "key": "kkzy.me",
-            "name": "🔞成人04",
-            "type": 1,
-            "api": "https://kkzy.me/api.php/provide/vod/",
             "searchable": 1,
             "recordable": 0,
             "style": {
