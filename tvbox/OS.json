@@ -43,42 +43,10 @@
             ]
         },
         {
-            "key": "红牛资源",
-            "name": "红牛资源",
-            "type": 1,
-            "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "非凡云资源",
             "name": "非凡云资源",
             "type": 1,
             "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "OK资源",
-            "name": "OK资源",
-            "type": 1,
-            "api": "https://api.okzy.org/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "闪电资源",
-            "name": "闪电资源",
-            "type": 1,
-            "api": "https://xsd.sdzyapi.com/api.php/provide/vod/from/sdm3u8/at/xml",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "闪电资源2",
-            "name": "闪电资源2",
-            "type": 1,
-            "api": "http://sdzyapi.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -89,32 +57,7 @@
             "api": "https://360zy.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
-        },
-        {
-            "key": "飞速资源",
-            "name": "飞速资源",
-            "type": 1,
-            "api": "https://www.feisuzyapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "飞速资源2",
-            "name": "飞速资源2",
-            "type": 1,
-            "api": "https://www.feisuzy.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "飞速资源3",
-            "name": "飞速资源3",
-            "type": 1,
-            "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
-        },
+        }
         {
             "key": "卧龙资源",
             "name": "卧龙资源",
@@ -134,38 +77,6 @@
                 "恐怖片",
                 "动作片"
             ]
-        },
-        {
-            "key": "天空资源",
-            "name": "天空资源",
-            "type": 1,
-            "api": "https://m3u8.tiankongapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "天空资源2",
-            "name": "天空资源2",
-            "type": 1,
-            "api": "https://api.tiankongapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "playUrl": "",
-            "categories": [
-                "国产剧",
-                "剧情片",
-                "大陆综艺",
-                "动作片"
-            ]
-        },
-        {
-            "key": "csp_xml___CK资源",
-            "name": "CK资源",
-            "type": 1,
-            "api": "https://ckzy.me/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1
         },
         {
             "key": "飘零资源",
@@ -213,28 +124,6 @@
                 "日韩综艺",
                 "欧美综艺",
                 "体育赛事"
-            ]
-        },
-        {
-            "key": "影图资源",
-            "name": "影图资源",
-            "type": 1,
-            "api": "https://cj.vodimg.top/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "快车资源",
-            "name": "快车资源",
-            "type": 1,
-            "api": "https://caiji.kczyapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "categories": [
-                "国产剧",
-                "战争片",
-                "动作片",
-                "香港剧"
             ]
         },
         {
@@ -355,16 +244,16 @@
             ]
         },
         {
-            "key": "量子资源",
-            "name": "量子资源",
+            "key": "红牛资源",
+            "name": "红牛资源",
             "type": 1,
-            "api": "https://cj.lzcaiji.com/api.php/provide/vod/",
+            "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "量子资源2",
-            "name": "量子资源2",
+            "key": "量子资源",
+            "name": "量子资源",
             "type": 0,
             "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
