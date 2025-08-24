@@ -65,10 +65,10 @@
             "api": "https://collect.wolongzy.cc/api.php/provide/vod/"
         },
         {
-            "key": "卧龙资源2",
-            "name": "卧龙资源2",
+            "key": "猫眼资源",
+            "name": "猫眼资源",
             "type": 1,
-            "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+            "api": "https://api.maoyanapi.top/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1,
             "categories": [
