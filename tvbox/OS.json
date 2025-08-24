@@ -87,10 +87,10 @@
             "quickSearch": 1
         },
         {
-            "key": "极速资源",
-            "name": "极速资源",
+            "key": "91精品资源",
+            "name": "91精品资源",
             "type": 1,
-            "api": "https://jszyapi.com/api.php/provide/vod/from/jsm3u8",
+            "api": "https://91jpzyw.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
