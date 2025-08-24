@@ -2,14 +2,14 @@
     "spider": "./OS.jar",
     "sites": [
         {
-            "key": "鸭鸭资源",
+            "key": "茅台资源",
             "name": "🐾主页",
             "type": 1,
             "style": {
                 "type": "rect",
                 "ratio": 0.8
             },
-            "api": "https://cj.yayazy.net/api.php/provide/vod/from/yym3u8/at/xml",
+            "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/xml/",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
