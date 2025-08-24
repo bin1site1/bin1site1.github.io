@@ -9,7 +9,7 @@
                 "type": "rect",
                 "ratio": 0.8
             },
-            "api": "https://cj.yayazy.net/api.php/provide/vod/?ac=list",
+            "api": "https://cj.yayazy.net/api.php/provide/vod/from/yym3u8/at/xml",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
