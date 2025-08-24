@@ -13,7 +13,7 @@
             "key": "豪华资源",
             "name": "豪华资源",
             "type": 1,
-            "api": "https://hhzyapi.com/api.php/provide/vod/from/hhyun/at/json",
+            "api": "https://hhzyapi.com/api.php/provide/vod/at/json",
             "searchable": 1,
             "quickSearch": 1
         },
