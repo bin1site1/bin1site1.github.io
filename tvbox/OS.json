@@ -9,7 +9,7 @@
                 "type": "rect",
                 "ratio": 0.8
             },
-            "api": "https://xingba222.com/api.php/provide/vod/at/xml",
+            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
@@ -87,10 +87,10 @@
             "quickSearch": 1
         },
         {
-            "key": "91精品资源",
-            "name": "91精品资源",
+            "key": "快播资源",
+            "name": "快播资源",
             "type": 1,
-            "api": "https://91jpzyw.com/api.php/provide/vod/at/json",
+            "api": "https://gayapi.com/api.php/provide/vod",
             "searchable": 1,
             
             "quickSearch": 1
