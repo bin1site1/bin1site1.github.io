@@ -2,16 +2,16 @@
     "spider": "./OS.jar",
     "sites": [
         {
-            "key": "杏吧资源",
+            "key": "爱奇艺资源",
             "name": "🐾主页",
             "type": 1,
             "style": {
                 "type": "rect",
                 "ratio": 0.8
             },
-            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
+            "api": "https://iqiyizyapi.com/api.php/provide/vod/from/snm3u8/at/xml",
             "searchable": 1,
-            "quickSearch": 0
+            "quickSearch": 1
         },
         {
             "key": "非凡云资源",
@@ -41,13 +41,7 @@
             "type": 1,
             "api": "https://api.maoyanapi.top/api.php/provide/vod",
             "searchable": 1,
-            "quickSearch": 1,
-            "categories": [
-                "国产剧",
-                "香港剧",
-                "恐怖片",
-                "动作片"
-            ]
+            "quickSearch": 1
         },
         {
             "key": "飘零资源",
@@ -57,17 +51,7 @@
             "searchable": 1,
             "quickSearch": 1
         },
-        {
-            "key": "快播资源",
-            "name": "快播资源",
-            "type": 1,
-            "api": "https://gayapi.com/api.php/provide/vod",
-            "searchable": 1,
-            
-            "quickSearch": 1
-           
-       
-        },
+        
         {
             "key": "四圈资源",
             "name": "四圈资源",
