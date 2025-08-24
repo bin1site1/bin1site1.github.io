@@ -5,10 +5,6 @@
             "key": "魔都资源",
             "name": "🐾主页",
             "type": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 0.8
-            },
             "api": "https://www.mdzyapi.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1
