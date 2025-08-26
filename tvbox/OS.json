@@ -3,7 +3,7 @@
     "sites": [
         {
             "key": "魔都资源",
-            "name": "🐾主页",
+            "name": "🐾推荐|主页",
             "type": 1,
             "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -26,14 +26,6 @@
             "quickSearch": 1
         },
         {
-            "key": "卧龙资源",
-            "name": "卧龙资源",
-            "type": 1,
-            "api": "https://collect.wolongzy.cc/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-                {
             "key": "魔爪资源",
             "name": "魔爪资源",
             "type": 1,
@@ -57,19 +49,19 @@
             "searchable": 1,
             "quickSearch": 1
         },
-        
         {
             "key": "四圈资源",
             "name": "四圈资源",
             "type": 1,
-            "api": "https://pg.fenwe078.cf/api.php/provide/vod/"
+            "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
         },
         {
             "key": "金鹰资源",
             "name": "金鹰资源",
             "type": 1,
             "api": "https://jyzyapi.com/provide/vod/",
-            "playUrl": "",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -77,49 +69,33 @@
             "key": "无尽资源",
             "name": "无尽资源",
             "type": 1,
-            "api": "https://api.wujinapi.com/api.php/provide/vod/"
+            "api": "https://api.wujinapi.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
         },
         {
             "key": "天翼资源",
             "name": "天翼资源",
             "type": 1,
-            "api": "https://www.911ysw.top/tianyi.php/provide/vod/"
+            "api": "https://www.911ysw.top/tianyi.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
         },
         {
             "key": "暴风资源",
             "name": "暴风资源",
             "type": 1,
-            "api": "https://bfzyapi.com/api.php/provide/vod/"
+            "api": "https://bfzyapi.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
         },
         {
             "key": "暴风资源2",
-            "name": "暴风资源2",
+            "name": "暴风资源",
             "type": 1,
             "api": "https://app.bfzyapi.com/api.php/provide/vod/",
-            "playUrl": "",
-            "categories": [
-                "国产剧",
-                "国产动漫",
-                "动作片",
-                "科幻片",
-                "剧情片",
-                "喜剧片",
-                "爱情片",
-                "恐怖片",
-                "战争片",
-                "香港剧",
-                "台湾剧",
-                "日本剧",
-                "欧美剧",
-                "泰国剧",
-                "日本动漫",
-                "综艺频道",
-                "大陆综艺",
-                "港台综艺",
-                "日本综艺",
-                "新马泰综艺",
-                "纪录片"
-            ]
+            "searchable": 1,
+            "quickSearch": 1
         },
         {
             "key": "光速资源",
@@ -127,59 +103,13 @@
             "type": 1,
             "api": "https://api.guangsuapi.com/api.php/provide/vod/",
             "searchable": 1,
-            "quickSearch": 1,
-            "categories": [
-                "大陆剧",
-                "港澳剧",
-                "综艺",
-                "动漫"
-            ]
+            "quickSearch": 1
         },
         {
             "key": "索尼资源",
             "name": "索尼资源",
             "type": 1,
             "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": [
-                "篮球",
-                "足球",
-                "影视解说",
-                "科幻片",
-                "动作片",
-                "恐怖片",
-                "纪录片",
-                "预告片",
-                "喜剧片",
-                "爱情片",
-                "国产剧",
-                "欧美剧",
-                "韩剧",
-                "日剧",
-                "港剧",
-                "台剧",
-                "泰剧",
-                "纪录片",
-                "大陆综艺",
-                "港台综艺",
-                "日韩综艺",
-                "欧美综艺",
-                "国产动漫",
-                "日韩动漫",
-                "欧美动漫",
-                "动画片",
-                "港台动漫",
-                "海外动漫"
-            ]
-        },
-        {
-            "key": "红牛资源",
-            "name": "红牛资源",
-            "type": 1,
-            "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -189,43 +119,7 @@
             "type": 0,
             "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
-            "changeable": 1,
-            "categories": [
-                "国产动漫",
-                "日韩动漫",
-                "国产剧",
-                "韩国剧",
-                "日本剧",
-                "电影片",
-                "连续剧",
-                "综艺片",
-                "动漫片",
-                "动作片",
-                "喜剧片",
-                "爱情片",
-                "科幻片",
-                "恐怖片",
-                "剧情片",
-                "战争片",
-                "台湾剧",
-                "香港剧",
-                "欧美剧",
-                "记录片",
-                "海外剧",
-                "泰国剧",
-                "大陆综艺",
-                "港台综艺",
-                "日韩综艺",
-                "欧美综艺",
-                "欧美动漫",
-                "港台动漫",
-                "海外动漫",
-                "体育",
-                "足球",
-                "篮球",
-                "网球",
-                "斯诺克"
-            ]
+            "quickSearch": 1
         }
     ],
     "doh": [
