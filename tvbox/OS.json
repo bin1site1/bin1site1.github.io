@@ -10,6 +10,30 @@
             "quickSearch": 1
         },
         {
+            "key": "电影天堂",
+            "name": "电影天堂",
+            "type": 1,
+            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "爱奇艺资源",
+            "name": "爱奇艺资源",
+            "type": 1,
+            "api": "https://iqiyizyapi.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "360资源",
+            "name": "360资源",
+            "type": 1,
+            "api": "https://360zyzz.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "非凡资源",
             "name": "非凡资源",
             "type": 1,
@@ -122,22 +146,6 @@
             "quickSearch": 1
         },
         {
-            "key": "电影天堂",
-            "name": "电影天堂",
-            "type": 1,
-            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "爱奇艺资源",
-            "name": "爱奇艺资源",
-            "type": 1,
-            "api": "https://iqiyizyapi.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "天涯资源",
             "name": "天涯资源",
             "type": 1,
@@ -146,32 +154,24 @@
             "quickSearch": 1
         },
         {
-            "key": "旺旺资源网1",
-            "name": "旺旺资源网1",
+            "key": "旺旺资源1",
+            "name": "旺旺资源1",
             "type": 1,
             "api": "https://api.wwzy.tv/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "旺旺资源网2",
-            "name": "旺旺资源网2",
+            "key": "旺旺资源2",
+            "name": "旺旺资源2",
             "type": 1,
             "api": "https://ww.tyyszy5.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "360资源站",
-            "name": "360资源站",
-            "type": 1,
-            "api": "https://360zyzz.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "魔都资源网",
-            "name": "魔都资源网",
+            "key": "魔都资源",
+            "name": "魔都资源",
             "type": 1,
             "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
