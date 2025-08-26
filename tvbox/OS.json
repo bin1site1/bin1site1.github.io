@@ -138,6 +138,14 @@
             "quickSearch": 1
         },
         {
+            "key": "天涯资源",
+            "name": "天涯资源",
+            "type": 1,
+            "api": "https://ty.tyyszy5.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "杏吧资源",
             "name": "🔞杏吧资源",
             "type": 1,
