@@ -146,6 +146,94 @@
             "quickSearch": 1
         },
         {
+            "key": "旺旺资源网1",
+            "name": "旺旺资源网1",
+            "type": 1,
+            "api": "https://api.wwzy.tv/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "旺旺资源网2",
+            "name": "旺旺资源网2",
+            "type": 1,
+            "api": "https://ww.tyyszy5.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "360资源站",
+            "name": "360资源站",
+            "type": 1,
+            "api": "https://360zyzz.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "魔都资源网",
+            "name": "魔都资源网",
+            "type": 1,
+            "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "快车资源",
+            "name": "快车资源",
+            "type": 1,
+            "api": "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "新浪资源",
+            "name": "新浪资源",
+            "type": 1,
+            "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/json",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "豆瓣资源1",
+            "name": "豆瓣资源1",
+            "type": 1,
+            "api": "https://caiji.dbzy5.com/api.php/provide/vod/at/json/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "豆瓣资源2",
+            "name": "豆瓣资源2",
+            "type": 1,
+            "api": "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/json/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "鸭鸭资源1",
+            "name": "鸭鸭资源1",
+            "type": 1,
+            "api": "https://cj.yayazy.net/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "鸭鸭资源2",
+            "name": "鸭鸭资源2",
+            "type": 1,
+            "api": "https://cj2.yayazy.net/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "蔡坤资源",
+            "name": "🔞蔡坤资源",
+            "type": 1,
+            "api": "https://ckzy.me/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "杏吧资源",
             "name": "🔞杏吧资源",
             "type": 1,
@@ -166,6 +254,38 @@
             "name": "🔞大奶子资源",
             "type": 1,
             "api": "https://apidanaizi.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "奶香香资源",
+            "name": "🔞奶香香资源",
+            "type": 1,
+            "api": "https://Naixxzy.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "细胞网资源",
+            "name": "🔞细胞网资源",
+            "type": 1,
+            "api": "https://www.xxibaozyw.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "老色逼资源",
+            "name": "🔞老色逼资源",
+            "type": 1,
+            "api": "https://apilsbzy.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "丝袜资源网",
+            "name": "🔞丝袜资源网",
+            "type": 1,
+            "api": "https://siwazyw.tv/api.php/provide/vod/at/json/",
             "searchable": 1,
             "quickSearch": 1
         }
