@@ -114,6 +114,14 @@
             "quickSearch": 1
         },
         {
+            "key": "量子资源",
+            "name": "量子资源",
+            "type": 0,
+            "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "电影天堂",
             "name": "电影天堂",
             "type": 1,
@@ -131,7 +139,7 @@
         },
         {
             "key": "杏吧资源",
-            "name": "杏吧资源",
+            "name": "🔞杏吧资源",
             "type": 1,
             "api": "https://xingba222.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -139,7 +147,7 @@
         },
         {
             "key": "91精品资源",
-            "name": "91精品资源",
+            "name": "🔞91精品资源",
             "type": 1,
             "api": "https://91jpzyw.com/api.php/provide/vod/at/json",
             "searchable": 1,
@@ -147,17 +155,9 @@
         },
         {
             "key": "大奶子资源",
-            "name": "大奶子资源",
+            "name": "🔞大奶子资源",
             "type": 1,
             "api": "https://apidanaizi.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "量子资源",
-            "name": "量子资源",
-            "type": 0,
-            "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1
         }
