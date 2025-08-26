@@ -113,11 +113,19 @@
             "searchable": 1,
             "quickSearch": 1
         },
-                {
+        {
             "key": "电影天堂",
             "name": "电影天堂",
             "type": 1,
             "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "爱奇艺资源",
+            "name": "爱奇艺资源",
+            "type": 1,
+            "api": "https://iqiyizyapi.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
