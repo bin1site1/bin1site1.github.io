@@ -33,6 +33,14 @@
             "searchable": 1,
             "quickSearch": 1
         },
+                {
+            "key": "魔爪资源",
+            "name": "魔爪资源",
+            "type": 1,
+            "api": "https://mozhuazy.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
         {
             "key": "猫眼资源",
             "name": "猫眼资源",
