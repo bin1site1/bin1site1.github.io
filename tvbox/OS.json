@@ -117,7 +117,7 @@
             "key": "电影天堂",
             "name": "电影天堂",
             "type": 1,
-            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
+            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
