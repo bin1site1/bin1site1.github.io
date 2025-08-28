@@ -2,8 +2,16 @@
     "spider": "./OS.jar",
     "sites": [
         {
+            "key": "非凡资源",
+            "name": "非凡资源",
+            "type": 1,
+            "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=list",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "魔都资源",
-            "name": "🐾推荐|主页",
+            "name": "魔都资源",
             "type": 1,
             "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -30,14 +38,6 @@
             "name": "360资源",
             "type": 1,
             "api": "https://360zyzz.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "非凡资源",
-            "name": "非凡资源",
-            "type": 1,
-            "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
