@@ -1,7 +1,7 @@
 {
     "spider": "./OS.jar",
     "sites": [
-{
+        {
             "key": "魔都资源",
             "name": "魔都资源",
             "type": 1,
@@ -9,7 +9,7 @@
             "searchable": 1,
             "quickSearch": 1
         },
-{
+        {
             "key": "非凡资源",
             "name": "非凡资源",
             "type": 1,
@@ -17,7 +17,7 @@
             "searchable": 1,
             "quickSearch": 1
         },
-{
+        {
             "key": "360资源",
             "name": "360资源",
             "type": 1,
@@ -33,8 +33,6 @@
             "searchable": 1,
             "quickSearch": 1
         },
-        
-        
         {
             "key": "爱奇艺资源",
             "name": "爱奇艺资源",
@@ -43,7 +41,6 @@
             "searchable": 1,
             "quickSearch": 1
         },
-        
         {
             "key": "魔爪资源",
             "name": "魔爪资源",
@@ -221,8 +218,8 @@
             "quickSearch": 1
         },
         {
-            "key": "电影天堂",
-            "name": "电影天堂",
+            "key": "电影天堂资源",
+            "name": "电影天堂资源",
             "type": 1,
             "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
@@ -245,8 +242,8 @@
             "quickSearch": 1
         },
         {
-            "key": "新黑木耳",
-            "name": "新黑木耳",
+            "key": "新黑木耳资源",
+            "name": "新黑木耳资源",
             "type": 1,
             "api": "https://json.heimuer.xyz/api.php/provide/vod",
             "searchable": 1,
@@ -261,8 +258,8 @@
             "quickSearch": 1
         },
         {
-            "key": "新华为吧",
-            "name": "新华为吧",
+            "key": "新华为吧资源",
+            "name": "新华为吧资源",
             "type": 0,
             "api": "https://huaweiba.live/api.php/provide/vod/at/xml",
             "searchable": 1,
@@ -373,48 +370,48 @@
             "quickSearch": 1
         },
         {
-            "key": "速播影视",
-            "name": "速播影视",
+            "key": "速播资源",
+            "name": "速播资源",
             "type": 1,
             "api": "https://subocaiji.com/api.php/provide/vod/from/subyun/at/json",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "高清影视",
-            "name": "高清影视",
+            "key": "高清资源",
+            "name": "高清资源",
             "type": 1,
             "api": "https://api.yzzy-api.com/inc/apijson.php",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "圈凯影视",
-            "name": "圈凯影视",
+            "key": "圈凯资源",
+            "name": "圈凯资源",
             "type": 0,
             "api": "https://api.okzy.org/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "百度影视",
-            "name": "百度影视",
+            "key": "百度资源",
+            "name": "百度资源",
             "type": 0,
             "api": "https://api.apibdzy.com//api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "影图影视",
-            "name": "影图影视",
+            "key": "影图资源",
+            "name": "影图资源",
             "type": 1,
             "api": "https://cj.vodimg.top/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
         {
-            "key": "梦梦影视",
-            "name": "梦梦影视",
+            "key": "梦梦资源",
+            "name": "梦梦资源",
             "type": 0,
             "api": "https://www.gtrgt.com//api.php/provide/vod/at/xml",
             "searchable": 1,
