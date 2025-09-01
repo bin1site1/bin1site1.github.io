@@ -90,6 +90,14 @@
             "quickSearch": 1
         },
         {
+            "key": "无尽资源1",
+            "name": "无尽资源1",
+            "type": 1,
+            "api": "https://api.wujinapi.me/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "天翼资源",
             "name": "天翼资源",
             "type": 1,
@@ -218,6 +226,198 @@
             "quickSearch": 1
         },
         {
+            "key": "快龙资源",
+            "name": "快龙资源",
+            "type": 0,
+            "api": "https://lz.118318.xyz/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "暴风资源",
+            "name": "暴风资源",
+            "type": 1,
+            "api": "http://bf.xoxowin86cisyap.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "新黑木耳",
+            "name": "新黑木耳",
+            "type": 1,
+            "api": "https://json.heimuer.xyz/api.php/provide/vod",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "最大资源",
+            "name": "最大资源",
+            "type": 0,
+            "api": "http://zuidazy.me/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "新华为吧",
+            "name": "新华为吧",
+            "type": 0,
+            "api": "https://huaweiba.live/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "虎牙资源",
+            "name": "虎牙资源",
+            "type": 1,
+            "api": "https://www.huyaapi.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "漫道资源",
+            "name": "漫道资源",
+            "type": 1,
+            "api": "http://www.mandao.site/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "黑墙资源",
+            "name": "黑墙资源",
+            "type": 0,
+            "api": "https://blackwallvideo.online/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "独播资源",
+            "name": "独播资源",
+            "type": 0,
+            "api": "https://caiji.dbzy.tv/api.php/provide/vod/from/dbm3u8/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "红牛资源",
+            "name": "红牛资源",
+            "type": 0,
+            "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "极速资源",
+            "name": "极速资源",
+            "type": 1,
+            "api": "https://jszyapi.com/api.php/provide/vod",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "牛牛资源",
+            "name": "牛牛资源",
+            "type": 0,
+            "api": "https://api.niuniuzy.me/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "鸭鸭资源",
+            "name": "鸭鸭资源",
+            "type": 0,
+            "api": "https://yayazy2.com/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "火狐资源",
+            "name": "火狐资源",
+            "type": 1,
+            "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "阿里资源",
+            "name": "阿里资源",
+            "type": 1,
+            "api": "https://alivod.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "优库资源",
+            "name": "优库资源",
+            "type": 0,
+            "api": "https://api.ukuapi88.com/api.php/provide/vod/at/xmlsea",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "闪电资源",
+            "name": "闪电资源",
+            "type": 0,
+            "api": "https://shandianzy.com/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "卧龙影视",
+            "name": "卧龙影视",
+            "type": 0,
+            "api": "https://collect.wolongzyw.com/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "速播影视",
+            "name": "速播影视",
+            "type": 1,
+            "api": "https://subocaiji.com/api.php/provide/vod/from/subyun/at/json",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "高清影视",
+            "name": "高清影视",
+            "type": 1,
+            "api": "https://api.yzzy-api.com/inc/apijson.php",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "圈凯影视",
+            "name": "圈凯影视",
+            "type": 0,
+            "api": "https://api.okzy.org/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "百度影视",
+            "name": "百度影视",
+            "type": 0,
+            "api": "https://api.apibdzy.com//api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "影图影视",
+            "name": "影图影视",
+            "type": 1,
+            "api": "https://cj.vodimg.top/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "梦梦影视",
+            "name": "梦梦影视",
+            "type": 0,
+            "api": "https://www.gtrgt.com//api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "蔡坤资源",
             "name": "🔞蔡坤资源",
             "type": 1,
@@ -274,56 +474,231 @@
             "quickSearch": 1
         },
         {
+            "key": "老色逼云",
+            "name": "🔞老色逼云🔞",
+            "type": 1,
+            "api": "https://apilsbzy1.com/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "丝袜资源网",
             "name": "🔞丝袜资源网",
             "type": 1,
             "api": "https://siwazyw.tv/api.php/provide/vod/at/json/",
             "searchable": 1,
             "quickSearch": 1
+        },
+        {
+            "key": "樂吧资源",
+            "name": "🔞樂吧资源",
+            "type": 1,
+            "api": "http://lbapiby.com/api.php/provide/vod",
+            "playerUrl": ""
+        },
+        {
+            "key": "番号资源",
+            "name": "🔞番号资源",
+            "type": 0,
+            "api": "http://fhapi9.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "大地资源",
+            "name": "🔞大地资源",
+            "type": 0,
+            "api": "https://dadiapi.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "苹果资源",
+            "name": "🔞苹果资源",
+            "type": 0,
+            "api": "https://www.pgxdy.com/api/xml.php",
+            "searchable": 0,
+            "quickSearch": 0
+        },
+        {
+            "key": "淫水机资源",
+            "name": "🔞淫水机资源",
+            "type": 0,
+            "api": "https://www.xrbsp.com/api/xml.php",
+            "searchable": 0,
+            "quickSearch": 0
+        },
+        {
+            "key": "美少女资源",
+            "name": "🔞美少女资源",
+            "type": 0,
+            "api": "https://www.msnii.com/api/xml.php",
+            "searchable": 0,
+            "quickSearch": 0
+        },
+        {
+            "key": "香奶儿资源",
+            "name": "🔞香奶儿资源",
+            "type": 0,
+            "api": "https://www.gdlsp.com/api/xml.php",
+            "searchable": 0,
+            "quickSearch": 0
+        },
+        {
+            "key": "开心果资源",
+            "name": "🔞开心果资源",
+            "type": 0,
+            "api": "https://www.kxgav.com/api/xml.php",
+            "searchable": 0,
+            "quickSearch": 0
+        },
+        {
+            "key": "小湿妹资源",
+            "name": "🔞小湿妹资源",
+            "type": 0,
+            "api": "https://www.afasu.com/api/xml.php",
+            "searchable": 0,
+            "quickSearch": 0
+        },
+        {
+            "key": "色南国资源",
+            "name": "🔞色南国资源",
+            "type": 0,
+            "api": "https://api.sexnguon.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "奥斯卡资源",
+            "name": "🔞奥斯卡资源",
+            "type": 0,
+            "api": "https://aosikazy.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "久久热资源",
+            "name": "🔞久久热资源",
+            "type": 0,
+            "api": "https://99reapi.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "狼少年资源",
+            "name": "🔞狼少年资源",
+            "type": 0,
+            "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
+            "playerUrl": ""
+        },
+        {
+            "key": "一五五资源",
+            "name": "🔞一五五资源",
+            "type": 0,
+            "api": "https://155api.com/api.php/provide/vod/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "九九八云",
+            "name": "🔞九九八云",
+            "type": 0,
+            "api": "https://api.998zy.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "色猫资源",
+            "name": "🔞色猫资源",
+            "type": 1,
+            "api": "https://caiji.semaozy.net/inc/api.php",
+            "playerUrl": ""
+        },
+        {
+            "key": "玉兔资源",
+            "name": "🔞玉兔资源",
+            "type": 1,
+            "api": "https://apiyutu.com/api.php/provide/vod",
+            "playerUrl": ""
+        },
+        {
+            "key": "百万资源",
+            "name": "🔞百万资源",
+            "type": 1,
+            "api": "https://api.bwzym3u8.com/api.php/provide/vod",
+            "playerUrl": ""
+        },
+        {
+            "key": "桃花资源",
+            "name": "🔞桃花资源",
+            "type": 0,
+            "api": "https://thzy1.me/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "雪豹资源",
+            "name": "🔞雪豹资源",
+            "type": 0,
+            "api": "https://api.xbapi.cc/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "老鸭资源",
+            "name": "🔞老鸭资源",
+            "type": 0,
+            "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "金坤资源",
+            "name": "🔞金坤资源",
+            "type": 0,
+            "api": "https://www.jkunzyapi.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "探探资源",
+            "name": "🔞探探资源",
+            "type": 0,
+            "api": "https://apittzy.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "嘛唞资源",
+            "name": "🔞嘛唞资源",
+            "type": 0,
+            "api": "https://madoucun.com/api.php/provide/vod/at/xml",
+            "playerUrl": ""
         }
     ],
-    "doh": [
+    "parses": [
         {
-            "name": "Google",
-            "url": "https://dns.google/dns-query",
-            "ips": [
-                "8.8.4.4",
-                "8.8.8.8"
-            ]
+            "name": "聚合",
+            "type": 3,
+            "url": "Demo"
         },
         {
-            "name": "Cloudflare",
-            "url": "https://cloudflare-dns.com/dns-query",
-            "ips": [
-                "1.1.1.1",
-                "1.0.0.1",
-                "2606:4700:4700::1111",
-                "2606:4700:4700::1001"
-            ]
+            "name": "并发",
+            "type": 2,
+            "url": "Parallel"
         },
         {
-            "name": "AdGuard",
-            "url": "https://dns.adguard.com/dns-query",
-            "ips": [
-                "94.140.14.140",
-                "94.140.14.141"
-            ]
+            "name": "轮询",
+            "type": 2,
+            "url": "Sequence"
         },
         {
-            "name": "DNSWatch",
-            "url": "https://resolver2.dns.watch/dns-query",
-            "ips": [
-                "84.200.69.80",
-                "84.200.70.40"
-            ]
+            "name": "春风",
+            "type": 1,
+            "url": "https://jx.xyflv.cc/?url="
         },
         {
-            "name": "Quad9",
-            "url": "https://dns.quad9.net/dns-quer",
-            "ips": [
-                "9.9.9.9",
-                "149.112.112.112"
-            ]
+            "name": "夏雨",
+            "type": 1,
+            "url": "https://jx.77flv.cc/?url="
+        },
+        {
+            "name": "秋霜",
+            "type": 1,
+            "url": "https://jx.xymp4.cc/?url="
+        },
+        {
+            "name": "冬雪",
+            "type": 1,
+            "url": "https://jx.xmflv.com/?url="
         }
     ],
     "flags": [
@@ -418,6 +793,50 @@
         "imgo",
         "ruyi1080",
         "ruyib1080"
+    ],
+    "doh": [
+        {
+            "name": "Google",
+            "url": "https://dns.google/dns-query",
+            "ips": [
+                "8.8.4.4",
+                "8.8.8.8"
+            ]
+        },
+        {
+            "name": "Cloudflare",
+            "url": "https://cloudflare-dns.com/dns-query",
+            "ips": [
+                "1.1.1.1",
+                "1.0.0.1",
+                "2606:4700:4700::1111",
+                "2606:4700:4700::1001"
+            ]
+        },
+        {
+            "name": "AdGuard",
+            "url": "https://dns.adguard.com/dns-query",
+            "ips": [
+                "94.140.14.140",
+                "94.140.14.141"
+            ]
+        },
+        {
+            "name": "DNSWatch",
+            "url": "https://resolver2.dns.watch/dns-query",
+            "ips": [
+                "84.200.69.80",
+                "84.200.70.40"
+            ]
+        },
+        {
+            "name": "Quad9",
+            "url": "https://dns.quad9.net/dns-quer",
+            "ips": [
+                "9.9.9.9",
+                "149.112.112.112"
+            ]
+        }
     ],
     "ijk": [
         {
