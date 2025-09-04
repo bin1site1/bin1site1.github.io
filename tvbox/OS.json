@@ -10,30 +10,6 @@
             "quickSearch": 1
         },
         {
-            "key": "非凡资源",
-            "name": "非凡资源",
-            "type": 1,
-            "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=list",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "360资源",
-            "name": "360资源",
-            "type": 1,
-            "api": "https://360zyzz.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "360资源1",
-            "name": "360资源1",
-            "type": 1,
-            "api": "https://360zy.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
             "key": "爱奇艺资源",
             "name": "爱奇艺资源",
             "type": 1,
@@ -54,6 +30,30 @@
             "name": "猫眼资源",
             "type": 1,
             "api": "https://api.maoyanapi.top/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "360资源",
+            "name": "360资源",
+            "type": 1,
+            "api": "https://360zyzz.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "360资源1",
+            "name": "360资源1",
+            "type": 1,
+            "api": "https://360zy.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "非凡资源",
+            "name": "非凡资源",
+            "type": 1,
+            "api": "http://api.ffzyapi.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
