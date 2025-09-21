@@ -2,6 +2,14 @@
     "spider": "./OS.jar",
     "sites": [
         {
+            "key": "高清资源",
+            "name": "高清资源",
+            "type": 1,
+            "api": "https://api.yzzy-api.com/inc/apijson.php",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "魔都资源",
             "name": "魔都资源",
             "type": 1,
@@ -318,14 +326,6 @@
             "name": "卧龙影视",
             "type": 0,
             "api": "https://collect.wolongzyw.com/api.php/provide/vod/at/xml",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "高清资源",
-            "name": "高清资源",
-            "type": 1,
-            "api": "https://api.yzzy-api.com/inc/apijson.php",
             "searchable": 1,
             "quickSearch": 1
         },
