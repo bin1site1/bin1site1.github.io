@@ -26,6 +26,14 @@
             "quickSearch": 1
         },
         {
+            "key": "爱奇艺资源",
+            "name": "爱奇艺资源",
+            "type": 1,
+            "api": "https://hhzyapi.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "荐片资源",
             "name": "荐片资源",
             "type": 4,
