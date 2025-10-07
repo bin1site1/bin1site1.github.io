@@ -26,6 +26,15 @@
             "quickSearch": 1
         },
         {
+            "key": "AcFuns",
+            "name": "AcFuns",
+            "type": 4,
+            "api": "https://www.acfuns.net/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "漫岛动漫",
             "name": "漫岛动漫",
             "type": 4,
