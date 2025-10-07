@@ -51,6 +51,30 @@
             "quickSearch": 1
         },
         {
+            "key": "TVB云播",
+            "name": "TVB云播",
+            "type": 1,
+            "api": "http://www.tvyb03.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "TVB云播2",
+            "name": "TVB云播2",
+            "type": 1,
+            "api": "http://www.hktv06.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "蘑菇影视",
+            "name": "蘑菇影视",
+            "type": 1,
+            "api": "https://www.5o5k.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "荐片资源",
             "name": "荐片资源",
             "type": 4,
