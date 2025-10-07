@@ -25,6 +25,15 @@
             "searchable": 1,
             "quickSearch": 1
         },
+                {
+            "key": "漫岛动漫",
+            "name": "漫岛动漫",
+            "type": 4,
+            "api": "https://www.mandao.cc/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
         {
             "key": "荐片资源",
             "name": "荐片资源",
