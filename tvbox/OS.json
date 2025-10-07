@@ -35,6 +35,22 @@
             "filterable": 1
         },
         {
+            "key": "影猫仓库",
+            "name": "影猫仓库",
+            "type": 1,
+            "api": "https://ymck.pro/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "追剧吧Pro",
+            "name": "追剧吧Pro",
+            "type": 1,
+            "api": "https://zjuba.vip/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "荐片资源",
             "name": "荐片资源",
             "type": 4,
