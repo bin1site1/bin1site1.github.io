@@ -392,7 +392,7 @@
             "key": "鲨鱼资源",
             "name": "🔞鲨鱼资源",
             "type": 0,
-            "api": "https://shayuapi.com/api.php/provide/vod/at/json/",
+            "api": "https://shayuapi.com/api.php/provide/vod/at/json/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -400,7 +400,7 @@
             "key": "色猫资源",
             "name": "🔞色猫资源",
             "type": 0,
-            "api": "https://caiji.semaozy.net/inc/apijson_vod.php",
+            "api": "https://caiji.semaozy.net/inc/api.php",
             "searchable": 1,
             "quickSearch": 1
         },
