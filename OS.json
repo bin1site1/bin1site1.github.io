@@ -421,10 +421,10 @@
             "quickSearch": 1
         },
         {
-            "key": "辣椒资源",
-            "name": "🔞辣椒资源",
+            "key": "JKUN资源",
+            "name": "🔞JKUN资源",
             "type": 1,
-            "api": "http://lajiaozy.com/api.php/provide/vod",
+            "api": "https://jkunzyapi.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
