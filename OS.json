@@ -389,6 +389,14 @@
             "quickSearch": 1
         },
         {
+            "key": "樱花资源",
+            "name": "樱花资源",
+            "type": 0,
+            "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "搞起资源",
             "name": "🔞搞起资源",
             "type": 0,
@@ -425,14 +433,6 @@
             "name": "🔞JKUN资源",
             "type": 1,
             "api": "https://jkunzyapi.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "吉吉巳资源",
-            "name": "吉吉巳资源",
-            "type": 0,
-            "api": "https://oc.jijisi.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
