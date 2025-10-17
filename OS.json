@@ -392,7 +392,7 @@
             "key": "奥斯卡资源",
             "name": "奥斯卡资源",
             "type": 0,
-            "api": "https://aosikazy.com/api.php/provide/vod/at/xml",
+            "api": "https://aosikazy.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -400,7 +400,7 @@
             "key": "辣椒资源",
             "name": "🔞辣椒资源",
             "type": 1,
-            "api": "https://apilj.com/api.php/provide/vod",
+            "api": "https://apilj.com/api.php/provide/vod/at/json/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -576,7 +576,7 @@
             "key": "155资源",
             "name": "🔞155资源",
             "type": 0,
-            "api": "https://155api.com/api.php/provide/vod/at/xml",
+            "api": "https://155api.com/api.php/provide/vod/?ac=list",
             "playerUrl": ""
         },
         {
