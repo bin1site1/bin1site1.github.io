@@ -397,13 +397,14 @@
             "quickSearch": 1
         },
         {
-            "key": "搞起资源",
-            "name": "🔞搞起资源",
+            "key": "红牛资源",
+            "name": "红牛资源",
             "type": 0,
-            "api": "https://caiji.gqjiexi.com/api.php/provide/vod",
+            "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1
         },
+
         {
             "key": "色猫资源",
             "name": "🔞色猫资源",
