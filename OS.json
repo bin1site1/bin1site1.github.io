@@ -392,7 +392,7 @@
             "key": "樱花资源",
             "name": "樱花资源",
             "type": 0,
-            "api": "https://m3u8.apiyhzy.com/api.php/seacms/vod/at/xml/?ac=list",
+            "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -400,7 +400,7 @@
             "key": "搞起资源",
             "name": "🔞搞起资源",
             "type": 0,
-            "api": "https://caiji.gqjiexi.com/api.php/provide/vod/at/xml/",
+            "api": "https://caiji.gqjiexi.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
