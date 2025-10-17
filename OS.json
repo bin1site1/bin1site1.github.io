@@ -413,10 +413,10 @@
             "quickSearch": 1
         },
         {
-            "key": "滴滴资源",
-            "name": "🔞滴滴资源",
+            "key": "老色逼资源",
+            "name": "🔞老色逼资源",
             "type": 0,
-            "api": "https://didizy.com/api.php/provide/vod",
+            "api": "https://apilsbzy1.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -429,10 +429,10 @@
             "quickSearch": 1
         },
         {
-            "key": "黄瓜资源",
-            "name": "🔞黄瓜资源",
+            "key": "小湿妹资源",
+            "name": "🔞小湿妹资源",
             "type": 0,
-            "api": "https://avre00.com/api.php/provide/vod",
+            "api": "https://www.afasu.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1
         },
