@@ -397,6 +397,14 @@
             "quickSearch": 1
         },
         {
+            "key": "滴滴资源",
+            "name": "🔞滴滴资源",
+            "type": 0,
+            "api": "https://didizy.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "辣椒资源",
             "name": "🔞辣椒资源",
             "type": 1,
