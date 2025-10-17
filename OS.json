@@ -392,7 +392,7 @@
             "key": "鲨鱼资源",
             "name": "🔞鲨鱼资源",
             "type": 0,
-            "api": "https://shayuapi.com/api.php/provide/vod/at/json/?ac=list",
+            "api": "https://shayuzy.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -416,7 +416,7 @@
             "key": "滴滴资源",
             "name": "🔞滴滴资源",
             "type": 0,
-            "api": "https://api.ddapi.cc/api.php/provide/vod/at/xml/?ac=list",
+            "api": "https://didizy.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
