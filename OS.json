@@ -389,6 +389,22 @@
             "quickSearch": 1
         },
         {
+            "key": "奥斯卡资源",
+            "name": "奥斯卡资源",
+            "type": 0,
+            "api": "https://aosikazy.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "森林资源",
+            "name": "🔞森林资源",
+            "type": 1,
+            "api": "https://slapibf.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "蔡坤资源",
             "name": "🔞蔡坤资源",
             "type": 1,
@@ -546,6 +562,13 @@
             "name": "🔞桃花资源",
             "type": 0,
             "api": "https://thzy1.me/api.php/provide/vod/at/xml",
+            "playerUrl": ""
+        },
+        {
+            "key": "155资源",
+            "name": "🔞155资源",
+            "type": 0,
+            "api": "https://155api.com/api.php/provide/vod",
             "playerUrl": ""
         },
         {
