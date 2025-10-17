@@ -397,6 +397,14 @@
             "quickSearch": 1
         },
         {
+            "key": "辣椒资源",
+            "name": "🔞辣椒资源",
+            "type": 1,
+            "api": "https://apilj.com/api.php/Seacms/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "森林资源",
             "name": "🔞森林资源",
             "type": 1,
