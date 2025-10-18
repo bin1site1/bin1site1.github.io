@@ -429,6 +429,14 @@
             "quickSearch": 1
         },
         {
+            "key": "极速资源",
+            "name": "极速资源",
+            "type": 0,
+            "api": "https://jszyapi.com/api.php/provide/vod/at/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "茅台资源",
             "name": "茅台资源",
             "type": 0,
