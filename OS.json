@@ -404,7 +404,14 @@
             "searchable": 1,
             "quickSearch": 1
         },
-
+        {
+            "key": "淘片资源",
+            "name": "淘片资源",
+            "type": 0,
+            "api": "https://taopianapi.com/cjapi/mc/vod/xml",
+            "searchable": 1,
+            "quickSearch": 1
+        },
         {
             "key": "色猫资源",
             "name": "🔞色猫资源",
