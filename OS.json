@@ -653,6 +653,16 @@
             "url": "Sequence"
         },
         {
+            "name": "西瓜",
+            "type": 1,
+            "url": "https://onepage.czl.net/xg/?url="
+        },
+        {
+            "name": "Dplayer",
+            "type": 1,
+            "url": "https://onepage.czl.net/dplayer/?url="
+        },
+        {
             "name": "春风",
             "type": 1,
             "url": "https://jx.xyflv.cc/?url="
