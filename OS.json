@@ -429,6 +429,14 @@
             "quickSearch": 1
         },
         {
+            "key": "茅台资源",
+            "name": "茅台资源",
+            "type": 0,
+            "api": "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/xml/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "色猫资源",
             "name": "🔞色猫资源",
             "type": 0,
