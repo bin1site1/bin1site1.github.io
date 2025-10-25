@@ -35,16 +35,6 @@
             "filterable": 1
         },
         {
-            "key": "段友影视",
-            "name": "段友影视",
-            "type": 3,
-            "api": "csp_AppYsV2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://shangjihuoke.com/api.php/tv.vod"
-        },
-        {
             "key": "天天美剧网",
             "name": "天天美剧网",
             "type": 3,
