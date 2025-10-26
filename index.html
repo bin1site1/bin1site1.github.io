@@ -355,23 +355,36 @@
 
         <!-- 页脚 -->
         <div class="footer">
-            本站已运行 <span class="days" id="days">0</span> 天<br>
+            <div class="runtime" id="runtime">本站已运行 0 天 0 时 0 分 0 秒</div>
             Copyright @知性小方块. 2022 - 2025. All Rights Reserved
         </div>
     </div>
 
     <script>
-        // 计算从2022年1月7日开始的运行天数
-        function calculateDays() {
-            const startDate = new Date('2022-01-07');
-            const currentDate = new Date();
-            const timeDiff = currentDate.getTime() - startDate.getTime();
-            const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
-            document.getElementById('days').textContent = daysDiff;
+        // 计算运行时间
+        function updateRuntime() {
+            const startDate = new Date('2022-01-07T08:00:00+08:00'); // 北京时间2022年1月7日8时0分0秒
+            const now = new Date();
+
+            // 计算时间差（毫秒）
+            const diff = now - startDate;
+
+            // 转换为天、时、分、秒
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // 更新显示
+            document.getElementById('runtime').textContent =
+                `本站已运行 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒`;
         }
 
-        // 页面加载完成后计算天数
-        window.onload = calculateDays;
+        // 初始更新
+        updateRuntime();
+
+        // 每秒更新一次
+        setInterval(updateRuntime, 1000);
     </script>
 </body>
 <script>
