@@ -26,6 +26,14 @@
             "quickSearch": 1
         },
         {
+            "key": "播剧网",
+            "name": "播剧网",
+            "type": 1,
+            "api": "https://www.ysxq.cc/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "AcFuns",
             "name": "AcFuns",
             "type": 4,
