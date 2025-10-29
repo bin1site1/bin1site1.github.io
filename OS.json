@@ -26,6 +26,30 @@
             "quickSearch": 1
         },
         {
+            "key": "速播资源",
+            "name": "速播资源",
+            "type": 1,
+            "api": "https://subocaiji.com/api.php/provide/vod/from/subyun/at/json",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "360资源",
+            "name": "360资源",
+            "type": 1,
+            "api": "https://360zyzz.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "360资源1",
+            "name": "360资源1",
+            "type": 1,
+            "api": "https://360zy.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "播剧网",
             "name": "播剧网",
             "type": 1,
@@ -107,30 +131,6 @@
             "name": "猫眼资源",
             "type": 1,
             "api": "https://api.maoyanapi.top/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "速播资源",
-            "name": "速播资源",
-            "type": 1,
-            "api": "https://subocaiji.com/api.php/provide/vod/from/subyun/at/json",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "360资源",
-            "name": "360资源",
-            "type": 1,
-            "api": "https://360zyzz.com/api.php/provide/vod",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "360资源1",
-            "name": "360资源1",
-            "type": 1,
-            "api": "https://360zy.com/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
