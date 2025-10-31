@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store每日限免App汇总</title>
+    <style>
+        :root {
+            --bg-color: #f5f7fa;
+            --text-color: #333;
+            --card-bg: #fff;
+            --card-shadow: rgba(0, 0, 0, 0.07);
+            --header-bg: #fff;
+            --section-title-color: #1a73e8;
+            --app-item-bg: #f9fafc;
+            --app-item-hover: #f0f5ff;
+            --footer-bg: #fff;
+            --btn-primary: #1a73e8;
+            --btn-primary-hover: #0d5bcd;
+            --btn-secondary: #fbbc04;
+            --btn-secondary-hover: #e6a700;
+            --btn-tertiary: #4285f4;
+            --btn-tertiary-hover: #3367d6;
+            --btn-xhs: #ff2442;
+            --btn-xhs-hover: #e01e3a;
+            --btn-author: #673ab7;
+            --btn-author-hover: #5e35b1;
+            --btn-save: #34a853;
+            --btn-save-hover: #2e8b47;
+            --link-color: #1a73e8;
+            --link-hover: #0d5bcd;
+            --toast-bg: #34a853;
+            --toast-error: #ea4335;
+            --toast-warning: #fbbc05;
+            --back-to-top-bg: #1a73e8;
+            --back-to-top-hover: #0d5bcd;
+            --ending-tag-bg: #e53935;
+            --empty-tip-bg: #f9fafc;
+            --help-section-bg: #f9fafc;
+            --disclaimer-color: #e53935;
+        }
+
+        .dark-mode {
+            --bg-color: #1a1a2e;
+            --text-color: #e6e6e6;
+            --card-bg: #16213e;
+            --card-shadow: rgba(0, 0, 0, 0.3);
+            --header-bg: #16213e;
+            --section-title-color: #4cc9f0;
+            --app-item-bg: #0f3460;
+            --app-item-hover: #1a3a5f;
+            --footer-bg: #16213e;
+            --btn-primary: #4cc9f0;
+            --btn-primary-hover: #2bb4e6;
+            --btn-secondary: #f9c74f;
+            --btn-secondary-hover: #f7b32b;
+            --btn-tertiary: #5778ff;
+            --btn-tertiary-hover: #3d5eff;
+            --btn-xhs: #ff5c8d;
+            --btn-xhs-hover: #ff3d7a;
+            --btn-author: #9d4edd;
+            --btn-author-hover: #8a2be2;
+            --btn-save: #43aa8b;
+            --btn-save-hover: #379683;
+            --link-color: #4cc9f0;
+            --link-hover: #2bb4e6;
+            --toast-bg: #43aa8b;
+            --toast-error: #f94144;
+            --toast-warning: #f9c74f;
+            --back-to-top-bg: #4cc9f0;
+            --back-to-top-hover: #2bb4e6;
+            --ending-tag-bg: #f94144;
+            --empty-tip-bg: #0f3460;
+            --help-section-bg: #0f3460;
+            --disclaimer-color: #f94144;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "Roboto", sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* 模式切换按钮 */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            background: var(--card-bg);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px var(--card-shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--text-color);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* 气泡提示样式 */
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background-color: var(--toast-bg);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            opacity: 0;
+            white-space: nowrap;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast.error {
+            background-color: var(--toast-error);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--header-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px var(--card-shadow);
+        }
+
+        .header h1 {
+            color: var(--section-title-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .update-info {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .auto-update-tip {
+            color: var(--section-title-color);
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--btn-primary);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn:hover {
+            background-color: var(--btn-primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--btn-secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--btn-secondary-hover);
+        }
+
+        .btn-tertiary {
+            background-color: var(--btn-tertiary);
+        }
+
+        .btn-tertiary:hover {
+            background-color: var(--btn-tertiary-hover);
+        }
+
+        .btn-xhs {
+            background-color: var(--btn-xhs);
+        }
+
+        .btn-xhs:hover {
+            background-color: var(--btn-xhs-hover);
+        }
+
+        .btn-author {
+            background-color: var(--btn-author);
+        }
+
+        .btn-author:hover {
+            background-color: var(--btn-author-hover);
+        }
+
+        .btn-save {
+            background-color: var(--btn-save);
+        }
+
+        .btn-save:hover {
+            background-color: var(--btn-save-hover);
+        }
+
+        .app-item.ending-soon {
+            border-left: 4px solid var(--ending-tag-bg);
+            background-color: rgba(229, 57, 53, 0.1);
+        }
+
+        .ending-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: var(--ending-tag-bg);
+            color: #fff;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--back-to-top-bg);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 90;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--back-to-top-hover);
+            transform: translateY(-3px);
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 15px var(--card-shadow);
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .section-title {
+            color: var(--section-title-color);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .app-list {
+            margin-top: 15px;
+        }
+
+        .app-item {
+            padding: 15px;
+            border-radius: 8px;
+            background-color: var(--app-item-bg);
+            margin-bottom: 12px;
+        }
+
+        .app-item:hover {
+            background-color: var(--app-item-hover);
+        }
+
+        .app-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .app-index {
+            font-weight: 600;
+            color: var(--section-title-color);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .app-info {
+            font-size: 14px;
+            color: var(--text-color);
+        }
+
+        .app-info p {
+            margin-bottom: 5px;
+        }
+
+        .app-info .label {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+
+        .app-url {
+            color: var(--link-color);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .app-url:hover {
+            text-decoration: underline;
+            color: var(--link-hover);
+        }
+
+        .empty-tip {
+            color: var(--text-color);
+            opacity: 0.7;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--empty-tip-bg);
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: var(--footer-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px var(--card-shadow);
+            padding: 20px;
+            font-size: 13px;
+            color: var(--text-color);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-section {
+            padding: 15px;
+            border-radius: 8px;
+            background-color: var(--help-section-bg);
+            margin-bottom: 15px;
+        }
+
+        .footer-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .help-section .help-title {
+            font-weight: 600;
+            color: var(--section-title-color);
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .help-section .help-list {
+            padding-left: 20px;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        .help-list li {
+            margin-bottom: 6px;
+        }
+
+        .help-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .disclaimer-section .disclaimer {
+            font-weight: 500;
+            color: var(--disclaimer-color);
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .loading,
+        .error {
+            text-align: center;
+            padding: 30px;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .error {
+            color: var(--disclaimer-color);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                font-size: 13px;
+            }
+
+            .btn span {
+                display: none;
+            }
+
+            .btn i {
+                font-size: 16px;
+            }
+
+            .section-card {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 16px;
+            }
+
+            .app-item {
+                padding: 12px;
+            }
+
+            .app-info {
+                font-size: 13px;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .help-list {
+                padding-left: 15px;
+                font-size: 12px;
+            }
+
+            .footer-section {
+                padding: 12px;
+            }
+
+            .btn:hover {
+                transform: none;
+            }
+
+            .toast {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+
+            .theme-toggle {
+                top: 15px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 模式切换按钮 -->
+    <button class="theme-toggle" id="theme-toggle" title="切换白天/黑夜模式">
+        <i class="fa fa-moon-o" id="theme-icon"></i>
+    </button>
+
+    <!-- 气泡提示容器 -->
+    <div id="toast" class="toast"></div>
+
+    <div class="header" id="page-header">
+        <h1>Apple Store每日限免App汇总</h1>
+        <div class="update-info">最后更新：<span id="last-update">加载中...</span></div>
+        <div class="auto-update-tip">🔄 每次刷新页面自动获取最新限免数据</div>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn" id="refresh-btn">
+            <i class="fa fa-refresh"></i>
+            <span>手动刷新数据</span>
+        </button>
+        <button class="btn btn-secondary" id="copy-btn">
+            <i class="fa fa-copy"></i>
+            <span>一键复制清单</span>
+        </button>
+        <button class="btn btn-xhs" id="copy-xhs-btn">
+            <i class="fa fa-file-text"></i>
+            <span>一键复制小红书文案</span>
+        </button>
+        <button class="btn btn-save" id="save-local-btn">
+            <i class="fa fa-download"></i>
+            <span>一键保存本地</span>
+        </button>
+        <button class="btn btn-author" id="author-homepage-btn">
+            <i class="fa fa-user"></i>
+            <span>作者主页</span>
+        </button>
+        <button class="btn btn-tertiary" id="share-btn">
+            <i class="fa fa-share-alt"></i>
+            <span>分享当前网页</span>
+        </button>
+    </div>
+
+    <div class="main">
+        <div class="section-card">
+            <div class="section-title"><span>📱</span>本体限免App</div>
+            <div id="app-free-container" class="app-list">
+                <div class="loading">加载中...正在获取限免数据</div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title"><span>🔓</span>内购限免App</div>
+            <div id="in-app-free-container" class="app-list">
+                <div class="loading">加载中...正在获取限免数据</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-section help-section">
+            <div class="help-title">📖 使用帮助：</div>
+            <ul class="help-list">
+                <li>点击「手动刷新数据」可立即获取最新限免信息</li>
+                <li>「一键复制清单」可将所有限免信息复制到剪贴板</li>
+                <li>「一键复制小红书文案」可将限免信息转换为小红书格式</li>
+                <li>「一键保存本地」可将限免信息保存为txt文件到电脑</li>
+                <li>「作者主页」可访问开发者主页获取更多资源</li>
+                <li>「分享当前清单」可通过社交软件分享限免信息</li>
+                <li>若国区显示收费，可能是因为该应用在美区有免费版本</li>
+                <li>点击应用地址可直接跳转到App Store下载</li>
+            </ul>
+        </div>
+
+        <div class="footer-section disclaimer-section">
+            <div class="disclaimer">⚠️ 免责声明：</div>
+            <div>本信息来自网络，限免状态可能实时变化，实际情况以App Store为准。</div>
+        </div>
+    </div>
+
+    <div class="back-to-top" id="back-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+    <script>
+        const API_URL = "https://api.zxki.cn/api/appfree";
+
+        // 主题模式功能
+        function initThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+            // 检查本地存储的主题设置
+            const savedTheme = localStorage.getItem('theme');
+
+            // 根据保存的设置或系统偏好设置初始主题
+            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+                document.body.classList.add('dark-mode');
+                themeIcon.className = 'fa fa-sun-o';
+                themeToggle.title = '切换到白天模式';
+            } else {
+                document.body.classList.remove('dark-mode');
+                themeIcon.className = 'fa fa-moon-o';
+                themeToggle.title = '切换到黑夜模式';
+            }
+
+            // 切换主题
+            themeToggle.addEventListener('click', function () {
+                if (document.body.classList.contains('dark-mode')) {
+                    document.body.classList.remove('dark-mode');
+                    localStorage.setItem('theme', 'light');
+                    themeIcon.className = 'fa fa-moon-o';
+                    themeToggle.title = '切换到黑夜模式';
+                } else {
+                    document.body.classList.add('dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                    themeIcon.className = 'fa fa-sun-o';
+                    themeToggle.title = '切换到白天模式';
+                }
+            });
+        }
+
+        // 气泡提示函数
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = 'toast';
+
+            if (type === 'error') {
+                toast.classList.add('error');
+            } else if (type === 'warning') {
+                toast.classList.add('warning');
+            }
+
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+        // 解析应用数据
+        function parseAppData(appList) {
+            return appList.map((app, index) => {
+                let { name = '-----', desc = '-----', url = '-----', limitedTime = '未知' } = app;
+                name = name.trim();
+                desc = desc.trim();
+                url = url.trim();
+                limitedTime = limitedTime.trim() || '未知';
+
+                if ((desc === '-----' || desc === '' || desc === ' ') && name.includes('//')) {
+                    const splitResult = name.split('//', 2);
+                    name = splitResult[0].trim();
+                    desc = splitResult.length > 1 ? splitResult[1].trim() : '';
+                }
+
+                if (desc === '' || desc === ' ' || desc === '-----') {
+                    desc = '未知';
+                }
+
+                desc = desc.replace('https', '').replace('http', '');
+                const isEndingSoon = limitedTime.includes('24小时内') || limitedTime.includes('12小时内') || limitedTime.includes('6小时内');
+
+                return {
+                    index: index + 1,
+                    name,
+                    desc,
+                    url,
+                    limitedTime,
+                    isEndingSoon
+                };
+            });
+        }
+        // 渲染应用列表到指定容器
+        function renderAppList(containerId, appList) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+
+            if (appList.length === 0) {
+                container.innerHTML = '<div class="empty-tip">暂无符合条件的限免数据</div>';
+                return;
+            }
+
+            appList.forEach(app => {
+                const appItem = document.createElement('div');
+                appItem.className = `app-item ${app.isEndingSoon ? 'ending-soon' : ''}`;
+
+                appItem.innerHTML = `
+                    <div class="app-index">
+                        ${app.index}. 名称：${app.name}
+                        ${app.isEndingSoon ? '<span class="ending-tag">即将结束</span>' : ''}
+                    </div>
+                    <div class="app-info">
+                        <p><span class="label">简介：</span>${app.desc === '---' ? '未知' : app.desc}</p>
+                        <p><span class="label">地址：</span><a href="${app.url}" target="_blank" class="app-url">${app.url}</a></p>
+                    </div>
+                `;
+
+                container.appendChild(appItem);
+            });
+        }
+        // 获取并展示限免应用数据
+        async function fetchAndShowAppData() {
+            const loadingHtml = '<div class="loading">加载中...正在获取限免数据</div>';
+            document.getElementById('app-free-container').innerHTML = loadingHtml;
+            document.getElementById('in-app-free-container').innerHTML = loadingHtml;
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'GET',
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+                        'Accept': 'application/json, text/plain, */*',
+                        'Referer': 'https://example.com'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`请求失败（状态码：${response.status}），可能API暂时不可用`);
+                }
+
+                const appData = await response.json();
+
+                if (!appData || typeof appData !== 'object' || !('apps' in appData)) {
+                    throw new Error('API返回数据格式异常，缺少"apps"核心字段');
+                }
+                if (typeof appData.apps !== 'object' || !('本体限免' in appData.apps) || !('内购限免' in appData.apps)) {
+                    throw new Error('API返回的"apps"字段格式错误，需包含"本体限免"和"内购限免"');
+                }
+
+                const appFreeList = parseAppData(Array.isArray(appData.apps['本体限免']) ? appData.apps['本体限免'] : []);
+                const inAppFreeList = parseAppData(Array.isArray(appData.apps['内购限免']) ? appData.apps['内购限免'] : []);
+
+                const lastUpdated = appData.last_updated || new Date().toLocaleString();
+
+                renderAppList('app-free-container', appFreeList);
+                renderAppList('in-app-free-container', inAppFreeList);
+                document.getElementById('last-update').textContent = lastUpdated;
+
+            } catch (error) {
+                const errorHtml = `<div class="error">❌ 数据获取失败：${error.message}</div>`;
+                document.getElementById('app-free-container').innerHTML = errorHtml;
+                document.getElementById('in-app-free-container').innerHTML = errorHtml;
+                console.error('API请求错误详情：', error);
+            }
+        }
+        // 复制到剪贴板
+        function copyToClipboard() {
+            const lastUpdateTime = document.getElementById('last-update').textContent;
+            let content = `🍎 Apple Store每日限免应用汇总\n\n最后更新：${lastUpdateTime}\n\n`;
+
+            const appFreeItems = document.querySelectorAll('#app-free-container .app-item');
+            const inAppFreeItems = document.querySelectorAll('#in-app-free-container .app-item');
+            // 本体限免App
+            content += "📱 本体限免App：\n\n";
+            if (appFreeItems.length === 0) {
+                content += "   暂无本体限免App数据\n\n";
+            } else {
+                appFreeItems.forEach((item, appIndex) => {
+                    const nameElem = item.querySelector('.app-index');
+                    const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
+                    const name = nameText.split('名称：')[1] || '未知名称';
+
+                    let desc = '无简介';
+                    const infoPs = item.querySelectorAll('.app-info p');
+                    infoPs.forEach(p => {
+                        if (p.textContent.includes('简介：')) {
+                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知'; if(desc === '---') desc = '未知'; if(desc === '---') desc = '未知';
+                        }
+                    });
+
+                    const urlElem = item.querySelector('.app-url');
+                    const url = urlElem ? urlElem.textContent : '无地址';
+
+                    content += `${appIndex + 1}. 名称：${name}\n`;
+                    content += `   简介：${desc}\n`;
+                    content += `   地址：${url}\n\n`;
+                });
+            }
+            // 内购限免App
+            content += "🔓 内购限免App：\n\n";
+            if (inAppFreeItems.length === 0) {
+                content += "   暂无内购限免App数据\n\n";
+            } else {
+                inAppFreeItems.forEach((item, appIndex) => {
+                    const nameElem = item.querySelector('.app-index');
+                    const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
+                    const name = nameText.split('名称：')[1] || '未知名称';
+
+                    let desc = '无简介';
+                    const infoPs = item.querySelectorAll('.app-info p');
+                    infoPs.forEach(p => {
+                        if (p.textContent.includes('简介：')) {
+                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                        }
+                    });
+
+                    const urlElem = item.querySelector('.app-url');
+                    const url = urlElem ? urlElem.textContent : '无地址';
+
+                    content += `${appIndex + 1}. 名称：${name}\n`;
+                    content += `   简介：${desc}\n`;
+                    content += `   地址：${url}\n\n`;
+                });
+            }
+
+            content += "⚠️  免责声明：\n";
+            content += "本信息来自网络，限免状态可能实时变化，实际情况以App Store为准。";
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(content)
+                    .then(() => showToast('✅ 清单已成功复制到剪贴板！'))
+                    .catch(err => {
+                        console.error('Clipboard API失败：', err);
+                        fallbackCopy(content);
+                    });
+            } else {
+                fallbackCopy(content);
+            }
+        }
+        /// 复制到小红书
+        function copyToXiaohongshu() {
+            const lastUpdateTime = document.getElementById('last-update').textContent;
+            let content = `🍎 苹果商店限免APP汇总\n\n最后更新：${lastUpdateTime}\n\n`;
+            // 本体限免App
+            const appFreeItems = document.querySelectorAll('#app-free-container .app-item');
+            if (appFreeItems.length > 0) {
+                content += "📱本体限免APP\n\n";
+                appFreeItems.forEach((item, appIndex) => {
+                    const nameElem = item.querySelector('.app-index');
+                    const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
+                    const name = nameText.split('名称：')[1] || '未知名称';
+
+                    let desc = '无简介';
+                    const infoPs = item.querySelectorAll('.app-info p');
+                    infoPs.forEach(p => {
+                        if (p.textContent.includes('简介：')) {
+                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                        }
+                    });
+
+                    content += `${appIndex + 1}、${name}  //  ${desc}\n`;
+                });
+                content += "\n";
+            }
+            // 内购限免App
+            const inAppFreeItems = document.querySelectorAll('#in-app-free-container .app-item');
+            if (inAppFreeItems.length > 0) {
+                content += "🔓 内购限免APP\n\n";
+                inAppFreeItems.forEach((item, appIndex) => {
+                    const nameElem = item.querySelector('.app-index');
+                    const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
+                    const name = nameText.split('名称：')[1] || '未知名称';
+
+                    let desc = '无简介';
+                    const infoPs = item.querySelectorAll('.app-info p');
+                    infoPs.forEach(p => {
+                        if (p.textContent.includes('简介：')) {
+                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                        }
+                    });
+
+                    content += `${appIndex + 1}、${name}  //  ${desc}\n`;
+                });
+                content += "\n";
+            }
+
+            content += "⚠️ 免责声明：\n";
+            content += "本信息来自网络，限免状态可能实时变化，以App Store为准。\n\n";
+            content += " 🔎友情提示: \n";
+            content += " 1、applestore搜索app名称查看详情，若国区收费则可尝试切换至ip美区；\n";
+            content += " 2、活动有时效性，若不显示free则表示已结束，可等待下次活动开启。";
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(content)
+                    .then(() => showToast('✅ 小红书文案已成功复制到剪贴板！'))
+                    .catch(err => {
+                        console.error('Clipboard API失败：', err);
+                        fallbackCopy(content);
+                    });
+            } else {
+                fallbackCopy(content);
+            }
+        }
+        // 回退复制函数
+        function fallbackCopy(content) {
+            const textarea = document.createElement('textarea');
+            textarea.value = content;
+            textarea.style.position = 'fixed';
+            textarea.style.top = '-999px';
+            textarea.style.left = '-999px';
+            document.body.appendChild(textarea);
+
+            textarea.select();
+            textarea.setSelectionRange(0, content.length);
+            const success = document.execCommand('copy');
+
+            document.body.removeChild(textarea);
+
+            if (success) {
+                showToast('✅ 内容已成功复制到剪贴板！');
+            } else {
+                showToast('❌ 复制失败，请手动复制页面内容', 'error');
+            }
+        }
+        // 初始化作者主页功能
+        function initAuthorHomepageFeature() {
+            const authorBtn = document.getElementById('author-homepage-btn');
+
+            authorBtn.addEventListener('click', function () {
+                const authorHomepageUrl = 'https://bin1site1.github.io';
+                window.open(authorHomepageUrl, '_blank');
+            });
+        }
+        // 初始化保存到本地功能
+        function initSaveToLocalFeature() {
+            const saveBtn = document.getElementById('save-local-btn');
+
+            saveBtn.addEventListener('click', function () {
+                const now = new Date();
+                const dateStr = now.toISOString().split('T')[0];
+                const timeStr = now.toTimeString().split(' ')[0].replace(/:/g, '-');
+
+                const fileName = `AppleStore限免汇总_${dateStr}_${timeStr}.txt`;
+
+                const lastUpdateTime = document.getElementById('last-update').textContent;
+                let content = `🍎 Apple Store每日限免应用汇总\n\n最后更新：${lastUpdateTime}\n\n`;
+
+                const appFreeItems = document.querySelectorAll('#app-free-container .app-item');
+                const inAppFreeItems = document.querySelectorAll('#in-app-free-container .app-item');
+                // 本体限免App
+                content += "📱 本体限免App：\n\n";
+                if (appFreeItems.length === 0) {
+                    content += "   暂无本体限免App数据\n\n";
+                } else {
+                    appFreeItems.forEach((item, appIndex) => {
+                        const nameElem = item.querySelector('.app-index');
+                        const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
+                        const name = nameText.split('名称：')[1] || '未知名称';
+
+                        let desc = '无简介';
+                        const infoPs = item.querySelectorAll('.app-info p');
+                        infoPs.forEach(p => {
+                            if (p.textContent.includes('简介：')) {
+                                desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                            }
+                        });
+
+                        const urlElem = item.querySelector('.app-url');
+                        const url = urlElem ? urlElem.textContent : '无地址';
+
+                        content += `${appIndex + 1}. 名称：${name}\n`;
+                        content += `   简介：${desc}\n`;
+                        content += `   地址：${url}\n\n`;
+                    });
+                }
+                // 内购限免App
+                content += "🔓 内购限免App：\n\n";
+                if (inAppFreeItems.length === 0) {
+                    content += "   暂无内购限免App数据\n\n";
+                } else {
+                    inAppFreeItems.forEach((item, appIndex) => {
+                        const nameElem = item.querySelector('.app-index');
+                        const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
+                        const name = nameText.split('名称：')[1] || '未知名称';
+
+                        let desc = '无简介';
+                        const infoPs = item.querySelectorAll('.app-info p');
+                        infoPs.forEach(p => {
+                            if (p.textContent.includes('简介：')) {
+                                desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                            }
+                        });
+
+                        const urlElem = item.querySelector('.app-url');
+                        const url = urlElem ? urlElem.textContent : '无地址';
+
+                        content += `${appIndex + 1}. 名称：${name}\n`;
+                        content += `   简介：${desc}\n`;
+                        content += `   地址：${url}\n\n`;
+                    });
+                }
+
+                content += "⚠️  免责声明：\n";
+                content += "本信息来自网络，限免状态可能实时变化，实际情况以App Store为准。\n\n";
+                content += "生成时间：" + now.toLocaleString('zh-CN');
+
+                const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = fileName;
+                document.body.appendChild(a);
+                a.click();
+
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 100);
+
+                showToast('✅ 限免数据已成功保存为文件：' + fileName);
+            });
+        }
+        // 初始化分享功能
+        function initShareFeature() {
+            const shareBtn = document.getElementById('share-btn');
+
+            shareBtn.addEventListener('click', async () => {
+                const lastUpdateTime = document.getElementById('last-update').textContent;
+                const shareTitle = `Apple Store限免汇总（${lastUpdateTime}更新）`;
+                const shareText = `发现一批Apple Store限免应用，包含本体限免和内购限免，速领！`;
+                const shareUrl = window.location.href;
+
+                try {
+                    await navigator.share({
+                        title: shareTitle,
+                        text: shareText,
+                        url: shareUrl
+                    });
+                } catch (err) {
+                    console.log('Web Share API不支持，切换为复制链接', err);
+                    await navigator.clipboard.writeText(`${shareTitle}\n${shareText}\n链接：${shareUrl}`);
+                    showToast('✅ 分享内容已复制到剪贴板，可手动粘贴分享！');
+                }
+            });
+        }
+        // 初始化返回顶部功能
+        function initBackToTopFeature() {
+            const backToTopBtn = document.getElementById('back-to-top');
+            const pageHeader = document.getElementById('page-header');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('active');
+                } else {
+                    backToTopBtn.classList.remove('active');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                pageHeader.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+        // 初始化主题切换功能
+        document.addEventListener('DOMContentLoaded', () => {
+            initThemeToggle();
+            fetchAndShowAppData();
+
+            document.getElementById('refresh-btn').addEventListener('click', fetchAndShowAppData);
+            document.getElementById('copy-btn').addEventListener('click', copyToClipboard);
+            document.getElementById('copy-xhs-btn').addEventListener('click', copyToXiaohongshu);
+
+            initAuthorHomepageFeature();
+            initSaveToLocalFeature();
+            initShareFeature();
+            initBackToTopFeature();
+        });
+    </script>
+</body>
+
+</html>
