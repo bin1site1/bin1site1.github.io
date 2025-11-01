@@ -584,7 +584,7 @@
 
         <div class="footer-section disclaimer-section">
             <div class="disclaimer">⚠️ 免责声明：</div>
-            <div>本信息来自网络，限免状态可能实时变化，实际情况以App Store为准。</div>
+            <div>本信息来自API数据，限免状态可能实时变化，实际情况以App Store为准。</div>
         </div>
     </div>
 
@@ -817,7 +817,7 @@
             }
 
             content += "⚠️  免责声明：\n";
-            content += "本信息来自网络，限免状态可能实时变化，实际情况以App Store为准。";
+            content += "本信息来自API数据，限免状态可能实时变化，实际情况以App Store为准。";
 
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(content)
@@ -981,7 +981,7 @@
                 }
 
                 content += "⚠️  免责声明：\n";
-                content += "本信息来自网络，限免状态可能实时变化，实际情况以App Store为准。\n\n";
+                content += "本信息来自API数据，限免状态可能实时变化，实际情况以App Store为准。\n\n";
                 content += "生成时间：" + now.toLocaleString('zh-CN');
 
                 const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
