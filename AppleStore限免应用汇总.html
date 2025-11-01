@@ -777,7 +777,7 @@
                     const infoPs = item.querySelectorAll('.app-info p');
                     infoPs.forEach(p => {
                         if (p.textContent.includes('简介：')) {
-                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知'; if(desc === '---') desc = '未知'; if(desc === '---') desc = '未知';
+                            desc = p.textContent.split('简介：')[1] || '无简介'; if (desc === '---') desc = '未知'; if (desc === '---') desc = '未知'; if (desc === '---') desc = '未知';
                         }
                     });
 
@@ -803,7 +803,7 @@
                     const infoPs = item.querySelectorAll('.app-info p');
                     infoPs.forEach(p => {
                         if (p.textContent.includes('简介：')) {
-                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                            desc = p.textContent.split('简介：')[1] || '无简介'; if (desc === '---') desc = '未知';
                         }
                     });
 
@@ -830,59 +830,46 @@
                 fallbackCopy(content);
             }
         }
-        /// 复制到小红书
+        // 复制到小红书（修改后的格式）
         function copyToXiaohongshu() {
             const lastUpdateTime = document.getElementById('last-update').textContent;
-            let content = `🍎 苹果商店限免APP汇总\n\n最后更新：${lastUpdateTime}\n\n`;
+            let content = `🍎 Applestore限免App汇总\n最后更新：${lastUpdateTime}\n\n`;
+
             // 本体限免App
             const appFreeItems = document.querySelectorAll('#app-free-container .app-item');
             if (appFreeItems.length > 0) {
-                content += "📱本体限免APP\n\n";
+                content += "📱本体限免:\n";
                 appFreeItems.forEach((item, appIndex) => {
                     const nameElem = item.querySelector('.app-index');
-                    const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
-                    const name = nameText.split('名称：')[1] || '未知名称';
+                    const nameText = nameElem ? nameElem.textContent.split('名称：')[1].trim() : '未知名称';
+                    const desc = item.querySelector('.app-info p').textContent.split('简介：')[1].trim() || '';
 
-                    let desc = '无简介';
-                    const infoPs = item.querySelectorAll('.app-info p');
-                    infoPs.forEach(p => {
-                        if (p.textContent.includes('简介：')) {
-                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
-                        }
-                    });
-
-                    content += `${appIndex + 1}、${name}  //  ${desc}\n`;
+                    content += `${appIndex + 1}、${nameText} [${desc}]\n`;
                 });
                 content += "\n";
             }
+
             // 内购限免App
             const inAppFreeItems = document.querySelectorAll('#in-app-free-container .app-item');
             if (inAppFreeItems.length > 0) {
-                content += "🔓 内购限免APP\n\n";
+                content += "🔓内购限免:\n";
                 inAppFreeItems.forEach((item, appIndex) => {
                     const nameElem = item.querySelector('.app-index');
-                    const nameText = nameElem ? nameElem.textContent.replace(/即将结束/, '').trim() : '未知名称';
-                    const name = nameText.split('名称：')[1] || '未知名称';
+                    const nameText = nameElem ? nameElem.textContent.split('名称：')[1].trim() : '未知名称';
+                    const desc = item.querySelector('.app-info p').textContent.split('简介：')[1].trim() || '';
 
-                    let desc = '无简介';
-                    const infoPs = item.querySelectorAll('.app-info p');
-                    infoPs.forEach(p => {
-                        if (p.textContent.includes('简介：')) {
-                            desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
-                        }
-                    });
-
-                    content += `${appIndex + 1}、${name}  //  ${desc}\n`;
+                    content += `${appIndex + 1}、${nameText} [${desc}]\n`;
                 });
                 content += "\n";
             }
 
             content += "⚠️ 免责声明：\n";
-            content += "本信息来自网络，限免状态可能实时变化，以App Store为准。\n\n";
-            content += " 🔎友情提示: \n";
-            content += " 1、applestore搜索app名称查看详情，若国区收费则可尝试切换至ip美区；\n";
-            content += " 2、活动有时效性，若不显示free则表示已结束，可等待下次活动开启。";
+            content += "本信息来自API数据，限免状态可能实时变化，以App Store为准。\n\n";
+            content += "🔎友情提示:\n";
+            content += "1、applestore搜索app名称查看详情，若国区收费则可尝试切换至ip美区；\n";
+            content += "2、活动有时效性，若不显示free则表示已结束，可等待下次活动开启。";
 
+            // 复制到剪贴板逻辑保持不变
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(content)
                     .then(() => showToast('✅ 小红书文案已成功复制到剪贴板！'))
@@ -954,7 +941,7 @@
                         const infoPs = item.querySelectorAll('.app-info p');
                         infoPs.forEach(p => {
                             if (p.textContent.includes('简介：')) {
-                                desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                                desc = p.textContent.split('简介：')[1] || '无简介'; if (desc === '---') desc = '未知';
                             }
                         });
 
@@ -980,7 +967,7 @@
                         const infoPs = item.querySelectorAll('.app-info p');
                         infoPs.forEach(p => {
                             if (p.textContent.includes('简介：')) {
-                                desc = p.textContent.split('简介：')[1] || '无简介'; if(desc === '---') desc = '未知';
+                                desc = p.textContent.split('简介：')[1] || '无简介'; if (desc === '---') desc = '未知';
                             }
                         });
 
