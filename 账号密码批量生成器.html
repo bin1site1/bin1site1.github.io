@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>账号密码批量生成器</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
@@ -12,7 +13,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
         }
-        
+
         :root {
             --primary-color: #2E86AB;
             --secondary-color: #A23B72;
@@ -22,21 +23,21 @@
             --dark-text: #333;
             --border-color: #ddd;
         }
-        
+
         body {
             background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 15px;
+            align-items: flex-start;
+            padding: 10px;
             color: var(--dark-text);
         }
-        
+
         .container {
             width: 100%;
             max-width: 1400px;
-            height: 95vh;
+            min-height: 95vh;
             display: flex;
             flex-direction: column;
             background: rgba(255, 255, 255, 0.97);
@@ -44,32 +45,37 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
-        
+
         header {
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 15px 20px;
+            padding: 12px 15px;
             text-align: center;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             flex-shrink: 0;
         }
-        
+
         header h1 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
         }
-        
+
+        header p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
         .main-content {
             display: flex;
             flex: 1;
             overflow: hidden;
             flex-direction: row;
         }
-        
+
         .settings-panel {
             width: 40%;
             padding: 15px;
@@ -77,28 +83,29 @@
             overflow-y: auto;
             display: flex;
             flex-direction: column;
+            gap: 12px;
         }
-        
+
         .results-panel {
             width: 60%;
             padding: 15px;
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            gap: 12px;
         }
-        
+
         .section {
-            margin-bottom: 15px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             overflow: hidden;
             flex-shrink: 0;
         }
-        
+
         .section-title {
             background: var(--light-bg);
-            padding: 12px 15px;
+            padding: 10px 15px;
             font-weight: 600;
             border-bottom: 1px solid var(--border-color);
             display: flex;
@@ -106,41 +113,50 @@
             gap: 8px;
             font-size: 0.9rem;
         }
-        
+
         .section-content {
             padding: 15px;
         }
-        
+
         .form-group {
             margin-bottom: 15px;
         }
-        
+
         label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             font-weight: 500;
             display: flex;
             align-items: center;
             gap: 5px;
             font-size: 0.85rem;
         }
-        
-        input, select {
+
+        input,
+        select {
             width: 100%;
-            padding: 10px;
+            padding: 10px 12px;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.3s;
         }
-        
-        /* 分散对齐样式 */
+
+        input:focus,
+        select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(46, 134, 171, 0.1);
+        }
+
         .distributed-group {
             display: flex;
             justify-content: space-between;
             width: 100%;
             margin-top: 5px;
+            gap: 8px;
         }
-        
+
         .distributed-item {
             display: flex;
             align-items: center;
@@ -149,25 +165,27 @@
             flex: 1;
             justify-content: center;
         }
-        
-        .checkbox-group, .radio-group {
+
+        .checkbox-group,
+        .radio-group {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 5px;
         }
-        
-        .checkbox-item, .radio-item {
+
+        .checkbox-item,
+        .radio-item {
             display: flex;
             align-items: center;
             gap: 5px;
             font-size: 0.85rem;
         }
-        
+
         button {
             padding: 10px 15px;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             font-weight: 600;
             transition: all 0.3s;
@@ -175,84 +193,101 @@
             align-items: center;
             justify-content: center;
             gap: 5px;
+            font-size: 0.85rem;
         }
-        
+
         .btn-generate {
             background: var(--primary-color);
             color: white;
             width: 100%;
+            padding: 12px;
             font-size: 0.9rem;
+            margin-top: 8px;
         }
-        
+
         .btn-generate:hover {
             background: #1a6a8d;
+            box-shadow: 0 2px 6px rgba(46, 134, 171, 0.2);
         }
-        
+
+        /* 功能按钮组样式 - 适配新位置 */
+        .function-actions {
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            margin-top: 10px;
+            width: 100%;
+            flex-wrap: wrap;
+            /* 移动端自动换行 */
+        }
+
         .btn-save {
             background: var(--success-color);
             color: white;
             flex: 1;
+            padding: 11px;
+            min-width: 100px;
+            /* 移动端最小宽度 */
         }
-        
+
         .btn-save:hover {
             background: #1e7e34;
+            box-shadow: 0 2px 6px rgba(40, 167, 69, 0.2);
         }
-        
+
         .btn-clear {
             background: var(--danger-color);
             color: white;
             flex: 1;
+            padding: 11px;
+            min-width: 100px;
+            /* 移动端最小宽度 */
         }
-        
+
         .btn-clear:hover {
             background: #c82333;
+            box-shadow: 0 2px 6px rgba(220, 53, 69, 0.2);
         }
-        
-        .actions {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-            position: sticky;
-            bottom: 0;
-            background: white;
-            padding: 10px 0;
-            z-index: 10;
-        }
-        
+
         .results-container {
             flex: 1;
             display: flex;
             flex-direction: column;
             overflow: hidden;
             position: relative;
+            min-height: 150px;
         }
-        
+
         .results-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             position: sticky;
             top: 0;
             background: var(--light-bg);
-            padding: 5px 0;
+            padding: 8px 10px;
+            border-radius: 6px;
             z-index: 5;
+            font-size: 0.85rem;
         }
-        
+
         #results {
             flex: 1;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 10px;
+            border-radius: 6px;
+            padding: 12px;
             overflow-y: auto;
             background: var(--light-bg);
             font-family: 'Courier New', monospace;
             font-size: 0.8rem;
-            white-space: pre;
+            white-space: pre-wrap;
+            word-break: break-all;
+            line-height: 1.5;
         }
-        
+
         .status-bar {
-            padding: 10px;
+            padding: 10px 15px;
             background: var(--light-bg);
             border-top: 1px solid var(--border-color);
             font-size: 0.8rem;
@@ -261,170 +296,196 @@
             gap: 5px;
             flex-shrink: 0;
         }
-        
-        /* 平板设备响应式 */
+
+        /* 平板适配 */
         @media (max-width: 1024px) {
-            .container {
-                height: 92vh;
-            }
-            
-            header h1 {
-                font-size: 1.3rem;
-            }
-            
-            .section-title {
-                font-size: 0.85rem;
-            }
-            
-            label, input, select, button {
-                font-size: 0.8rem;
-            }
-            
-            #results {
-                font-size: 0.75rem;
-            }
-            
-            /* 平板端分散对齐调整 */
-            .distributed-item {
-                font-size: 0.8rem;
-            }
-        }
-        
-        /* 手机和平板竖屏响应式 */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .container {
-                height: auto;
-                min-height: 95vh;
-                max-height: 95vh;
-            }
-            
-            .main-content {
-                flex-direction: column;
-            }
-            
-            .settings-panel, .results-panel {
-                width: 100%;
-                padding: 10px;
-            }
-            
             .settings-panel {
-                border-right: none;
-                border-bottom: 1px solid var(--border-color);
-                max-height: 50vh;
+                width: 45%;
+                padding: 12px;
             }
-            
+
             .results-panel {
-                max-height: 50vh;
+                width: 55%;
+                padding: 12px;
             }
-            
-            header {
-                padding: 10px 15px;
-            }
-            
+
             header h1 {
                 font-size: 1.2rem;
             }
-            
+
+            .section-title {
+                font-size: 0.85rem;
+                padding: 9px 12px;
+            }
+        }
+
+        /* 手机适配 */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+                align-items: flex-start;
+                background-attachment: fixed;
+            }
+
+            .container {
+                min-height: calc(100vh - 16px);
+                height: auto;
+                max-height: none;
+            }
+
+            .main-content {
+                flex-direction: column;
+            }
+
+            .settings-panel,
+            .results-panel {
+                width: 100%;
+                padding: 12px;
+                max-height: none;
+                border-right: none;
+            }
+
+            .settings-panel {
+                border-bottom: 1px solid var(--border-color);
+                max-height: none;
+                /* 取消高度限制，适配按钮布局 */
+            }
+
+            .results-panel {
+                flex: 1;
+                max-height: none;
+            }
+
+            header {
+                padding: 10px 12px;
+            }
+
+            header h1 {
+                font-size: 1.1rem;
+            }
+
+            header p {
+                font-size: 0.8rem;
+            }
+
             .section {
                 margin-bottom: 10px;
             }
-            
-            .section-title {
-                padding: 10px 12px;
-                font-size: 0.8rem;
-            }
-            
+
             .section-content {
                 padding: 12px;
             }
-            
+
             .form-group {
                 margin-bottom: 12px;
             }
-            
-            /* 手机端分散对齐调整为垂直布局 */
+
             .distributed-group {
                 flex-direction: column;
                 gap: 8px;
             }
-            
+
             .distributed-item {
                 justify-content: flex-start;
+                padding-left: 2px;
             }
-            
-            .actions {
-                position: relative;
-                bottom: auto;
+
+            /* 移动端按钮组适配 */
+            .function-actions {
+                gap: 8px;
+            }
+
+            .btn-save,
+            .btn-clear {
+                font-size: 0.8rem;
+                padding: 10px;
+                flex: 1 1 calc(50% - 4px);
+                /* 移动端每行2个按钮 */
+            }
+
+            #results {
+                font-size: 0.75rem;
+                padding: 10px;
             }
         }
-        
-        /* 小手机响应式 */
+
+        /* 小手机适配 */
         @media (max-width: 480px) {
             .container {
                 border-radius: 8px;
             }
-            
-            header {
+
+            .settings-panel {
+                max-height: none;
+            }
+
+            .section-title {
+                font-size: 0.8rem;
                 padding: 8px 10px;
             }
-            
-            header h1 {
-                font-size: 1.1rem;
+
+            label,
+            input,
+            select,
+            button {
+                font-size: 0.8rem;
             }
-            
-            .settings-panel, .results-panel {
-                padding: 8px;
+
+            .btn-generate {
+                padding: 11px;
+                font-size: 0.85rem;
             }
-            
-            .section-title {
-                font-size: 0.75rem;
+
+            .results-header {
+                font-size: 0.8rem;
+                padding: 7px 8px;
             }
-            
-            label, input, select, button {
-                font-size: 0.75rem;
-            }
-            
+
             #results {
                 font-size: 0.7rem;
-                padding: 8px;
+                padding: 9px;
             }
-            
-            .distributed-item {
+
+            .status-bar {
                 font-size: 0.75rem;
+                padding: 9px 12px;
+            }
+
+            /* 小屏按钮全屏宽 */
+            .btn-save,
+            .btn-clear {
+                flex: 1 1 100%;
             }
         }
-        
-        /* 滚动条样式 */
+
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 5px;
+            height: 5px;
         }
-        
+
         ::-webkit-scrollbar-track {
             background: #f1f1f1;
             border-radius: 3px;
         }
-        
+
         ::-webkit-scrollbar-thumb {
             background: #c1c1c1;
             border-radius: 3px;
         }
-        
+
         ::-webkit-scrollbar-thumb:hover {
             background: #a8a8a8;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>🔐 账号密码批量生成器</h1>
             <p>快速生成安全可靠的账号密码组合</p>
         </header>
-        
+
         <div class="main-content">
             <div class="settings-panel">
                 <div class="section">
@@ -436,7 +497,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section">
                     <div class="section-title">👤 账号设置</div>
                     <div class="section-content">
@@ -444,38 +505,38 @@
                             <label for="prefix">🔤 账号前缀</label>
                             <input type="text" id="prefix" value="user">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="suffix">🔡 账号后缀</label>
                             <input type="text" id="suffix" value="">
                         </div>
-                        
+
                         <div class="form-group">
                             <label>🔢 账号类型</label>
-                            <div class="distributed-group">
-                                <div class="distributed-item">
+                            <div class="radio-group">
+                                <div class="radio-item">
                                     <input type="radio" id="sequential" name="accountType" value="sequential" checked>
                                     <label for="sequential">数字序列</label>
                                 </div>
-                                <div class="distributed-item">
+                                <div class="radio-item">
                                     <input type="radio" id="random" name="accountType" value="random">
                                     <label for="random">随机字符串</label>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="accountLength">📏 账号长度</label>
                             <input type="number" id="accountLength" min="1" value="6">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="startNumber">🔢 起始数字</label>
                             <input type="number" id="startNumber" min="1" value="1">
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section">
                     <div class="section-title">🔑 密码设置</div>
                     <div class="section-content">
@@ -483,39 +544,47 @@
                             <label for="passwordLength">📏 密码长度</label>
                             <input type="number" id="passwordLength" min="1" value="12">
                         </div>
-                        
+
                         <div class="form-group">
                             <label>🎨 包含字符类型</label>
-                            <div class="distributed-group">
-                                <div class="distributed-item">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
                                     <input type="checkbox" id="upperCase" checked>
                                     <label for="upperCase">大写字母</label>
                                 </div>
-                                <div class="distributed-item">
+                                <div class="checkbox-item">
                                     <input type="checkbox" id="lowerCase" checked>
                                     <label for="lowerCase">小写字母</label>
                                 </div>
-                                <div class="distributed-item">
+                                <div class="checkbox-item">
                                     <input type="checkbox" id="digits" checked>
                                     <label for="digits">数字</label>
                                 </div>
-                                <div class="distributed-item">
+                                <div class="checkbox-item">
                                     <input type="checkbox" id="specialChars" checked>
                                     <label for="specialChars">特殊字符</label>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="customSpecialChars">✨ 自定义特殊字符</label>
                             <input type="text" id="customSpecialChars" value="!@#$%">
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- 生成按钮 -->
                 <button class="btn-generate" id="generateBtn">🚀 生成账号密码</button>
+
+                <!-- 功能按钮组 - 移至生成按钮下方 -->
+                <div class="function-actions">
+                    <button class="btn-save" id="saveTxtBtn">💾 保存为TXT</button>
+                    <button class="btn-save" id="saveExcelBtn">📊 保存为Excel</button>
+                    <button class="btn-clear" id="clearBtn">🗑️ 清空结果</button>
+                </div>
             </div>
-            
+
             <div class="results-panel">
                 <div class="section" style="height: 100%; display: flex; flex-direction: column;">
                     <div class="section-title">📋 生成结果</div>
@@ -527,19 +596,13 @@
                             </div>
                             <pre id="results">暂无数据，请先生成账号密码。</pre>
                         </div>
-                        
-                        <div class="actions">
-                            <button class="btn-save" id="saveTxtBtn">💾 保存为TXT</button>
-                            <button class="btn-save" id="saveExcelBtn">📊 保存为Excel</button>
-                            <button class="btn-clear" id="clearBtn">🗑️ 清空结果</button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="status-bar">
-            <span></span>
+            <span>ℹ️</span>
             <span id="statusText">就绪，请设置参数并生成账号密码。</span>
         </div>
     </div>
@@ -547,7 +610,7 @@
     <script>
         // 全局变量
         let accounts = [];
-        
+
         // DOM 元素
         const generateBtn = document.getElementById('generateBtn');
         const saveTxtBtn = document.getElementById('saveTxtBtn');
@@ -556,235 +619,268 @@
         const resultsElement = document.getElementById('results');
         const statusText = document.getElementById('statusText');
         const resultCount = document.getElementById('resultCount');
-        
+
         // 字符集
         const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
         const digitChars = '0123456789';
-        
+
         // 生成数字序列
         function generateSequentialNumbers(start, count, length) {
             const numbers = [];
-            for (let i = start; i < start + count; i++) {
-                let numStr = i.toString();
-                if (numStr.length < length) {
-                    numStr = numStr.padStart(length, '0');
-                } else if (numStr.length > length) {
-                    numStr = numStr.slice(-length);
+            try {
+                for (let i = 0; i < count; i++) {
+                    const num = start + i;
+                    let numStr = num.toString();
+                    // 补零或截取到指定长度
+                    if (numStr.length < length) {
+                        numStr = numStr.padStart(length, '0');
+                    } else if (numStr.length > length) {
+                        numStr = numStr.slice(-length);
+                    }
+                    numbers.push(numStr);
                 }
-                numbers.push(numStr);
+            } catch (error) {
+                console.error('生成数字序列失败:', error);
             }
             return numbers;
         }
-        
+
         // 生成随机字符串
         function generateRandomString(count, length) {
             const chars = uppercaseChars + lowercaseChars + digitChars;
             const result = [];
-            for (let i = 0; i < count; i++) {
-                let str = '';
-                for (let j = 0; j < length; j++) {
-                    str += chars.charAt(Math.floor(Math.random() * chars.length));
+            try {
+                for (let i = 0; i < count; i++) {
+                    let str = '';
+                    for (let j = 0; j < length; j++) {
+                        str += chars.charAt(Math.floor(Math.random() * chars.length));
+                    }
+                    result.push(str);
                 }
-                result.push(str);
+            } catch (error) {
+                console.error('生成随机字符串失败:', error);
             }
             return result;
         }
-        
+
         // 生成密码
         function generatePassword(length) {
             let charSets = [];
-            
-            if (document.getElementById('upperCase').checked) {
-                charSets.push(uppercaseChars);
-            }
-            if (document.getElementById('lowerCase').checked) {
-                charSets.push(lowercaseChars);
-            }
-            if (document.getElementById('digits').checked) {
-                charSets.push(digitChars);
-            }
-            if (document.getElementById('specialChars').checked) {
-                const customChars = document.getElementById('customSpecialChars').value;
-                charSets.push(customChars || '!@#$%');
-            }
-            
-            // 确保至少有一种字符类型被选择
-            if (charSets.length === 0) {
-                charSets = [uppercaseChars + lowercaseChars + digitChars + '!@#$%'];
-            }
-            
-            const allChars = charSets.join('');
-            let password = [];
-            
-            // 确保每种字符类型至少有一个字符
-            for (const charSet of charSets) {
-                if (charSet.length > 0) {
-                    password.push(charSet.charAt(Math.floor(Math.random() * charSet.length)));
+
+            try {
+                if (document.getElementById('upperCase').checked) {
+                    charSets.push(uppercaseChars);
                 }
-            }
-            
-            // 填充剩余长度
-            const remainingLength = length - password.length;
-            if (remainingLength < 0) {
-                // 如果要求的长度小于字符集数量，只取前length个
-                password = password.slice(0, length);
-            } else {
-                for (let i = 0; i < remainingLength; i++) {
-                    password.push(allChars.charAt(Math.floor(Math.random() * allChars.length)));
+                if (document.getElementById('lowerCase').checked) {
+                    charSets.push(lowercaseChars);
                 }
+                if (document.getElementById('digits').checked) {
+                    charSets.push(digitChars);
+                }
+                if (document.getElementById('specialChars').checked) {
+                    const customChars = document.getElementById('customSpecialChars').value.trim();
+                    charSets.push(customChars || '!@#$%^&*()_+-=[]{}|;:,.<>?');
+                }
+
+                // 确保至少有一种字符类型
+                if (charSets.length === 0) {
+                    charSets = [uppercaseChars + lowercaseChars + digitChars + '!@#$%'];
+                }
+
+                const allChars = charSets.join('');
+                let password = [];
+
+                // 每种字符类型至少取一个
+                for (const charSet of charSets) {
+                    if (charSet.length > 0) {
+                        password.push(charSet.charAt(Math.floor(Math.random() * charSet.length)));
+                    }
+                }
+
+                // 填充剩余长度
+                const remainingLength = length - password.length;
+                if (remainingLength > 0) {
+                    for (let i = 0; i < remainingLength; i++) {
+                        password.push(allChars.charAt(Math.floor(Math.random() * allChars.length)));
+                    }
+                } else if (remainingLength < 0) {
+                    password = password.slice(0, length);
+                }
+
+                // 打乱顺序
+                password.sort(() => Math.random() - 0.5);
+
+                return password.join('');
+            } catch (error) {
+                console.error('生成密码失败:', error);
+                return 'password' + Math.floor(Math.random() * 1000000); // 备用密码
             }
-            
-            // 打乱顺序
-            for (let i = password.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [password[i], password[j]] = [password[j], password[i]];
-            }
-            
-            return password.join('');
         }
-        
-        // 生成账号密码
+
+        // 生成账号密码（核心修复）
         function generateAccounts() {
-            // 获取参数
-            const count = parseInt(document.getElementById('count').value) || 10;
-            const prefix = document.getElementById('prefix').value;
-            const suffix = document.getElementById('suffix').value;
-            const accountType = document.querySelector('input[name="accountType"]:checked').value;
-            const accountLength = parseInt(document.getElementById('accountLength').value) || 6;
-            const startNumber = parseInt(document.getElementById('startNumber').value) || 1;
-            const passwordLength = parseInt(document.getElementById('passwordLength').value) || 12;
-            
-            // 验证参数
-            if (count <= 0 || count > 10000) {
-                updateStatus('❌ 生成数量应在1-10000之间', 'error');
-                return;
-            }
-            
-            if (accountLength <= 0) {
-                updateStatus('❌ 账号长度必须大于0', 'error');
-                return;
-            }
-            
-            if (passwordLength <= 0) {
-                updateStatus('❌ 密码长度必须大于0', 'error');
-                return;
-            }
-            
-            // 生成账号部分
-            let accountParts = [];
-            if (accountType === 'sequential') {
-                accountParts = generateSequentialNumbers(startNumber, count, accountLength);
-            } else {
-                accountParts = generateRandomString(count, accountLength);
-            }
-            
-            if (!accountParts || accountParts.length === 0) {
-                updateStatus('❌ 账号生成失败，请检查参数', 'error');
-                return;
-            }
-            
-            // 生成完整的账号和密码
-            accounts = [];
-            for (let i = 0; i < accountParts.length; i++) {
-                const account = prefix + accountParts[i] + suffix;
-                const password = generatePassword(passwordLength);
-                
-                accounts.push({
-                    index: i + 1,
-                    account: account,
-                    password: password,
-                    timestamp: new Date().toLocaleString()
+            try {
+                // 获取参数（添加容错处理）
+                const count = parseInt(document.getElementById('count').value) || 10;
+                const prefix = document.getElementById('prefix').value || '';
+                const suffix = document.getElementById('suffix').value || '';
+                const accountType = document.querySelector('input[name="accountType"]:checked')?.value || 'sequential';
+                const accountLength = parseInt(document.getElementById('accountLength').value) || 6;
+                const startNumber = parseInt(document.getElementById('startNumber').value) || 1;
+                const passwordLength = parseInt(document.getElementById('passwordLength').value) || 12;
+
+                // 严格参数验证
+                if (isNaN(count) || count <= 0 || count > 10000) {
+                    updateStatus('❌ 生成数量应在1-10000之间', 'error');
+                    return;
+                }
+                if (isNaN(accountLength) || accountLength <= 0 || accountLength > 50) {
+                    updateStatus('❌ 账号长度应在1-50之间', 'error');
+                    return;
+                }
+                if (isNaN(passwordLength) || passwordLength <= 0 || passwordLength > 50) {
+                    updateStatus('❌ 密码长度应在1-50之间', 'error');
+                    return;
+                }
+                if (isNaN(startNumber) || startNumber < 1) {
+                    updateStatus('❌ 起始数字应大于等于1', 'error');
+                    return;
+                }
+
+                // 生成账号主体部分
+                let accountParts = [];
+                if (accountType === 'sequential') {
+                    accountParts = generateSequentialNumbers(startNumber, count, accountLength - prefix.length - suffix.length);
+                    // 处理前缀后缀过长的情况
+                    if (prefix.length + suffix.length >= accountLength) {
+                        accountParts = generateSequentialNumbers(startNumber, count, 4); // 保底4位数字
+                    }
+                } else {
+                    accountParts = generateRandomString(count, accountLength - prefix.length - suffix.length);
+                    if (prefix.length + suffix.length >= accountLength) {
+                        accountParts = generateRandomString(count, 4); // 保底4位随机字符
+                    }
+                }
+
+                // 确保accountParts有数据
+                if (!accountParts || accountParts.length === 0) {
+                    accountParts = generateSequentialNumbers(startNumber, count, 4);
+                }
+
+                // 生成完整账号和密码
+                accounts = [];
+                const timestamp = new Date().toLocaleString();
+                for (let i = 0; i < count; i++) {
+                    const accountPart = accountParts[i % accountParts.length]; // 防止数组长度不足
+                    const account = prefix + accountPart + suffix;
+                    const password = generatePassword(passwordLength);
+
+                    accounts.push({
+                        index: i + 1,
+                        account: account,
+                        password: password,
+                        timestamp: timestamp
+                    });
+                }
+
+                // 确保按钮可见
+                [saveTxtBtn, saveExcelBtn, clearBtn].forEach(btn => {
+                    btn.style.display = 'flex';
+                    btn.disabled = false;
                 });
+
+                // 更新状态和显示结果
+                updateStatus(`✅ 成功生成 ${accounts.length} 个账号密码`);
+                displayResults();
+            } catch (error) {
+                console.error('生成账号密码失败:', error);
+                updateStatus('❌ 生成失败：' + error.message, 'error');
+                accounts = [];
+                displayResults();
             }
-            
-            // 更新状态和显示结果
-            updateStatus(` 成功生成 ${accounts.length} 个账号密码`);
-            displayResults();
         }
-        
-        // 显示结果
+
+        // 显示结果（简化格式，确保显示正常）
         function displayResults() {
             if (accounts.length === 0) {
                 resultsElement.textContent = '暂无数据，请先生成账号密码。';
                 resultCount.textContent = '0 条记录';
                 return;
             }
-            
-            let resultText = '';
-            resultText += `${'序号'.padEnd(4)} ${'账号'.padEnd(25)} ${'密码'.padEnd(20)} 生成时间\n`;
-            resultText += '='.repeat(70) + '\n';
-            
-            for (const acc of accounts) {
-                resultText += `${acc.index.toString().padEnd(4)} ${acc.account.padEnd(25)} ${acc.password.padEnd(20)} ${acc.timestamp}\n`;
-            }
-            
-            resultText += '='.repeat(70) + '\n';
-            resultText += `总计: ${accounts.length} 条记录 | 生成时间: ${new Date().toLocaleString()}\n`;
-            
+
+            let resultText = '序号 | 账号 | 密码 | 生成时间\n';
+            resultText += '-'.repeat(50) + '\n';
+
+            accounts.forEach(acc => {
+                // 简化显示，避免移动端拥挤
+                const shortTime = acc.timestamp.split(' ')[1] || acc.timestamp;
+                resultText += `${acc.index.toString().padEnd(2)}  | ${acc.account.padEnd(12)} | ${acc.password.padEnd(12)} | ${shortTime}\n`;
+            });
+
+            resultText += '-'.repeat(50) + '\n';
+            resultText += `总计: ${accounts.length} 条记录 | 生成时间: ${new Date().toLocaleTimeString()}`;
+
             resultsElement.textContent = resultText;
             resultCount.textContent = `${accounts.length} 条记录`;
         }
-        
+
         // 保存为TXT
         function saveAsTxt() {
             if (accounts.length === 0) {
                 updateStatus('⚠️ 没有数据可保存', 'warning');
                 return;
             }
-            
-            let content = '';
-            for (const acc of accounts) {
-                content += `${acc.account}:${acc.password}\n`;
+
+            let content = '序号,账号,密码,生成时间\n';
+            accounts.forEach(acc => {
+                content += `${acc.index},${acc.account},${acc.password},${acc.timestamp}\n`;
+            });
+
+            try {
+                const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `账号密码_${new Date().getTime()}.txt`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                updateStatus('💾 数据已保存为TXT文件');
+            } catch (error) {
+                updateStatus('❌ 保存TXT失败：' + error.message, 'error');
             }
-            
-            // 创建Blob对象并下载
-            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = '账号密码.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-            
-            updateStatus('💾 数据已保存为TXT文件');
         }
-        
+
         // 保存为Excel
         function saveAsExcel() {
             if (accounts.length === 0) {
                 updateStatus('⚠️ 没有数据可保存', 'warning');
                 return;
             }
-            
+
             try {
-                // 创建工作簿
                 const wb = XLSX.utils.book_new();
-                
-                // 准备数据
                 const data = accounts.map(acc => ({
                     '序号': acc.index,
                     '账号': acc.account,
                     '密码': acc.password,
                     '生成时间': acc.timestamp
                 }));
-                
-                // 创建工作表
+
                 const ws = XLSX.utils.json_to_sheet(data);
-                
-                // 将工作表添加到工作簿
+                const wscols = [{ wch: 6 }, { wch: 25 }, { wch: 20 }, { wch: 20 }];
+                ws['!cols'] = wscols;
+
                 XLSX.utils.book_append_sheet(wb, ws, '账号密码');
-                
-                // 生成Excel文件并保存
-                XLSX.writeFile(wb, '账号密码.xlsx');
+                XLSX.writeFile(wb, `账号密码_${new Date().getTime()}.xlsx`);
                 updateStatus('📊 数据已保存为Excel文件');
             } catch (error) {
-                updateStatus('❌ 保存Excel文件时出错: ' + error.message, 'error');
+                updateStatus('❌ 保存Excel失败：' + error.message, 'error');
             }
         }
-        
+
         // 清空结果
         function clearResults() {
             accounts = [];
@@ -792,44 +888,54 @@
             resultCount.textContent = '0 条记录';
             updateStatus('🗑️ 已清空所有结果');
         }
-        
+
         // 更新状态
         function updateStatus(message, type = 'info') {
             statusText.textContent = message;
-            
-            // 根据类型设置状态图标
             const statusIcon = statusText.previousElementSibling;
+
             if (type === 'error') {
                 statusIcon.textContent = '❌';
+                statusText.style.color = 'var(--danger-color)';
             } else if (type === 'warning') {
                 statusIcon.textContent = '⚠️';
+                statusText.style.color = '#ffc107';
             } else {
                 statusIcon.textContent = '✅';
+                statusText.style.color = 'var(--dark-text)';
             }
+
+            setTimeout(() => {
+                if (statusText.textContent === message) {
+                    statusIcon.textContent = 'ℹ️';
+                }
+            }, 3000);
         }
-        
-        // 事件监听
-        generateBtn.addEventListener('click', generateAccounts);
-        saveTxtBtn.addEventListener('click', saveAsTxt);
-        saveExcelBtn.addEventListener('click', saveAsExcel);
-        clearBtn.addEventListener('click', clearResults);
-        
-        // 初始化
-        document.addEventListener('DOMContentLoaded', function() {
-            // 设置初始高度和宽度
-            document.querySelector('.container').style.height = '95vh';
-            document.querySelector('.container').style.width = '100%';
-            
-            // 显示初始状态
-            updateStatus(' 就绪，请设置参数并生成账号密码。');
+
+        // 事件绑定（确保绑定成功）
+        document.addEventListener('DOMContentLoaded', function () {
+            // 初始化按钮状态
+            [saveTxtBtn, saveExcelBtn, clearBtn].forEach(btn => {
+                btn.style.display = 'flex';
+                btn.disabled = false;
+            });
+
+            // 绑定点击事件
+            if (generateBtn) generateBtn.addEventListener('click', generateAccounts);
+            if (saveTxtBtn) saveTxtBtn.addEventListener('click', saveAsTxt);
+            if (saveExcelBtn) saveExcelBtn.addEventListener('click', saveAsExcel);
+            if (clearBtn) clearBtn.addEventListener('click', clearResults);
+
+            updateStatus('就绪，请设置参数并生成账号密码。');
         });
-        
-        // 阻止窗口大小变化影响容器尺寸
-        window.addEventListener('resize', function() {
-            const container = document.querySelector('.container');
-            container.style.height = '95vh';
-            container.style.width = '100%';
+
+        // 窗口大小变化适配
+        window.addEventListener('resize', function () {
+            if (accounts.length > 0) {
+                displayResults();
+            }
         });
     </script>
 </body>
+
 </html>
