@@ -4,123 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8"> <!-- 设置字符编码为UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 设置视口适应设备宽度 -->
-    <meta name="description" content="知性小方块 - 个人导航"> <!-- 设置页面描述 -->
-    <meta name="keywords" content="个人主页，主页，导航，引导，社区">
-    <!-- 设置页面关键词 -->
-    <meta name="author" content="bin1"> <!-- 设置作者 -->
-    <meta name="robots" content="index,follow"> <!-- 设置搜索引擎抓取 -->
-    <meta name="googlebot" content="index,follow"> <!-- 设置谷歌搜索引擎抓取 -->
-    <meta name="bingbot" content="index,follow"> <!-- 设置必应搜索引擎抓取 -->
-    <meta name="slurp" content="index,follow"> <!-- 设置搜狗搜索引擎抓取 -->
-    <meta name="yandex" content="index,follow"> <!-- 设置雅虎搜索引擎抓取 -->
-    <meta name="baidu" content="index,follow"> <!-- 设置百度搜索引擎抓取 -->
-    <meta name="sogou" content="index,follow"> <!-- 设置搜狗搜索引擎抓取 -->
-    <title>知性小方块 - 个人导航</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- 引入Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+    <title>知性小方块 - 个人导航主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        // 自定义Tailwind颜色和动画
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7C3AED', // 主紫
+                        secondary: '#EC4899', // 粉
+                        accent1: '#2563EB', // 蓝
+                        accent2: '#DC2626', // 红
+                        accent3: '#16A34A', // 绿
+                        accent4: '#F59E0B', // 黄
+                        light: '#F8FAFC',
+                        dark: '#1E293B',
+                    },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s infinite',
+                        'scale-up': 'scale-up 0.3s ease forwards',
+                    },
+                    keyframes: {
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 15px rgba(124, 58, 237, 0.7), 0 0 30px rgba(236, 72, 153, 0.5)' },
+                            '50%': { boxShadow: '0 0 25px rgba(124, 58, 237, 0.9), 0 0 40px rgba(236, 72, 153, 0.7)' },
+                        },
+                        'scale-up': {
+                            '0%': { transform: 'scale(0.95)' },
+                            '100%': { transform: 'scale(1.05)' },
+                        },
+                    },
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(45deg, #7C3AED, #EC4899, #2563EB);
+            }
+            .bg-glass {
+                background: rgba(255, 255, 255, 0.85);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .circle-btn-shadow {
+                box-shadow: 0 0 20px rgba(124, 58, 237, 0.6), 0 0 40px rgba(236, 72, 153, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <div class="container">
-        <!-- 头部区域 -->
-        <div class="header">
-            <div class="avatar">
-                <img src="logo.jpg" alt="头像" />
+<body class="bg-gradient-to-br from-green-50 to-pink-50 min-h-screen flex flex-col items-center py-8 px-4">
+    <!-- 主容器 -->
+    <div class="max-w-2xl w-full bg-glass rounded-2xl shadow-xl overflow-hidden border border-white/20">
+        <!-- 头部信息 -->
+        <div class="p-6 text-center border-b border-purple-100">
+            <!-- 头像 -->
+            <div
+                class="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center mb-3 shadow-lg">
+                <img src="logo.jpg" alt="头像" class="w-18 h-18 rounded-full object-cover border-2 border-white">
             </div>
-            <div class="name">知性小方块</div>
-            <div class="quote">"保持好奇，持续学习，不断成长"</div>
-            <div class="tags">
-                <span class="tag"><i class="fas fa-code"></i> 编程爱好者</span>
-                <span class="tag"><i class="fas fa-book"></i> 终身学习者</span>
-                <span class="tag"><i class="fas fa-lightbulb"></i> 创意实践者</span>
-                <span class="tag"><i class="fas fa-globe-asia"></i> 资源分享家</span>
-                <span class="tag"><i class="fas fa-tools"></i> 技术探索者</span>
-            </div>
-        </div>
-
-        <!-- 链接区域 -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-link"></i> 联系站长
-            </div>
-            <div class="buttons">
-                <a href="https://pd.qq.com/s/9oir7qw0g" class="btn btn-tencent">
-                    <i class="fab fa-qq"></i> Tencent频道
-                </a>
-                <a href="https://t.me/CostCodeNote" class="btn btn-telegram">
-                    <i class="fab fa-telegram-plane"></i> Telegram频道
-                </a>
-                <a href="mailto:246822487@qq.com" class="btn btn-email">
-                    <i class="fas fa-envelope"></i> Email联系邮箱
-                </a>
-                <a href="https://xhslink.com/m/2Llr5INJeli" class="btn btn-redbook">
-                    <i class="fas fa-book-open"></i> 关注UP小红书
-                </a>
-                <a href="https://haokale.cn/h5/?code=Cp2owEN3" class="btn btn-card">
-                    <i class="fas fa-cart-plus"></i> 0元官方正规大流量卡¹
-                </a>
-                <a href="https://ym.kashijiehaoka.cn/?s=sNeWIXgH420078" class="btn btn-card">
-                    <i class="fas fa-paper-plane"></i> 0元官方正规大流量卡²
-                </a>
+            <!-- 名称 -->
+            <h1 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-gradient mb-2">知性小方块</h1>
+            <!-- 签名 -->
+            <p class="text-gray-600 mb-4">"保持好奇，持续学习，不断成长"</p>
+            <!-- 标签栏 -->
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="px-3 py-1 rounded-full bg-purple-100 text-primary text-sm font-medium">编程爱好者</span>
+                <span class="px-3 py-1 rounded-full bg-pink-100 text-secondary text-sm font-medium">终身学习者</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-accent1 text-sm font-medium">创意实践者</span>
+                <span class="px-3 py-1 rounded-full bg-green-100 text-accent3 text-sm font-medium">资源分享家</span>
+                <span class="px-3 py-1 rounded-full bg-yellow-100 text-accent4 text-sm font-medium">技术探索者</span>
             </div>
         </div>
 
-        <!-- 链接区域 -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-link"></i> 友情链接
-            </div>
-            <div class="buttons">
-                <a href="https://ios.free.nf" class="btn btn-apple">
-                    <i class="fas fa-apple-alt"></i> AppleStore每日限免
-                </a>
-                <a href="https://oss.dinduan.com/view.php/870e8e8d4508c4c3934ab0ba3788e967.png" class="btn btn-store">
-                    <i class="fas fa-store-alt"></i> DownHub应用中心
-                </a>
-                <a href="https://gh-proxy.org/raw.githubusercontent.com/bin1site1/bin1site1.github.io/refs/heads/main/OS.json"
-                    class="btn btn-tvbox">
-                    <i class="fas fa-file-alt"></i> TVBOX视频订阅源¹
-                </a>
+        <!-- 核心圆形按钮（整合原三个板块） -->
+        <div class="py-12 px-6 flex justify-center items-center">
+            <a href="https://bin1site.gt.tc/" target="_blank" rel="noopener noreferrer" class="group relative w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-r from-primary to-secondary circle-btn-shadow 
+                      animate-pulse-glow transition-all duration-500 hover:animate-scale-up active:scale-95">
+                <!-- 按钮内层 -->
+                <div
+                    class="absolute inset-2 rounded-full bg-white flex flex-col items-center justify-center p-4 text-center transition-all duration-300 group-hover:bg-gray-50">
+                    <i class="fa fa-link text-4xl md:text-5xl text-primary mb-3"></i>
+                    <h2 class="text-xl md:text-2xl font-bold text-dark">核心导航</h2>
+                    <p class="text-sm text-gray-600 mt-1">点击跳转</p>
+                </div>
+                <!-- 装饰光环 -->
+                <div class="absolute inset-0 rounded-full border-2 border-white/40"></div>
+                <div class="absolute inset-4 rounded-full border border-white/20"></div>
+            </a>
+        </div>
+
+        <!-- 提示板块 -->
+        <div class="p-6 border-t border-purple-100 bg-white/50">
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa fa-lightbulb-o text-accent4 text-xl"></i>
+                <div>
+                    <h3 class="font-semibold text-dark mb-2">提示：点击上方按钮跳转到主站！</h3>
+                </div>
             </div>
         </div>
 
-        <!-- 说明区域 -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-info-circle"></i> 说明
-            </div>
-            <ul class="notice-list">
-                <li><b>加群说明：</b>加入频道或群聊第一时间阅读公告，避免违规被踢出频道。纯闲聊交流社群，无资源分享，仅用于交流学习，禁止分享资源！</li>
-                <li><b>赞助成员群：</b>提供多类资源，包括Android软件、Windows/Office密钥、VPN软件、软件激活码、教程资料、软件库App资源合集等；原创破解和收集花费大量时间精力，不为爱发电，在QQ频道私信频道主完成赞助，频道主会第一时间审核并拉入赞助群。
-                </li>
-            </ul>
-        </div>
-
-        <!-- 说明区域 -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-exclamation-triangle"></i> 提示：
-            </div>
-            <ul class="notice-list">
-                <li>此页面长期维护更新，建议收藏保存！</li>
-            </ul>
-        </div>
-
-        <!-- 页脚 -->
-        <div class="footer">
-            <div class="running-time">
-                <i class="fas fa-heartbeat"></i> 本站已运行: <span id="runtime">0天0时0分0秒</span>
-            </div>
-            <p>Copyright © 2025 知性小方块 - 个人导航主页</p>
+        <!-- 页脚信息 -->
+        <div class="p-4 text-center border-t border-purple-100 bg-white/30">
+            <p class="text-gray-400 text-xs">Copyright © 2025 知性小方块</p>
         </div>
     </div>
-    <script src="time.js"></script>
-    <script src="huaban.js"></script>
-
 </body>
 
 </html>
