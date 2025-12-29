@@ -1,5 +1,19 @@
 {
     "spider": "./OS.jar",
+    "wallpaper": "https://bing.img.run/uhd.php",
+    "lives": [
+        {
+            "group": "redirect",
+            "channels": [
+                {
+                    "name": "live",
+                    "urls": [
+                        "http://www.korice.eu.org/uploads/upload_69529531124ae9.51089667.m3u"
+                    ]
+                }
+            ]
+        }
+    ],
     "sites": [
         {
             "key": "爱奇艺资源",
